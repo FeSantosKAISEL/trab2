@@ -1,0 +1,1101 @@
+sexo,idade,altura,peso,historico_obesidade_familia,consome_comida_calorica,consome_vegetais,n_refeicoes,come_entre_refeicoes,fuma,consumo_diario_agua,frequencia_atividade_fisica,tempo_usando_eletronicos,consumo_alcool,tipo_transporte
+F,38.0,1.64,59.8,sim,sim,2.0,3.0,as vezes,nao,2.0,2.0,0.0,nao,transporte publico
+M,21.196152,1.65,88.472359,sim,sim,2.4277,1.001633,as vezes,nao,3.0,1.172641,1.0,nao,transporte publico
+F,18.871794,1.586895,41.452385,nao,sim,2.0,1.07976,as vezes,nao,1.0,0.194745,1.547086,as vezes,transporte publico
+M,24.244029,1.622297,99.982541,sim,sim,2.941929,3.989492,as vezes,nao,1.014135,1.958694,0.687342,nao,transporte publico
+F,21.0,1.63,51.0,nao,sim,2.0,1.0,as vezes,nao,1.0,1.0,1.0,nao,transporte publico
+F,21.951309,1.730167,78.429312,sim,sim,2.138334,1.0,as vezes,nao,2.0,2.269058,0.0,as vezes,transporte publico
+M,26.050109,1.773115,115.089316,sim,sim,2.392179,3.0,as vezes,nao,2.16467,1.079934,1.073026,as vezes,transporte publico
+M,20.580984,1.798354,,sim,sim,2.0,3.0,as vezes,nao,2.401315,2.891986,0.0,nao,transporte publico
+M,17.0,1.7,55.0,nao,sim,3.0,3.0,sempre,nao,2.0,3.0,1.0,as vezes,transporte publico
+M,33.0,1.72,83.0,sim,sim,2.0,1.0,as vezes,nao,2.0,3.0,0.0,as vezes,carro
+M,20.261925,1.807538,85.316125,sim,sim,2.0,3.0,as vezes,nao,1.968011,1.072662,0.776758,as vezes,transporte publico
+F,25.976209,1.614484,104.999403,sim,sim,3.0,3.0,as vezes,nao,1.237557,0.083675,0.543761,as vezes,transporte publico
+M,22.18881,1.717722,81.92991,sim,sim,2.0,1.152521,as vezes,nao,1.723159,1.39016,1.094941,as vezes,transporte publico
+F,18.0,1.683,90.924208,sim,sim,2.387426,3.0,as vezes,nao,1.77962,,0.920162,as vezes,transporte publico
+F,25.930376,1.608808,102.083964,sim,sim,3.0,3.0,as vezes,nao,1.019684,0.026033,1.0,as vezes,transporte publico
+F,18.0,1.7,50.0,,nao,2.0,3.0,as vezes,nao,2.0,0.0,1.0,as vezes,andando
+F,19.821996,1.653431,75.090439,sim,nao,2.766036,2.443812,as vezes,nao,2.707927,0.702839,0.827439,as vezes,transporte publico
+M,19.524698,1.942725,121.657979,sim,sim,2.0,3.0,as vezes,nao,3.0,1.0,1.014808,as vezes,transporte publico
+F,18.741188,1.556789,71.788181,sim,nao,3.0,3.129155,as vezes,nao,2.0,1.634134,1.0,nao,transporte publico
+F,23.0,1.48,60.0,sim,sim,2.0,1.0,as vezes,sim,,0.0,0.0,as vezes,transporte publico
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+M,16.0,1.82,71.0,sim,sim,2.0,3.0,frequentemente,nao,2.0,2.0,1.0,as vezes,transporte publico
+F,16.0,1.6,57.0,nao,sim,3.0,3.0,as vezes,nao,1.0,3.0,0.0,,transporte publico
+M,17.412629,,97.350366,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,0.931721,nao,transporte publico
+,20.0,1.831357,89.652557,sim,sim,2.555401,3.292386,,nao,3.0,2.0,0.315918,as vezes,transporte publico
+M,18.181821,,79.863546,sim,nao,2.492758,2.270163,as vezes,nao,1.992586,1.452467,0.864583,nao,transporte publico
+M,24.079524,1.733439,97.911865,,sim,2.0,3.0,as vezes,nao,,1.309304,1.338655,nao,transporte publico
+M,26.288417,1.767806,82.694689,sim,sim,1.947405,3.118013,as vezes,nao,2.136159,0.783963,0.88868,nao,transporte publico
+M,19.0,1.85,115.0,nao,nao,2.0,3.0,as vezes,nao,3.0,1.0,2.0,nao,transporte publico
+M,30.899219,1.909639,129.013178,sim,sim,2.22259,3.0,as vezes,sim,1.591909,1.392026,0.917727,as vezes,transporte publico
+F,18.904037,1.743589,133.281333,sim,sim,3.0,3.0,as vezes,nao,2.684819,1.46525,0.804491,as vezes,transporte publico
+M,,1.824432,105.131956,sim,,3.0,3.0,as vezes,nao,2.110611,1.890907,1.58483,as vezes,transporte publico
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+M,37.084742,1.75,118.07381,sim,sim,2.133964,3.0,as vezes,nao,2.008361,0.202029,0.200516,as vezes,carro
+F,19.275687,1.623377,82.851318,sim,sim,1.276858,2.918124,as vezes,nao,1.403784,0.552511,1.560402,as vezes,transporte publico
+M,21.016665,1.790172,105.042194,sim,sim,2.259679,3.0,as vezes,nao,1.026143,0.268801,0.077818,as vezes,transporte publico
+M,24.473062,1.653751,91.204753,sim,sim,1.492834,3.0,as vezes,nao,1.005367,0.922739,0.733221,nao,carro
+M,33.185661,1.836007,97.416417,sim,sim,2.0,1.724887,,nao,3.0,1.0,0.0,as vezes,carro
+M,55.0,1.78,84.0,sim,nao,3.0,4.0,frequentemente,nao,3.0,3.0,0.0,frequentemente,andando
+F,35.125401,1.529834,62.903938,nao,sim,2.0,2.105616,as vezes,nao,1.456581,0.0,0.9974,as vezes,carro
+M,20.825962,1.793378,105.655037,sim,sim,2.0,3.0,as vezes,nao,1.155384,0.003938,0.526999,as vezes,transporte publico
+M,25.015173,1.788239,115.382519,sim,sim,1.735664,3.0,as vezes,nao,2.041536,1.392406,0.39174,as vezes,transporte publico
+F,21.538225,1.610327,67.999778,sim,sim,1.887951,3.728377,nao,nao,2.682107,1.123931,0.492528,as vezes,transporte publico
+M,26.271621,1.660955,90.0,sim,sim,2.0,3.0,as vezes,nao,3.0,0.669278,0.505266,as vezes,carro
+M,18.0,1.74,64.0,sim,sim,3.0,4.0,as vezes,nao,1.0,2.0,0.0,as vezes,transporte publico
+F,20.0,1.625236,74.433362,sim,nao,2.522399,1.032887,as vezes,nao,2.397653,2.358699,0.440087,,transporte publico
+F,35.194089,1.673482,73.193589,sim,nao,3.0,2.809716,as vezes,nao,1.591425,0.178023,0.0,as vezes,carro
+M,,1.79,90.0,nao,nao,2.0,1.0,as vezes,nao,2.0,0.0,0.0,as vezes,transporte publico
+F,37.532066,1.615385,80.0,sim,sim,2.972426,3.0,as vezes,nao,,0.0,0.0,as vezes,carro
+F,21.633056,1.754174,133.783955,sim,sim,3.0,3.0,as vezes,nao,1.94595,1.493018,0.906611,as vezes,transporte publico
+F,20.392665,1.525234,65.220249,sim,nao,2.451009,3.0,as vezes,nao,2.0,2.177243,1.323877,nao,transporte publico
+F,20.924956,1.752531,133.618706,sim,,3.0,3.0,as vezes,nao,2.887659,1.480919,0.779641,as vezes,transporte publico
+F,25.930376,1.608808,102.083964,sim,sim,3.0,3.0,as vezes,nao,1.019684,0.026033,1.0,as vezes,transporte publico
+F,40.654155,1.52906,79.760922,sim,sim,2.0,3.0,as vezes,nao,1.0,0.0,0.0,as vezes,carro
+M,22.882558,1.793451,,sim,sim,1.899116,2.375026,as vezes,nao,1.39854,0.0,1.365793,as vezes,transporte publico
+F,37.205173,1.667469,80.993373,sim,sim,2.01054,2.77684,as vezes,nao,1.651548,0.0,0.790967,nao,carro
+M,27.0,1.83,99.0,sim,sim,3.0,1.0,frequentemente,nao,2.0,2.0,1.0,as vezes,andando
+F,24.284833,1.650726,113.774198,sim,sim,3.0,3.0,as vezes,nao,2.75137,0.324913,0.516764,as vezes,transporte publico
+M,40.106145,1.760175,117.651046,sim,sim,2.032883,2.976211,as vezes,nao,1.726109,0.477855,0.0,as vezes,carro
+F,26.0,1.640606,111.036881,,sim,3.0,3.0,as vezes,nao,2.709428,,0.228486,as vezes,transporte publico
+M,21.0,1.75,72.0,sim,sim,1.0,3.0,frequentemente,nao,3.0,2.0,0.0,as vezes,transporte publico
+F,16.941489,1.551288,54.93242,nao,sim,1.75375,1.296156,as vezes,,2.0,0.110174,1.944675,as vezes,transporte publico
+M,20.0,1.98,125.0,sim,sim,2.0,,sempre,nao,3.0,1.0,1.0,as vezes,transporte publico
+M,18.0,1.7,78.0,nao,sim,1.0,3.0,as vezes,nao,2.0,0.0,1.0,as vezes,transporte publico
+F,21.687409,1.604697,68.016472,sim,sim,1.901611,3.266501,nao,,2.926995,0.985872,0.307982,as vezes,transporte publico
+F,25.943827,1.629491,104.839068,sim,sim,3.0,3.0,,nao,2.20979,0.114698,0.604422,as vezes,transporte publico
+F,18.006742,1.7,50.0,nao,sim,1.003566,3.238258,frequentemente,nao,,0.783676,1.0,as vezes,transporte publico
+F,22.329041,,44.918255,nao,nao,2.886157,2.326233,frequentemente,nao,2.306821,1.42237,0.0,nao,transporte publico
+F,19.054008,1.556611,39.695295,nao,,1.889199,2.217651,as vezes,nao,2.013605,2.075293,1.683261,as vezes,transporte publico
+M,16.0,1.67,50.0,sim,sim,2.0,1.0,frequentemente,nao,3.0,1.0,0.0,nao,transporte publico
+F,16.0,1.66,58.0,nao,nao,,1.0,as vezes,nao,1.0,0.0,1.0,nao,andando
+F,25.561868,1.675185,110.621723,sim,sim,3.0,3.0,as vezes,nao,1.49583,0.109327,0.384129,as vezes,transporte publico
+F,21.412434,1.675562,121.639178,sim,sim,3.0,3.0,as vezes,nao,1.484938,0.74225,0.604692,as vezes,transporte publico
+F,38.943282,1.554728,63.011645,sim,sim,2.869436,3.0,as vezes,nao,2.972426,2.16079,0.305954,as vezes,carro
+F,24.469756,1.663341,113.077187,sim,sim,3.0,3.0,,nao,2.632224,,0.26956,as vezes,transporte publico
+F,21.051107,1.753266,133.852432,sim,sim,3.0,3.0,as vezes,nao,2.95311,1.445148,0.67321,as vezes,transporte publico
+F,21.768834,1.733383,135.524857,sim,sim,3.0,3.0,as vezes,nao,1.485736,1.950374,0.869238,as vezes,transporte publico
+F,18.0,1.668555,85.607466,sim,sim,2.081238,3.0,as vezes,nao,1.18363,1.17177,0.0,nao,transporte publico
+M,24.982997,1.78968,118.436166,sim,sim,1.469384,2.996444,as vezes,nao,2.067741,1.082236,0.150544,as vezes,transporte publico
+F,18.0,1.622241,68.250249,sim,,2.0,1.010319,as vezes,nao,1.319437,0.0,1.626456,nao,transporte publico
+F,21.0,1.75,88.0,sim,,2.0,3.0,as vezes,nao,3.0,3.0,0.0,as vezes,transporte publico
+F,23.586058,1.700499,81.108599,sim,sim,2.042762,2.9774,as vezes,nao,1.522426,0.501417,1.029135,as vezes,transporte publico
+F,25.959772,1.642098,104.966758,sim,sim,3.0,3.0,as vezes,nao,1.482002,0.204108,0.657221,as vezes,transporte publico
+F,18.0,1.62,55.0,sim,sim,2.0,3.0,frequentemente,nao,1.0,1.0,1.0,nao,transporte publico
+M,19.329542,,55.700497,sim,sim,2.0,4.0,as vezes,nao,2.157395,2.0,1.679149,nao,carro
+F,19.758286,1.667404,49.125955,nao,nao,2.880792,3.281391,as vezes,nao,1.960131,1.513029,1.0,as vezes,transporte publico
+F,21.0,1.54,56.0,nao,sim,2.0,1.0,as vezes,nao,2.0,0.0,2.0,as vezes,transporte publico
+M,21.0,,80.0,nao,nao,1.0,3.0,nao,nao,2.0,2.0,0.0,nao,transporte publico
+F,20.744839,1.667852,49.803921,sim,sim,2.977018,3.193671,frequentemente,nao,2.482933,2.0,1.0,nao,transporte publico
+F,21.838323,1.758959,137.79299,sim,sim,3.0,3.0,as vezes,nao,2.640539,1.879818,0.885993,as vezes,transporte publico
+,19.0,1.8,60.0,sim,sim,3.0,1.0,sempre,nao,1.0,0.0,0.0,nao,moto
+M,41.0,1.75,118.0,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,0.0,as vezes,bicicleta
+,31.333798,1.835381,91.059595,sim,sim,2.0,3.0,as vezes,nao,1.18423,0.155579,0.453404,as vezes,transporte publico
+F,45.0,1.63,77.0,sim,sim,2.0,,frequentemente,nao,1.0,0.0,0.0,,carro
+M,23.0,1.68,70.0,nao,sim,2.0,3.0,as vezes,nao,2.0,2.0,2.0,frequentemente,andando
+F,26.0,1.643355,111.600553,sim,sim,3.0,3.0,as vezes,nao,2.652616,0.0,0.250502,as vezes,transporte publico
+F,20.255616,,41.268597,nao,sim,2.673638,2.779379,frequentemente,,,0.043412,0.403694,as vezes,transporte publico
+M,30.444081,1.761068,118.370628,sim,sim,2.571274,3.0,as vezes,nao,2.224164,1.018158,1.152899,as vezes,carro
+F,22.033129,1.704223,51.437985,sim,sim,2.984425,3.0,frequentemente,nao,2.044694,2.008256,1.250871,nao,transporte publico
+F,25.311534,1.685482,113.451224,sim,sim,3.0,3.0,as vezes,nao,2.987718,0.387074,0.283804,as vezes,transporte publico
+M,18.0,1.72,53.0,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,2.0,as vezes,transporte publico
+F,25.0,1.57,55.0,nao,sim,2.0,1.0,,nao,2.0,2.0,0.0,as vezes,transporte publico
+F,20.871667,1.782453,137.852618,sim,sim,3.0,3.0,as vezes,nao,2.748909,1.989171,,as vezes,transporte publico
+M,,1.824432,105.131956,sim,,3.0,3.0,as vezes,nao,2.110611,1.890907,1.58483,as vezes,transporte publico
+M,23.0,1.75,75.0,nao,sim,2.0,3.0,as vezes,nao,,1.0,0.0,frequentemente,transporte publico
+F,19.442663,1.627812,82.0,sim,sim,1.081585,2.870661,as vezes,nao,1.11756,0.0,1.616826,as vezes,transporte publico
+F,21.0,1.55,50.0,nao,sim,2.0,3.0,as vezes,nao,2.0,0.0,0.0,as vezes,transporte publico
+M,23.0,1.774644,105.966894,sim,sim,2.312825,3.0,as vezes,nao,2.073497,0.614466,0.579541,as vezes,transporte publico
+F,38.683794,1.501993,,,sim,2.0,3.0,as vezes,nao,1.0,0.0,0.0,as vezes,carro
+M,29.620095,1.787933,112.536367,,sim,2.008245,3.0,as vezes,nao,2.040137,0.0,0.474216,as vezes,carro
+F,25.461411,1.7,78.055968,sim,sim,2.661556,3.0,as vezes,nao,3.0,0.55181,0.658783,as vezes,transporte publico
+M,35.217173,1.823168,91.630257,sim,sim,2.0,2.9948,as vezes,nao,1.290979,0.87599,0.85405,as vezes,carro
+F,22.0,1.68,52.0,,sim,3.0,3.0,frequentemente,nao,2.0,0.0,1.0,nao,transporte publico
+M,28.986237,1.758618,113.501549,sim,sim,2.320201,3.0,as vezes,nao,2.164784,0.0,1.465479,as vezes,carro
+M,25.015173,1.788239,115.382519,sim,sim,1.735664,3.0,as vezes,nao,2.041536,1.392406,0.39174,as vezes,transporte publico
+F,34.0,1.68,77.0,sim,nao,3.0,1.0,as vezes,nao,2.0,1.0,0.0,as vezes,carro
+F,19.0,1.54,42.0,nao,sim,3.0,1.0,as vezes,nao,2.0,0.0,1.0,nao,transporte publico
+M,23.0,1.65,,sim,nao,2.0,,as vezes,nao,2.0,0.0,0.0,nao,transporte publico
+M,30.605464,1.754796,118.805937,sim,sim,2.907542,3.0,as vezes,nao,2.284494,0.647632,1.668318,as vezes,carro
+F,25.897815,1.664463,102.781971,sim,sim,3.0,3.0,as vezes,nao,1.068493,0.112122,1.0,as vezes,transporte publico
+F,25.998646,1.640741,104.808542,sim,sim,3.0,3.0,as vezes,nao,2.653531,0.190061,0.692343,as vezes,transporte publico
+M,39.585811,1.719153,86.464843,sim,sim,2.325623,1.313403,as vezes,nao,,0.604259,0.0,nao,carro
+,19.149706,1.699818,78.0,sim,,1.096455,2.491315,as vezes,nao,2.450069,0.0,0.726118,as vezes,transporte publico
+M,22.828435,1.710415,75.142858,sim,sim,,3.0,as vezes,nao,2.526193,0.925118,2.0,as vezes,transporte publico
+M,26.734476,1.816197,119.622764,sim,sim,2.247037,3.0,as vezes,nao,2.718408,0.763595,0.0,as vezes,transporte publico
+M,40.501722,1.744974,111.169678,sim,sim,2.294259,2.850948,as vezes,nao,1.87029,0.917014,0.0,nao,carro
+F,26.0,1.622418,110.676343,sim,sim,3.0,3.0,as vezes,nao,2.691584,0.0,0.425473,as vezes,transporte publico
+M,20.9859,1.780503,103.189532,sim,sim,2.0,3.0,as vezes,nao,1.608128,0.478134,0.0,nao,transporte publico
+F,21.571288,1.600914,68.058902,sim,sim,1.766849,3.322522,as vezes,nao,2.616285,0.943058,0.256977,as vezes,transporte publico
+M,21.620245,1.605314,66.621646,sim,sim,2.357496,3.376717,as vezes,nao,2.184843,1.358185,0.014885,as vezes,transporte publico
+F,17.767432,1.74379,50.0,nao,sim,1.344854,4.0,frequentemente,nao,1.0,2.0,1.0,,transporte publico
+F,20.81158,1.741193,128.763843,sim,sim,3.0,3.0,as vezes,nao,1.768111,0.616503,0.968151,as vezes,transporte publico
+F,17.0,1.56,51.0,nao,sim,3.0,3.0,as vezes,nao,1.0,0.0,,nao,transporte publico
+M,,1.65,80.0,nao,sim,2.0,3.0,as vezes,nao,2.0,1.0,0.0,,carro
+F,21.0,1.53,65.0,sim,nao,2.0,3.0,as vezes,nao,1.0,0.0,1.0,nao,transporte publico
+F,25.950898,1.649867,104.791035,sim,sim,3.0,3.0,as vezes,nao,2.535629,0.152713,,as vezes,transporte publico
+M,25.058566,1.764484,,sim,sim,1.517912,3.0,as vezes,nao,2.038958,1.590255,0.00164,as vezes,transporte publico
+F,18.0,1.62,68.0,nao,nao,2.0,1.0,as vezes,nao,,0.0,2.0,nao,transporte publico
+F,26.0,1.64599,111.922491,sim,sim,3.0,3.0,as vezes,nao,2.78678,0.0,0.09776,as vezes,transporte publico
+F,40.0,1.570811,62.211572,sim,sim,2.253371,3.0,as vezes,nao,2.756916,1.016042,0.213437,as vezes,carro
+M,16.0,1.82,71.0,sim,sim,2.0,3.0,frequentemente,nao,2.0,2.0,1.0,as vezes,transporte publico
+M,21.0,1.612556,69.463458,,sim,,1.259628,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+M,18.0,1.7,50.0,nao,sim,1.0,3.0,frequentemente,nao,1.0,2.0,1.0,as vezes,transporte publico
+F,21.028989,1.748524,133.878843,sim,sim,3.0,3.0,,nao,2.868167,1.48372,0.83509,as vezes,transporte publico
+M,23.0,1.72,66.0,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,1.0,as vezes,andando
+F,20.700876,1.68838,121.889803,sim,sim,3.0,3.0,as vezes,nao,1.353167,1.093679,0.534553,as vezes,transporte publico
+M,31.630054,1.671705,90.0,sim,sim,2.467002,1.851088,as vezes,nao,2.104054,1.991565,0.0,as vezes,carro
+,33.732714,1.679725,74.885222,sim,sim,3.0,1.13715,as vezes,nao,1.000695,0.261274,0.0,as vezes,carro
+M,18.426619,1.777108,57.145917,sim,sim,2.0,3.092116,as vezes,nao,2.426465,2.0,1.839862,nao,
+M,25.632447,1.836943,96.192662,sim,sim,1.317729,2.278652,as vezes,nao,2.0,1.80674,1.93977,as vezes,transporte publico
+M,33.070142,1.709428,83.014033,sim,sim,2.0,1.044628,as vezes,nao,2.01051,2.805801,0.0,,carro
+F,26.0,1.641601,111.830924,sim,,3.0,3.0,as vezes,nao,,0.0,0.196288,,transporte publico
+F,25.968792,1.632896,104.988925,sim,sim,3.0,3.0,as vezes,nao,1.239833,0.162279,0.619235,as vezes,transporte publico
+F,25.895546,1.626179,110.074019,sim,sim,3.0,3.0,as vezes,nao,1.967707,0.01437,0.434073,as vezes,transporte publico
+M,23.0,1.7425,105.028665,sim,sim,2.393837,3.0,as vezes,nao,2.01499,0.978815,0.41322,as vezes,transporte publico
+F,35.0,1.53,45.0,sim,nao,3.0,3.0,frequentemente,nao,1.0,0.0,1.0,nao,carro
+,23.147644,1.815514,120.337664,sim,sim,2.996717,2.791366,as vezes,nao,2.626309,1.194898,0.034897,as vezes,transporte publico
+M,20.580984,1.798354,,sim,sim,2.0,3.0,as vezes,nao,2.401315,2.891986,0.0,nao,transporte publico
+M,26.947786,1.647807,99.592225,sim,sim,2.935157,1.845858,as vezes,nao,1.0,1.089891,0.715993,nao,transporte publico
+M,21.504943,,106.038468,sim,sim,2.0,3.0,,nao,2.715252,,0.621605,nao,transporte publico
+M,22.052152,1.792527,89.994415,sim,sim,1.771693,1.890213,as vezes,nao,2.0,0.0,1.36595,as vezes,transporte publico
+F,18.0,1.57,,sim,sim,,1.0,sempre,nao,1.0,1.0,0.0,nao,transporte publico
+M,20.924808,1.803245,105.686091,sim,sim,2.0,3.0,as vezes,nao,2.290368,0.001086,0.544128,as vezes,transporte publico
+F,36.631456,1.532322,,sim,sim,2.288604,2.845307,as vezes,nao,2.638164,0.0,0.990741,as vezes,carro
+F,21.394047,1.792933,137.832414,sim,sim,3.0,3.0,as vezes,nao,2.682909,1.318743,0.900497,as vezes,transporte publico
+F,21.0,1.72,80.0,sim,sim,2.0,3.0,frequentemente,nao,2.0,2.0,1.0,as vezes,
+M,21.618246,1.679306,75.0,sim,sim,2.0,3.0,as vezes,nao,1.957871,0.994592,0.117303,as vezes,transporte publico
+M,28.825279,1.815347,120.399758,,sim,2.9673,3.0,as vezes,,2.530035,,0.947866,as vezes,carro
+M,23.0,1.8,60.0,sim,nao,2.0,3.0,nao,nao,3.0,0.0,1.0,as vezes,transporte publico
+F,20.81158,1.741193,128.763843,sim,sim,3.0,3.0,as vezes,nao,1.768111,0.616503,0.968151,as vezes,transporte publico
+F,25.996716,1.62658,105.037203,sim,sim,3.0,3.0,as vezes,nao,2.347322,0.008013,0.503896,as vezes,
+M,33.0,1.72,83.0,sim,sim,2.0,1.0,as vezes,nao,2.0,3.0,0.0,as vezes,carro
+F,26.0,1.639524,111.945588,sim,sim,,3.0,as vezes,nao,2.739351,0.0,0.064769,as vezes,transporte publico
+F,20.744839,1.667852,49.803921,sim,sim,2.977018,3.193671,frequentemente,nao,2.482933,2.0,1.0,nao,transporte publico
+M,26.945139,1.773259,118.154345,sim,nao,2.18354,3.0,as vezes,nao,2.277937,0.68183,0.0,as vezes,carro
+F,25.968792,1.632896,104.988925,sim,sim,3.0,3.0,as vezes,nao,1.239833,0.162279,0.619235,as vezes,transporte publico
+M,19.920629,1.768493,57.790381,sim,sim,2.0,3.897078,as vezes,nao,2.622638,2.0,1.894105,,carro
+M,23.083621,1.848553,121.421121,sim,sim,3.0,2.567567,,nao,2.011023,0.916478,0.0,as vezes,transporte publico
+M,19.858973,1.62,69.575315,nao,sim,2.185938,1.0,nao,nao,2.81353,1.0,1.110222,as vezes,transporte publico
+M,21.0,1.71,100.0,sim,sim,2.0,1.0,as vezes,nao,2.0,0.0,2.0,nao,transporte publico
+M,21.123048,1.717037,80.0,sim,sim,2.0,3.0,as vezes,nao,2.0,2.270555,1.343044,nao,transporte publico
+M,,1.718097,88.600878,sim,sim,,3.0,as vezes,nao,1.568035,0.870127,0.0,nao,carro
+F,38.378056,1.67805,,sim,sim,2.444599,3.0,as vezes,nao,1.029798,0.0,0.0,nao,carro
+F,26.0,1.650125,111.939671,sim,sim,3.0,3.0,as vezes,nao,2.770732,0.0,0.125235,as vezes,transporte publico
+F,38.542937,1.517248,79.843221,sim,sim,2.0,3.0,as vezes,nao,1.095134,0.0,0.0,,carro
+M,17.0,1.74,56.0,sim,sim,2.0,3.0,as vezes,nao,2.0,2.0,1.0,nao,transporte publico
+M,20.0,1.9,91.0,sim,sim,3.0,4.0,as vezes,nao,3.0,2.0,0.0,as vezes,andando
+M,18.424941,1.753389,54.121925,sim,sim,2.0,3.16645,as vezes,nao,2.278578,1.838881,2.0,as vezes,transporte publico
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+M,,1.796415,120.988454,sim,sim,2.475892,3.0,as vezes,nao,2.949356,1.866839,0.100048,as vezes,transporte publico
+M,30.424369,1.699354,100.176866,sim,sim,2.819934,1.91863,as vezes,nao,1.0,1.39302,0.553311,nao,transporte publico
+F,25.940153,1.596813,102.320437,sim,sim,3.0,3.0,as vezes,nao,1.000536,0.005939,0.566353,as vezes,transporte publico
+F,19.0,1.556211,42.339767,,sim,3.0,2.0846,as vezes,nao,2.13755,0.196152,0.062488,nao,transporte publico
+M,25.523127,1.786532,114.534678,sim,sim,2.100177,3.0,as vezes,nao,2.099687,1.281165,0.247332,as vezes,transporte publico
+M,30.403205,1.696365,102.815983,sim,sim,2.79166,2.13229,as vezes,nao,1.254589,0.652736,1.040713,nao,transporte publico
+M,25.492855,1.770124,114.163921,sim,,2.159033,3.0,as vezes,nao,2.116399,1.331526,0.052942,as vezes,
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+,26.680376,1.812259,118.277657,sim,sim,2.239634,3.0,as vezes,nao,2.684264,0.979306,0.0,as vezes,transporte publico
+F,26.0,1.600762,105.448264,sim,sim,3.0,3.0,as vezes,nao,1.031354,0.0,0.37465,as vezes,transporte publico
+M,21.0,1.72,75.0,nao,sim,2.0,3.0,as vezes,nao,1.0,1.0,0.0,nao,transporte publico
+M,21.0,,80.0,nao,nao,1.0,3.0,nao,nao,2.0,2.0,0.0,nao,transporte publico
+M,18.729566,1.855433,112.875283,sim,sim,2.0,2.427137,as vezes,nao,2.574073,1.0,2.0,as vezes,transporte publico
+F,22.591026,1.650012,87.676154,sim,sim,2.983851,1.068443,as vezes,nao,2.854161,1.103209,1.0,nao,transporte publico
+,19.741202,1.816783,86.522799,sim,sim,2.0,3.0,as vezes,nao,2.177386,0.336814,0.004813,as vezes,transporte publico
+F,25.908829,1.607734,102.305767,sim,sim,3.0,3.0,as vezes,nao,1.030501,0.06582,0.991473,as vezes,transporte publico
+F,30.0,1.71,82.0,sim,sim,3.0,4.0,,sim,1.0,0.0,0.0,nao,carro
+F,20.0,,52.0,nao,sim,3.0,3.0,frequentemente,nao,1.0,3.0,1.0,nao,carro
+M,29.0,1.62,53.0,nao,sim,2.0,3.0,as vezes,nao,,0.0,0.0,as vezes,carro
+M,25.136116,1.76414,113.089716,sim,,1.168856,3.0,as vezes,nao,2.013205,1.246223,0.00159,as vezes,transporte publico
+F,25.783865,1.655646,110.21734,sim,sim,3.0,3.0,as vezes,nao,1.528258,0.01586,0.436068,as vezes,transporte publico
+M,36.67933,1.780725,98.790167,sim,sim,2.540949,1.116401,as vezes,nao,2.929123,2.787319,,frequentemente,carro
+F,21.0285,1.742364,78.664618,sim,sim,2.780699,1.101404,as vezes,nao,1.579207,1.153775,0.0,as vezes,transporte publico
+M,29.506287,1.82697,108.751502,sim,sim,2.0,2.877583,as vezes,nao,2.358038,0.877295,1.817146,as vezes,carro
+F,29.463168,1.659172,71.170001,sim,sim,2.0,3.0,as vezes,nao,1.281683,1.609801,0.0,as vezes,carro
+F,20.0,1.62,53.0,nao,sim,3.0,1.0,as vezes,nao,3.0,1.0,,nao,transporte publico
+M,28.255199,1.816547,120.699119,sim,sim,2.997951,3.0,as vezes,nao,2.715856,0.739881,0.972054,as vezes,carro
+F,22.829681,1.616085,82.582954,sim,sim,2.663866,1.416309,as vezes,nao,2.379275,0.256323,0.598244,,transporte publico
+M,23.562135,1.717432,75.371244,sim,sim,2.0,3.0,as vezes,nao,2.0,0.121585,1.967259,as vezes,transporte publico
+M,27.349745,1.835271,97.58826,sim,sim,2.923433,1.338033,as vezes,nao,1.944095,1.931829,1.0,as vezes,transporte publico
+F,20.0,1.61,64.0,sim,nao,3.0,3.0,sempre,nao,2.0,0.0,1.0,frequentemente,transporte publico
+F,,1.532897,65.031879,sim,nao,2.0,1.0,as vezes,nao,1.0,0.262171,0.0,nao,
+F,18.0,1.67,66.0,nao,,3.0,3.0,as vezes,nao,2.0,0.0,0.0,as vezes,transporte publico
+M,22.735328,1.723921,94.743892,sim,sim,2.0,3.0,as vezes,nao,2.183149,1.932386,0.212767,nao,transporte publico
+F,21.125098,1.767479,56.265959,sim,sim,2.371338,3.998766,frequentemente,nao,2.263466,2.0,0.844004,nao,transporte publico
+F,38.0,1.56,80.0,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,0.0,as vezes,carro
+F,19.407204,1.520862,42.0,nao,sim,3.0,1.0,frequentemente,nao,1.848703,0.0,0.744555,as vezes,transporte publico
+M,19.72925,1.793315,58.19515,sim,sim,2.508835,3.435905,as vezes,nao,2.076933,,1.443328,nao,
+M,23.0,1.706525,,sim,sim,2.0,3.0,as vezes,nao,1.530493,,1.0,nao,transporte publico
+,29.153907,1.773656,87.070234,nao,sim,1.595746,3.618722,as vezes,nao,1.274389,1.504003,0.370067,nao,carro
+F,25.706285,1.585547,80.351263,sim,sim,2.0,1.0,as vezes,nao,2.0,0.0,0.0,as vezes,transporte publico
+F,18.907514,1.65,82.01831,sim,sim,3.0,3.0,as vezes,nao,1.0,0.215187,1.195929,nao,transporte publico
+M,23.0,1.74,105.0,sim,sim,3.0,3.0,as vezes,nao,2.0,1.0,0.0,as vezes,transporte publico
+M,17.6739,1.738465,97.185474,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,0.233314,nao,transporte publico
+M,22.283082,1.870931,89.251639,sim,sim,2.0,2.799979,as vezes,nao,1.081333,0.444347,1.0,as vezes,transporte publico
+M,23.0,,94.790579,sim,sim,2.0,3.0,as vezes,nao,1.490613,0.654316,1.0,nao,transporte publico
+F,38.952866,1.568441,62.855073,sim,sim,2.002796,3.0,as vezes,,2.526775,0.271174,0.806069,as vezes,carro
+F,21.030909,1.71818,133.466763,sim,sim,3.0,3.0,as vezes,nao,1.517215,1.486289,0.937492,as vezes,transporte publico
+F,26.0,1.618867,,sim,sim,3.0,3.0,as vezes,nao,2.618198,0.0,0.380695,as vezes,transporte publico
+M,21.00829,1.621412,70.0,nao,sim,2.0,1.0,nao,nao,2.795651,0.80873,0.0,as vezes,transporte publico
+F,24.0,1.5,63.0,sim,nao,2.0,1.0,as vezes,,2.0,0.0,0.0,nao,transporte publico
+F,23.0,1.728834,51.442293,sim,sim,2.0,3.0,frequentemente,nao,1.229915,0.619533,2.0,nao,transporte publico
+M,28.704462,1.762887,113.90198,sim,,2.323351,3.0,,nao,2.165048,0.0,1.493716,as vezes,carro
+,26.0,1.610636,105.423532,sim,sim,3.0,3.0,as vezes,nao,2.180566,0.0,0.519905,as vezes,transporte publico
+M,22.906886,1.81955,120.775439,sim,sim,2.636719,2.806341,as vezes,nao,1.967591,1.525384,0.315595,as vezes,transporte publico
+F,32.501143,1.675979,74.959747,sim,sim,2.291846,1.555557,as vezes,nao,1.0,0.0,0.388271,as vezes,carro
+M,18.0,1.74,,nao,nao,3.0,3.0,as vezes,nao,2.0,3.0,0.0,nao,transporte publico
+F,21.008051,1.65,88.126544,sim,sim,2.457547,1.00061,as vezes,nao,3.0,1.361533,1.0,nao,transporte publico
+M,19.0,1.89,87.0,nao,sim,2.0,4.0,frequentemente,nao,2.0,3.0,1.0,frequentemente,carro
+M,26.740655,1.863883,120.202596,sim,sim,2.247795,3.0,as vezes,nao,2.816015,0.712726,0.0,as vezes,transporte publico
+F,21.708354,1.704167,50.165754,sim,sim,2.969205,3.21043,frequentemente,nao,2.765876,0.611037,,nao,transporte publico
+F,21.282238,1.748951,133.662583,sim,sim,3.0,3.0,as vezes,nao,2.247979,1.609938,0.849236,as vezes,transporte publico
+F,26.0,1.583889,110.545378,sim,sim,3.0,3.0,as vezes,nao,2.578292,0.0,0.492394,as vezes,transporte publico
+F,26.0,1.61739,105.013901,sim,sim,3.0,3.0,as vezes,nao,1.292479,0.0,0.541309,as vezes,transporte publico
+M,23.118327,1.677573,75.0,sim,sim,2.0,3.0,as vezes,nao,2.0,0.334579,1.905826,as vezes,transporte publico
+F,18.741188,1.556789,71.788181,sim,nao,3.0,3.129155,as vezes,nao,2.0,1.634134,1.0,nao,transporte publico
+M,27.394123,1.764138,112.323213,sim,sim,1.924632,3.0,as vezes,nao,2.006595,0.1768,0.511694,as vezes,carro
+F,26.208134,1.7,78.041338,sim,sim,2.784383,3.0,as vezes,nao,2.165605,0.855973,0.839659,frequentemente,carro
+M,18.0,1.70165,50.157707,sim,sim,1.757466,3.0,as vezes,nao,1.153559,,1.616045,as vezes,transporte publico
+,17.925497,1.829142,59.933015,sim,sim,2.86099,4.0,as vezes,nao,2.0,2.0,0.007872,nao,carro
+M,18.0,1.78,64.4,sim,sim,3.0,,frequentemente,,2.0,3.0,2.0,nao,andando
+M,37.638102,1.750085,118.114184,sim,sim,,3.0,as vezes,nao,2.024035,0.131371,0.0,as vezes,carro
+F,25.902283,1.669701,104.585783,sim,sim,3.0,3.0,as vezes,nao,1.570188,0.210351,0.881848,as vezes,transporte publico
+M,21.033794,1.625891,70.0,nao,sim,2.0,,nao,nao,2.00876,0.63119,0.0,as vezes,
+M,22.874658,1.713343,75.828119,sim,sim,2.507841,3.648194,as vezes,nao,1.279756,0.132629,1.82753,as vezes,transporte publico
+M,18.0,1.72,,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,2.0,as vezes,transporte publico
+M,18.014333,1.751029,80.0,sim,sim,,2.805436,as vezes,nao,2.122884,0.045651,0.017225,frequentemente,transporte publico
+F,18.281092,1.7,50.0,,sim,1.036414,3.205587,as vezes,nao,1.745959,0.115974,1.0,as vezes,transporte publico
+M,24.982997,1.78968,118.436166,sim,sim,1.469384,2.996444,as vezes,nao,2.067741,1.082236,0.150544,as vezes,transporte publico
+F,21.895468,1.64456,88.119139,sim,sim,2.693859,1.000283,as vezes,nao,3.0,1.201403,1.612432,nao,transporte publico
+M,26.288417,1.767806,82.694689,sim,sim,1.947405,3.118013,as vezes,nao,2.136159,0.783963,0.88868,nao,transporte publico
+F,37.872971,1.565366,80.0,sim,sim,2.002564,1.974233,as vezes,nao,1.935398,1.649299,0.0,as vezes,carro
+F,22.0,1.64,56.0,sim,nao,3.0,3.0,as vezes,nao,2.0,0.0,0.0,nao,transporte publico
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+F,21.0,1.753578,77.97917,sim,sim,2.273548,2.39007,as vezes,nao,1.648404,0.874643,1.102696,as vezes,
+M,25.822348,1.766626,114.187096,sim,sim,2.075321,3.0,as vezes,nao,2.144838,1.501754,0.276319,as vezes,transporte publico
+F,26.595893,1.660756,78.574786,sim,sim,2.0,2.597608,as vezes,nao,2.0,0.0,0.434198,frequentemente,
+M,32.29016,1.754956,120.098812,sim,sim,2.9673,3.0,as vezes,nao,2.530035,0.955317,1.339232,as vezes,carro
+M,21.378039,1.718534,,sim,sim,2.0,3.0,as vezes,nao,2.0,2.721646,1.269982,nao,transporte publico
+M,21.0,1.7,65.0,sim,sim,2.0,3.0,frequentemente,nao,1.0,1.0,1.0,nao,transporte publico
+M,33.0,1.74,76.0,nao,nao,2.0,3.0,as vezes,nao,1.0,0.0,2.0,as vezes,andando
+M,32.895637,,103.771371,sim,sim,2.902469,1.734762,as vezes,nao,2.600238,2.113992,0.584755,as vezes,carro
+F,21.322097,1.751118,149.291106,sim,sim,3.0,3.0,as vezes,nao,2.309409,1.68291,0.70558,as vezes,transporte publico
+F,18.019572,1.701378,50.088468,nao,sim,1.601236,3.433908,as vezes,nao,1.055019,0.819269,1.030848,as vezes,transporte publico
+F,21.982942,1.748584,133.742943,sim,sim,3.0,3.0,as vezes,nao,2.00513,1.34139,0.59927,as vezes,transporte publico
+M,29.622804,1.814052,109.411622,sim,,2.407817,2.070033,as vezes,nao,1.796257,1.234483,0.178708,as vezes,carro
+M,24.657598,1.7088,83.520113,,sim,2.689577,2.714115,as vezes,nao,2.279214,0.970661,0.828549,as vezes,transporte publico
+F,25.994949,1.593321,110.168166,sim,sim,3.0,3.0,as vezes,nao,2.447306,0.000454,0.486558,as vezes,transporte publico
+F,22.909992,1.700038,80.0,sim,sim,2.0,,as vezes,nao,2.0,0.973114,1.540298,nao,transporte publico
+M,23.0,1.65,66.0,nao,nao,3.0,3.0,as vezes,nao,2.0,3.0,0.0,nao,transporte publico
+M,29.721964,1.918859,129.991623,sim,sim,2.041376,3.0,as vezes,nao,1.120213,1.05545,0.0,as vezes,transporte publico
+M,27.266287,1.828276,120.872294,sim,sim,,3.0,as vezes,nao,2.966647,1.159598,0.758897,as vezes,transporte publico
+M,40.794057,1.735851,109.889334,sim,sim,2.305349,3.169089,as vezes,nao,1.02161,0.908981,0.0,nao,carro
+M,30.605225,1.75,120.0,sim,sim,2.758394,3.0,as vezes,sim,2.174248,1.079524,1.358163,as vezes,carro
+M,21.834894,1.722785,94.094184,sim,sim,2.0,2.966803,as vezes,nao,2.0,0.0,1.281541,nao,transporte publico
+F,26.0,1.622418,110.676343,sim,sim,3.0,3.0,as vezes,nao,2.691584,0.0,0.425473,as vezes,transporte publico
+F,18.112503,1.82773,152.720545,sim,sim,3.0,3.0,as vezes,nao,2.154949,1.999897,0.957463,as vezes,transporte publico
+F,26.0,1.641849,111.682693,sim,sim,3.0,3.0,as vezes,nao,2.632253,0.0,0.244205,,transporte publico
+F,19.0,,49.0,sim,sim,2.0,1.0,nao,nao,2.0,2.0,0.0,nao,transporte publico
+M,16.496978,1.691206,50.0,nao,sim,2.0,1.630846,,nao,2.975528,0.548991,0.369134,as vezes,transporte publico
+F,17.807828,1.518067,55.822119,nao,sim,1.773265,2.118153,as vezes,nao,1.075239,0.085388,1.915191,as vezes,transporte publico
+F,21.009596,1.714193,131.866734,sim,sim,3.0,3.0,as vezes,nao,1.709556,1.592494,0.925843,as vezes,transporte publico
+F,26.0,1.640125,111.539494,sim,sim,3.0,3.0,as vezes,nao,2.625537,0.0,0.162494,as vezes,transporte publico
+M,18.0,1.788459,51.552595,nao,sim,2.897899,3.0,as vezes,nao,1.835545,1.162519,1.0,as vezes,transporte publico
+F,25.999174,1.638218,104.810024,sim,sim,3.0,3.0,as vezes,nao,2.654636,0.069238,0.629578,as vezes,transporte publico
+M,20.027764,1.611434,103.175516,sim,sim,2.983042,1.109956,as vezes,nao,1.430444,0.0,1.690901,nao,transporte publico
+M,24.178638,1.86741,121.684311,sim,sim,2.954417,2.65772,as vezes,nao,2.104696,0.870056,0.0,as vezes,transporte publico
+M,29.0,1.641784,89.424947,sim,sim,1.3307,3.0,as vezes,nao,1.880967,0.322013,0.0,as vezes,carro
+M,30.520854,1.784049,120.644178,sim,sim,2.499108,3.0,as vezes,nao,2.040952,0.838739,0.489854,as vezes,carro
+M,25.124595,1.77151,113.207124,sim,,1.457758,3.0,as vezes,nao,2.020249,1.556709,0.00133,as vezes,transporte publico
+F,19.0,,49.0,sim,sim,2.0,1.0,nao,nao,2.0,2.0,0.0,nao,transporte publico
+F,19.0,1.61,62.0,sim,sim,3.0,1.0,frequentemente,nao,2.0,1.0,,frequentemente,transporte publico
+F,26.0,1.643355,111.600553,sim,sim,3.0,3.0,as vezes,nao,2.652616,0.0,0.250502,as vezes,transporte publico
+M,25.0,1.7,83.0,sim,sim,2.0,3.0,frequentemente,nao,2.0,0.0,1.0,as vezes,transporte publico
+M,18.88485,1.699667,79.67793,sim,nao,2.735297,2.157164,as vezes,nao,1.087166,0.110174,0.003695,nao,transporte publico
+M,26.0,1.83,82.0,nao,sim,2.0,3.0,sempre,nao,2.0,1.0,1.0,,transporte publico
+F,18.634286,1.669354,126.088301,sim,sim,3.0,3.0,as vezes,nao,1.144539,0.922014,0.899673,as vezes,transporte publico
+M,24.190896,1.7,84.849349,sim,sim,2.0,3.0,as vezes,nao,2.056053,0.0,1.0,as vezes,transporte publico
+M,,1.672101,80.939733,sim,sim,2.0,2.395785,as vezes,nao,1.40077,0.788659,1.544357,nao,transporte publico
+F,19.0,1.779882,80.091886,sim,sim,1.078529,1.211606,as vezes,nao,2.568063,3.0,0.817983,nao,transporte publico
+M,24.679807,1.7,84.687554,sim,sim,2.0,,as vezes,nao,2.020424,0.0,1.0,as vezes,transporte publico
+M,18.0,1.811189,108.800964,sim,sim,2.0,1.250548,as vezes,nao,2.121176,1.0,0.741069,nao,transporte publico
+M,24.481032,1.661277,90.744965,sim,sim,1.712848,3.0,as vezes,nao,1.162153,0.458981,0.885532,nao,carro
+F,23.0,1.649736,84.134712,sim,sim,2.334474,1.496776,as vezes,nao,2.776724,0.782416,0.167728,nao,transporte publico
+M,17.971574,1.720379,85.0,sim,sim,2.0,3.0,as vezes,nao,2.802498,1.0,0.41758,as vezes,transporte publico
+F,21.501721,1.809871,152.394739,sim,sim,3.0,3.0,as vezes,nao,2.351207,0.246831,0.91336,,transporte publico
+F,29.934465,1.638744,69.242354,sim,sim,2.029634,3.0,as vezes,nao,1.827515,0.480206,0.0,as vezes,carro
+F,26.0,1.654784,111.933152,sim,sim,3.0,3.0,as vezes,nao,2.770125,0.0,0.088236,as vezes,transporte publico
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+F,20.0,1.6,57.0,nao,nao,3.0,3.0,sempre,nao,2.0,1.0,0.0,nao,andando
+M,17.0,1.79,57.0,sim,sim,2.0,4.0,frequentemente,nao,2.0,2.0,1.0,nao,transporte publico
+F,19.007177,1.690727,49.895716,nao,,1.212908,3.207071,as vezes,nao,1.029703,2.0,1.0,as vezes,transporte publico
+F,25.0,1.63,93.0,nao,nao,3.0,4.0,sempre,nao,1.0,2.0,0.0,nao,transporte publico
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+M,22.0,1.61,67.0,sim,nao,2.0,4.0,as vezes,nao,3.0,2.0,,as vezes,transporte publico
+M,37.084742,1.75,118.07381,sim,sim,2.133964,3.0,as vezes,nao,2.008361,0.202029,0.200516,as vezes,carro
+M,24.5822,1.769933,117.708705,sim,sim,1.475906,2.999346,as vezes,nao,2.01943,1.046878,0.460866,as vezes,
+F,28.977792,1.7,78.0,sim,sim,3.0,3.0,as vezes,nao,1.507638,1.82434,1.0,frequentemente,carro
+F,20.0,1.64,49.0,nao,nao,3.0,3.0,as vezes,sim,2.0,2.0,1.0,as vezes,carro
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+F,38.378056,1.67805,,sim,sim,2.444599,3.0,as vezes,nao,1.029798,0.0,0.0,nao,carro
+F,31.539393,1.657496,73.641633,sim,sim,2.0,3.0,as vezes,nao,1.0,0.0,1.112489,as vezes,carro
+M,24.001196,1.603091,100.209405,sim,sim,3.0,1.02075,as vezes,nao,1.0,0.233056,1.707421,nao,transporte publico
+M,33.0,1.85,97.92035,sim,sim,2.0,3.0,as vezes,nao,1.117464,1.0,0.663649,as vezes,transporte publico
+F,23.0,1.710129,50.079991,sim,sim,2.0,3.0,frequentemente,nao,2.685842,0.373186,2.0,nao,transporte publico
+F,36.631456,1.532322,,sim,sim,2.288604,2.845307,as vezes,nao,2.638164,0.0,0.990741,as vezes,carro
+M,30.551762,1.784377,102.872505,sim,sim,2.271306,3.0,as vezes,nao,1.771198,2.0,0.413752,as vezes,carro
+M,18.0,1.753349,51.457226,nao,sim,2.823179,3.0,as vezes,,1.773236,1.252472,1.0,as vezes,transporte publico
+M,35.389491,1.78,100.84763,sim,sim,2.069267,1.476204,as vezes,nao,3.0,,0.092736,frequentemente,carro
+M,25.523127,1.786532,114.534678,sim,sim,2.100177,3.0,as vezes,nao,2.099687,1.281165,0.247332,as vezes,transporte publico
+M,34.543563,1.765188,85.0,sim,sim,,3.0,as vezes,nao,2.653831,1.96582,0.891189,nao,carro
+F,20.971429,1.549311,41.557468,nao,sim,2.927218,1.0,frequentemente,nao,1.0,0.0,0.276592,as vezes,transporte publico
+F,23.0,1.649736,84.134712,sim,sim,2.334474,1.496776,as vezes,nao,2.776724,0.782416,0.167728,nao,transporte publico
+M,,1.92,130.0,sim,nao,2.0,3.0,as vezes,sim,1.0,1.0,0.0,as vezes,transporte publico
+F,26.0,1.632377,111.946655,sim,sim,3.0,3.0,as vezes,nao,2.737091,0.0,0.037078,as vezes,transporte publico
+M,33.0,1.75,85.0,nao,nao,2.0,3.0,as vezes,nao,2.0,1.0,0.0,as vezes,transporte publico
+M,,1.840708,98.259423,sim,,2.333503,1.820779,as vezes,nao,2.559265,1.327193,0.481357,as vezes,carro
+F,18.469086,1.741925,133.017105,sim,sim,3.0,3.0,as vezes,nao,2.474518,1.560261,0.662489,as vezes,transporte publico
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+M,18.0,1.803527,108.251044,sim,sim,,1.709546,as vezes,nao,2.530157,1.0,0.6454,nao,transporte publico
+M,30.444081,1.761068,118.370628,sim,sim,2.571274,3.0,as vezes,nao,2.224164,1.018158,1.152899,as vezes,carro
+F,26.0,1.640745,110.919646,sim,sim,,3.0,as vezes,nao,2.666178,,0.276907,as vezes,transporte publico
+M,25.486521,1.762461,115.531622,sim,sim,2.178308,3.0,as vezes,,2.165804,1.420675,1.875683,as vezes,transporte publico
+F,23.090215,1.596586,80.726195,sim,sim,1.518966,1.0,as vezes,nao,2.0,0.0,1.094046,nao,
+F,26.0,1.594776,110.640929,,sim,3.0,3.0,as vezes,nao,2.639816,0.0,0.452236,as vezes,transporte publico
+F,21.391371,1.730636,131.902591,sim,sim,3.0,3.0,as vezes,nao,1.419136,1.700889,0.930888,as vezes,transporte publico
+M,23.0,1.67,85.5,sim,sim,2.0,3.0,sempre,nao,2.0,0.0,1.0,nao,transporte publico
+F,21.028989,1.748524,133.878843,sim,sim,3.0,3.0,,nao,2.868167,1.48372,0.83509,as vezes,transporte publico
+M,,1.69151,102.59518,sim,sim,2.680375,1.089048,as vezes,nao,1.366238,0.181324,1.041677,nao,
+M,23.0,,60.0,sim,sim,3.0,1.0,as vezes,nao,1.0,1.0,1.0,as vezes,transporte publico
+M,23.360307,1.610647,100.642257,sim,sim,2.997524,1.154318,as vezes,nao,1.238057,1.1293,1.665621,nao,
+F,23.0,1.75,56.0,nao,nao,3.0,3.0,frequentemente,nao,2.0,2.0,0.0,as vezes,transporte publico
+M,31.630054,1.671705,90.0,sim,sim,2.467002,1.851088,as vezes,nao,2.104054,1.991565,0.0,as vezes,carro
+M,24.481032,1.661277,90.744965,sim,sim,1.712848,3.0,as vezes,nao,1.162153,0.458981,0.885532,nao,carro
+M,22.0,1.74,94.0,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,0.0,as vezes,transporte publico
+F,26.0,1.583889,110.545378,sim,sim,3.0,3.0,as vezes,nao,2.578292,0.0,0.492394,as vezes,transporte publico
+M,21.81119,1.71266,51.598593,sim,sim,3.0,3.156153,frequentemente,nao,,0.544784,0.256382,nao,transporte publico
+F,20.941943,1.812963,138.730619,sim,sim,3.0,3.0,as vezes,nao,2.641489,0.481555,0.735201,as vezes,transporte publico
+F,20.781751,1.734092,125.117633,sim,sim,3.0,3.0,as vezes,nao,1.54249,0.6277,0.450479,as vezes,transporte publico
+M,26.050109,1.773115,115.089316,sim,sim,2.392179,3.0,as vezes,nao,2.16467,1.079934,1.073026,as vezes,transporte publico
+F,40.0,1.561109,62.871794,sim,sim,2.948248,3.0,as vezes,nao,2.429911,0.11964,0.360193,as vezes,carro
+F,26.0,1.637725,111.208963,sim,sim,3.0,3.0,as vezes,,2.70914,0.0,0.110518,as vezes,transporte publico
+M,16.198153,1.691007,52.629374,nao,sim,2.0,2.000986,as vezes,nao,2.673835,0.99295,0.474836,as vezes,
+F,20.843363,1.521008,67.083121,sim,,2.493448,3.0,as vezes,nao,1.849997,0.954459,1.444532,nao,transporte publico
+M,20.924808,1.803245,105.686091,sim,sim,2.0,3.0,as vezes,nao,2.290368,0.001086,0.544128,as vezes,transporte publico
+M,21.544554,1.84998,122.609911,sim,sim,3.0,1.971659,as vezes,nao,1.179254,0.178856,0.0,as vezes,transporte publico
+M,21.077356,1.702002,97.971598,sim,sim,2.0,1.66338,as vezes,nao,2.0,0.0,1.865851,nao,transporte publico
+F,25.998646,1.640741,104.808542,sim,sim,3.0,3.0,as vezes,nao,2.653531,0.190061,0.692343,as vezes,transporte publico
+M,23.0,1.706525,,sim,sim,2.0,3.0,as vezes,nao,1.530493,,1.0,nao,transporte publico
+M,17.080493,1.782756,56.029418,sim,sim,2.0,4.0,as vezes,nao,2.28525,2.0,1.162801,nao,carro
+M,30.638944,,102.004554,sim,sim,2.938687,2.138375,as vezes,nao,1.251715,1.181811,0.778375,nao,transporte publico
+F,18.610761,1.550723,60.628321,nao,sim,2.823179,2.644692,as vezes,nao,1.226764,0.747528,0.008899,as vezes,transporte publico
+F,19.633898,1.66084,49.039794,nao,nao,2.750715,3.0,frequentemente,nao,,1.067817,1.0,as vezes,transporte publico
+F,22.989846,1.65,80.0,sim,sim,2.0,3.0,as vezes,nao,2.0,0.146919,2.0,nao,transporte publico
+F,20.438478,1.805803,153.149491,sim,sim,3.0,3.0,as vezes,nao,2.387991,0.850715,0.656491,as vezes,transporte publico
+F,23.426036,1.739991,,sim,sim,3.0,3.0,as vezes,nao,2.837797,1.343875,0.803156,as vezes,transporte publico
+F,21.868932,1.731261,78.175706,sim,sim,2.577427,1.0,as vezes,nao,2.0,,0.0,as vezes,transporte publico
+M,21.0,1.72,72.0,sim,sim,3.0,3.0,sempre,nao,3.0,3.0,0.0,as vezes,carro
+M,18.0,1.72,53.0,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,2.0,as vezes,transporte publico
+F,31.0,1.68,63.0,sim,sim,3.0,1.0,frequentemente,nao,2.0,1.0,1.0,as vezes,carro
+M,18.900253,1.750359,79.828725,sim,sim,2.0,2.228113,as vezes,nao,2.045004,1.293665,0.961806,frequentemente,transporte publico
+M,27.0,1.83,99.0,sim,sim,3.0,1.0,frequentemente,nao,2.0,2.0,1.0,as vezes,andando
+F,26.0,1.659557,111.999096,sim,,3.0,3.0,as vezes,nao,2.956548,0.0,0.010056,as vezes,transporte publico
+F,21.376426,1.722527,50.833029,nao,nao,3.0,3.285167,frequentemente,nao,1.569082,0.545931,0.469735,as vezes,transporte publico
+F,23.0,1.64,52.0,nao,sim,3.0,1.0,as vezes,nao,2.0,2.0,2.0,nao,transporte publico
+M,29.827481,1.899588,124.269251,sim,sim,2.048962,3.0,as vezes,nao,2.822871,1.066169,0.0,,transporte publico
+M,20.586978,1.781952,,sim,,2.0,3.0,as vezes,nao,1.689793,1.464204,0.0,nao,transporte publico
+F,19.376997,1.600264,45.0,nao,nao,3.0,3.0,frequentemente,nao,2.949419,1.295697,0.0,as vezes,transporte publico
+M,21.017383,1.752391,79.109637,sim,sim,,1.0,as vezes,nao,2.0,2.57223,0.0,as vezes,carro
+F,22.0,1.61,,sim,sim,3.0,3.0,frequentemente,nao,3.0,1.0,0.0,nao,transporte publico
+M,24.408805,1.779547,118.740035,sim,sim,2.736298,2.992903,as vezes,nao,2.045561,0.854957,0.428452,as vezes,transporte publico
+F,20.534606,1.758372,79.469513,sim,sim,2.8557,1.0,as vezes,nao,2.663861,2.762711,0.783336,as vezes,transporte publico
+M,24.733308,1.639383,91.267087,sim,sim,1.036159,3.0,as vezes,nao,1.0,0.344013,0.329367,as vezes,carro
+F,23.0,,75.0,sim,sim,2.0,3.0,frequentemente,sim,2.0,0.0,2.0,nao,andando
+M,18.0,1.811189,108.800964,sim,sim,2.0,1.250548,as vezes,nao,2.121176,1.0,0.741069,nao,transporte publico
+M,21.0,,80.0,nao,nao,1.0,3.0,nao,nao,2.0,2.0,0.0,nao,transporte publico
+M,30.108216,1.841908,124.070717,sim,sim,2.467548,3.0,as vezes,nao,2.66029,0.994422,0.310394,as vezes,transporte publico
+F,,1.686033,104.772164,sim,sim,3.0,3.0,as vezes,nao,1.299194,0.234303,0.946888,as vezes,
+F,18.0,1.57,50.0,nao,sim,2.0,3.0,as vezes,nao,1.0,0.0,1.0,as vezes,transporte publico
+M,17.0,1.74,56.0,sim,sim,2.0,3.0,as vezes,nao,2.0,2.0,1.0,nao,transporte publico
+F,19.0,1.69,70.0,sim,nao,2.0,1.0,nao,nao,2.0,2.0,0.0,nao,transporte publico
+F,22.654316,1.621233,82.0,sim,sim,1.063449,1.0,as vezes,nao,2.0,0.0,1.482016,as vezes,transporte publico
+M,18.381382,1.722547,53.783977,sim,sim,2.0,3.131032,as vezes,nao,2.072194,1.487987,2.0,as vezes,
+M,23.0,1.71,50.0,sim,sim,2.0,3.0,sempre,nao,3.0,0.0,2.0,nao,transporte publico
+F,22.377998,1.699568,54.98774,sim,sim,3.0,3.0,frequentemente,nao,2.0,0.139808,0.875464,nao,transporte publico
+F,22.154854,1.481682,61.373868,sim,nao,2.0,2.983297,as vezes,nao,1.453626,0.32896,0.509396,nao,transporte publico
+F,17.451085,1.6,,sim,sim,3.0,2.449723,as vezes,,2.0,0.479592,1.720642,as vezes,transporte publico
+F,21.938831,1.611239,67.939653,sim,sim,1.906194,3.987707,as vezes,nao,2.597746,1.922234,1.376124,as vezes,transporte publico
+F,18.503343,1.683124,126.67378,sim,sim,,3.0,as vezes,nao,1.115967,1.541072,1.0,as vezes,transporte publico
+F,20.908785,1.700996,126.490236,sim,sim,3.0,3.0,as vezes,nao,1.242832,0.530925,0.575969,as vezes,transporte publico
+F,21.210732,1.716497,130.871127,sim,sim,3.0,3.0,as vezes,nao,1.301657,1.718543,0.947884,as vezes,transporte publico
+M,25.015173,1.788239,115.382519,sim,sim,1.735664,3.0,as vezes,nao,2.041536,1.392406,0.39174,as vezes,transporte publico
+F,,1.66,59.0,nao,sim,1.0,3.0,sempre,nao,2.0,3.0,0.0,nao,carro
+M,26.348156,1.830317,117.75701,sim,sim,2.068834,3.0,as vezes,nao,,1.217993,0.038253,as vezes,transporte publico
+F,16.834813,1.74402,50.0,nao,sim,2.19005,3.420618,as vezes,nao,1.356405,1.351996,0.98468,as vezes,transporte publico
+M,25.758307,1.766547,115.45845,sim,sim,2.203962,3.0,as vezes,nao,2.15687,1.289421,1.220767,as vezes,transporte publico
+F,31.793937,1.65015,73.810728,sim,sim,2.372494,2.849848,as vezes,nao,1.028538,0.675983,0.303025,as vezes,carro
+M,31.783845,1.75,120.0,sim,sim,2.941627,3.0,as vezes,nao,2.318134,0.582686,1.588046,as vezes,carro
+M,33.0,1.76,66.5,nao,nao,2.0,3.0,as vezes,nao,2.0,3.0,1.0,as vezes,carro
+M,17.038222,1.710564,51.588874,nao,sim,2.0,2.057935,as vezes,nao,2.371015,0.288032,0.714627,as vezes,transporte publico
+M,21.0,1.693628,75.0,sim,sim,2.0,3.0,as vezes,nao,1.833055,1.0,0.0,,transporte publico
+F,18.469086,1.741925,133.017105,sim,sim,3.0,3.0,as vezes,nao,2.474518,1.560261,0.662489,as vezes,transporte publico
+F,35.432059,1.663178,80.135167,sim,sim,,3.0,as vezes,nao,1.992548,0.039207,1.528714,nao,carro
+M,17.0,1.62,69.0,sim,sim,3.0,1.0,sempre,nao,2.0,1.0,2.0,as vezes,transporte publico
+F,21.0,1.618148,68.981403,sim,sim,1.142468,3.0,nao,nao,2.197732,0.827506,0.572877,as vezes,transporte publico
+F,24.0,1.6,45.0,sim,nao,2.0,3.0,nao,nao,2.0,1.0,0.0,nao,transporte publico
+F,37.496175,1.653088,80.0,sim,sim,2.033745,3.0,as vezes,nao,1.517225,0.0,1.517897,nao,carro
+F,18.367481,1.745644,133.665587,sim,sim,3.0,,as vezes,nao,2.900857,1.508897,0.625371,,transporte publico
+F,21.056059,1.730113,152.094362,sim,sim,3.0,3.0,as vezes,nao,2.374958,0.750111,0.671458,as vezes,transporte publico
+F,22.154854,1.481682,61.373868,sim,nao,2.0,2.983297,as vezes,nao,1.453626,0.32896,0.509396,nao,transporte publico
+F,21.322097,1.751118,149.291106,sim,sim,3.0,3.0,as vezes,nao,2.309409,1.68291,0.70558,as vezes,transporte publico
+F,19.0,1.63,76.0,sim,nao,3.0,3.0,frequentemente,sim,3.0,2.0,1.0,as vezes,carro
+F,,1.6,56.0,sim,sim,2.0,1.0,sempre,nao,2.0,1.0,0.0,as vezes,andando
+M,24.06894,1.706912,85.743727,sim,sim,2.0,2.994198,as vezes,nao,2.747302,0.0,0.799756,as vezes,transporte publico
+M,21.997335,1.65,80.0,sim,sim,2.0,3.0,as vezes,nao,2.0,0.527341,2.0,nao,transporte publico
+F,26.0,1.62439,110.008636,sim,sim,3.0,3.0,as vezes,,,0.0,0.368472,as vezes,transporte publico
+M,40.106145,1.760175,117.651046,sim,sim,2.032883,2.976211,as vezes,nao,1.726109,0.477855,0.0,as vezes,carro
+M,18.0,1.8,72.0,sim,sim,2.0,3.0,as vezes,nao,2.0,3.0,0.0,as vezes,carro
+F,16.611837,1.830068,43.534531,nao,sim,2.945967,3.0,as vezes,nao,2.953192,2.830911,1.466667,as vezes,transporte publico
+M,19.789291,1.820643,85.0,sim,sim,3.0,3.0,as vezes,nao,2.759246,1.763277,0.453314,as vezes,transporte publico
+M,16.496978,1.691206,50.0,nao,sim,2.0,1.630846,,nao,2.975528,0.548991,0.369134,as vezes,transporte publico
+M,18.128206,1.778447,80.273807,sim,sim,1.570089,3.0,as vezes,nao,2.0,2.707882,0.0,nao,transporte publico
+M,18.0,1.784402,108.413119,sim,sim,2.0,2.475444,as vezes,nao,2.655795,1.0,0.169879,nao,transporte publico
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+F,23.090215,1.596586,80.726195,sim,sim,1.518966,1.0,as vezes,nao,2.0,0.0,1.094046,nao,
+M,30.003358,1.758355,112.007101,sim,sim,1.750809,3.0,as vezes,nao,2.002871,0.0,0.114457,as vezes,carro
+M,18.0,1.751278,86.963628,sim,nao,3.0,3.0,as vezes,nao,2.0,1.271667,0.155278,as vezes,transporte publico
+M,23.0,1.753716,106.49141,sim,sim,2.740633,3.0,as vezes,nao,2.081005,0.650235,0.76906,as vezes,transporte publico
+F,21.030909,1.71818,133.466763,sim,sim,3.0,3.0,as vezes,nao,1.517215,1.486289,0.937492,as vezes,transporte publico
+F,24.320154,1.577921,65.293179,sim,nao,2.03414,2.741413,as vezes,nao,1.996384,1.276552,1.019452,nao,transporte publico
+F,19.0,1.7,64.0,sim,,3.0,3.0,nao,nao,3.0,3.0,1.0,nao,transporte publico
+F,21.0,1.5,42.3,sim,nao,1.0,1.0,as vezes,nao,,3.0,0.0,nao,transporte publico
+M,23.826684,1.783609,120.921535,,sim,2.591292,2.956422,as vezes,nao,2.31083,1.48524,0.281815,,transporte publico
+F,32.0,1.67,90.0,,sim,3.0,1.0,as vezes,nao,2.0,2.0,0.0,as vezes,carro
+M,20.975973,1.792646,105.619143,sim,sim,2.0,3.0,as vezes,nao,1.025275,0.00203,0.175587,as vezes,transporte publico
+F,23.0,1.649736,84.134712,sim,sim,2.334474,1.496776,as vezes,nao,2.776724,0.782416,0.167728,nao,transporte publico
+F,37.872971,1.565366,80.0,sim,sim,2.002564,1.974233,as vezes,nao,1.935398,1.649299,0.0,as vezes,carro
+F,19.275687,1.623377,82.851318,sim,sim,1.276858,2.918124,as vezes,nao,1.403784,0.552511,1.560402,as vezes,transporte publico
+F,18.610761,1.550723,60.628321,nao,sim,2.823179,2.644692,as vezes,nao,1.226764,0.747528,0.008899,as vezes,transporte publico
+F,19.755797,1.542328,63.856193,nao,sim,2.628791,,as vezes,,1.512035,0.303722,0.003229,as vezes,transporte publico
+M,29.0,1.62,53.0,nao,sim,2.0,3.0,as vezes,nao,,0.0,0.0,as vezes,carro
+M,20.156664,1.620109,103.393354,sim,sim,2.766441,1.240424,,nao,1.413218,0.165269,0.862587,nao,transporte publico
+M,25.0,1.71,71.0,sim,sim,2.0,3.0,frequentemente,nao,2.0,0.0,0.0,as vezes,moto
+F,21.009596,1.714193,131.866734,sim,sim,3.0,3.0,as vezes,nao,1.709556,1.592494,0.925843,as vezes,transporte publico
+M,23.975685,1.840039,120.975489,sim,sim,2.598207,2.849347,as vezes,,2.006167,1.52001,0.295685,as vezes,transporte publico
+F,19.317148,1.731195,49.650897,nao,sim,2.919751,3.576103,as vezes,nao,1.949308,1.940182,1.0,as vezes,transporte publico
+M,31.327609,1.737984,82.523113,sim,sim,,3.071028,as vezes,nao,1.738959,0.090147,0.0,as vezes,carro
+F,21.687409,1.604697,68.016472,sim,sim,1.901611,3.266501,nao,,2.926995,0.985872,0.307982,as vezes,transporte publico
+M,26.734476,1.816197,119.622764,sim,sim,2.247037,3.0,as vezes,nao,2.718408,0.763595,0.0,as vezes,transporte publico
+M,33.174147,1.75015,118.299585,sim,sim,2.218599,3.0,as vezes,nao,2.104337,0.766007,0.262118,as vezes,carro
+M,37.084742,1.75,118.07381,sim,sim,2.133964,3.0,as vezes,nao,2.008361,0.202029,0.200516,as vezes,carro
+M,39.759575,1.792507,101.780099,sim,sim,2.33361,2.113575,as vezes,nao,,2.998981,1.0,as vezes,carro
+F,18.656912,1.574017,41.220175,nao,sim,1.649974,1.513835,as vezes,nao,1.549974,0.227802,1.972926,as vezes,transporte publico
+F,25.998646,1.640741,104.808542,sim,sim,3.0,3.0,as vezes,nao,2.653531,0.190061,0.692343,as vezes,transporte publico
+F,42.337283,1.64639,86.639861,sim,sim,2.81646,2.27374,as vezes,,1.722063,0.0,0.0,nao,carro
+M,19.556729,1.767563,56.307019,sim,sim,2.362918,4.0,as vezes,nao,2.358172,2.0,0.939819,nao,carro
+F,19.0,1.556211,42.339767,,sim,3.0,2.0846,as vezes,nao,2.13755,0.196152,0.062488,nao,transporte publico
+M,25.0,1.66,68.0,nao,sim,2.0,3.0,as vezes,sim,1.0,1.0,1.0,as vezes,transporte publico
+F,24.0,1.7,80.0,sim,sim,2.0,3.0,as vezes,nao,3.0,0.0,0.0,nao,transporte publico
+M,21.0,1.709561,,sim,sim,2.0,3.0,as vezes,nao,1.636326,1.0,0.0,as vezes,transporte publico
+F,21.0,1.66,57.0,sim,sim,2.0,3.0,frequentemente,nao,1.0,1.0,1.0,nao,transporte publico
+M,,1.85,105.0,sim,sim,3.0,3.0,frequentemente,nao,3.0,2.0,,as vezes,transporte publico
+F,40.0,1.570811,62.211572,sim,sim,2.253371,3.0,as vezes,nao,2.756916,1.016042,0.213437,as vezes,carro
+F,31.0,1.58,68.0,sim,nao,2.0,1.0,,nao,1.0,1.0,0.0,as vezes,transporte publico
+F,18.845518,1.753471,80.0,sim,sim,2.0,1.391778,as vezes,nao,2.64548,2.685087,0.97554,nao,transporte publico
+F,22.909992,1.700038,80.0,sim,sim,2.0,,as vezes,nao,2.0,0.973114,1.540298,nao,transporte publico
+M,23.0,1.8,90.0,sim,sim,1.0,3.0,sempre,nao,2.0,0.0,2.0,frequentemente,transporte publico
+F,26.0,1.608283,105.359688,sim,sim,3.0,3.0,as vezes,,2.476002,0.0,0.546345,as vezes,transporte publico
+F,26.591628,1.7,78.008388,sim,sim,2.734314,3.0,as vezes,nao,3.0,0.897702,0.908271,frequentemente,
+F,20.0,1.58,53.5,sim,sim,,1.0,frequentemente,nao,2.0,1.0,1.0,as vezes,transporte publico
+F,22.935612,1.732307,54.835576,sim,sim,3.0,3.0,frequentemente,nao,2.00357,1.25955,0.417116,nao,transporte publico
+M,22.675679,1.823765,96.945262,sim,sim,1.588782,2.601675,as vezes,nao,2.469469,1.736538,1.886855,as vezes,transporte publico
+F,61.0,,66.0,nao,sim,3.0,3.0,sempre,nao,2.0,1.0,1.0,frequentemente,transporte publico
+M,34.161998,1.705682,103.067766,sim,sim,2.562687,2.100918,as vezes,nao,,1.167856,0.412329,nao,transporte publico
+F,25.96773,1.603404,105.031908,sim,sim,3.0,3.0,as vezes,nao,1.919473,,0.546137,as vezes,transporte publico
+,21.0,1.61,54.5,sim,sim,3.0,3.0,as vezes,nao,3.0,0.0,1.0,as vezes,andando
+M,36.67933,1.780725,98.790167,sim,sim,2.540949,1.116401,as vezes,nao,2.929123,2.787319,,frequentemente,carro
+F,18.947102,1.518917,60.267427,nao,sim,2.838037,2.737571,as vezes,nao,1.144467,0.753782,1.286844,as vezes,transporte publico
+F,24.693108,1.667383,112.982549,sim,sim,3.0,3.0,as vezes,nao,2.887909,0.312923,0.210997,as vezes,transporte publico
+M,18.0,1.78,108.0,sim,nao,2.0,3.0,,nao,3.0,1.0,0.0,nao,
+F,25.999185,1.568543,102.000122,sim,sim,3.0,3.0,as vezes,nao,1.000544,0.001297,1.0,as vezes,transporte publico
+M,27.394123,1.764138,112.323213,sim,sim,1.924632,3.0,as vezes,nao,2.006595,0.1768,0.511694,as vezes,carro
+M,21.420537,1.712473,75.0,sim,sim,2.0,3.0,as vezes,nao,1.362642,0.921268,0.139013,as vezes,transporte publico
+F,23.099906,1.571812,78.997166,sim,sim,2.0,1.0,as vezes,nao,2.0,0.402614,0.0,nao,transporte publico
+F,18.0,1.57,50.0,nao,sim,2.0,3.0,as vezes,nao,1.0,0.0,1.0,as vezes,transporte publico
+F,23.0,1.611058,84.191125,sim,sim,2.14128,2.989112,as vezes,nao,2.519841,2.11137,0.013483,nao,transporte publico
+F,22.679454,1.62826,82.967937,sim,sim,2.274491,1.0,as vezes,nao,2.2695,0.946461,1.73107,as vezes,transporte publico
+M,21.682636,1.818641,105.496975,sim,sim,2.078082,3.0,as vezes,nao,2.895614,0.06275,0.261793,as vezes,transporte publico
+M,21.0,1.714253,75.0,sim,sim,2.0,3.0,as vezes,nao,1.081597,1.0,0.0,as vezes,transporte publico
+M,21.624552,1.790151,106.320686,sim,sim,2.490776,3.0,as vezes,nao,2.654517,0.112454,0.756339,as vezes,transporte publico
+M,23.0,1.715118,81.650778,sim,sim,2.0,1.976744,as vezes,nao,1.628997,0.880584,1.127675,as vezes,transporte publico
+M,30.62865,1.766975,118.363376,sim,sim,2.964319,3.0,as vezes,nao,2.377257,0.614959,1.875023,as vezes,carro
+F,30.711381,1.536819,65.912688,sim,nao,2.030256,2.948721,as vezes,nao,1.984323,0.986414,0.333673,nao,transporte publico
+M,21.0,1.82,67.0,nao,sim,2.0,4.0,sempre,sim,3.0,,2.0,as vezes,andando
+F,16.941489,1.551288,54.93242,nao,sim,1.75375,1.296156,as vezes,,2.0,0.110174,1.944675,as vezes,transporte publico
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+M,23.246702,1.652971,93.310284,sim,sim,1.368978,3.0,as vezes,nao,1.953152,0.104707,0.22183,nao,carro
+M,22.0,1.74,75.0,sim,,3.0,3.0,frequentemente,nao,1.0,1.0,0.0,nao,carro
+F,38.148845,1.557808,79.661693,sim,sim,2.0,3.0,as vezes,nao,1.274774,0.0,0.0,as vezes,carro
+F,43.719395,1.584322,80.986496,sim,,2.186322,2.900915,as vezes,nao,2.471033,0.256113,0.0,nao,carro
+F,23.421726,1.755467,133.478611,sim,sim,3.0,3.0,,nao,2.843782,1.302507,0.773807,as vezes,transporte publico
+M,22.126325,1.717262,98.579156,sim,sim,2.0,2.984523,as vezes,nao,2.263551,2.819661,2.0,nao,transporte publico
+M,26.348156,1.830317,117.75701,sim,sim,2.068834,3.0,as vezes,nao,,1.217993,0.038253,as vezes,transporte publico
+M,55.24625,1.769269,,nao,sim,2.0,3.0,as vezes,nao,,1.0,0.0,nao,carro
+F,20.801791,1.721476,131.042274,,sim,3.0,3.0,as vezes,,1.837184,1.525165,0.926443,as vezes,transporte publico
+F,19.091346,1.603923,45.0,nao,nao,3.0,3.0,frequentemente,nao,1.28246,1.60195,0.0,as vezes,transporte publico
+F,26.0,1.643355,111.600553,sim,sim,3.0,3.0,as vezes,nao,2.652616,0.0,0.250502,as vezes,transporte publico
+F,24.163526,1.64603,49.839685,sim,sim,3.0,3.590039,frequentemente,nao,2.7305,0.107078,0.0,nao,transporte publico
+M,29.713169,1.763259,113.215814,sim,sim,2.181057,3.0,as vezes,nao,2.08554,0.0,1.439004,as vezes,carro
+M,30.424369,1.699354,100.176866,sim,sim,2.819934,1.91863,as vezes,nao,1.0,1.39302,0.553311,nao,transporte publico
+F,25.783865,1.643111,109.910012,sim,sim,3.0,3.0,as vezes,nao,1.530992,0.01586,0.445495,as vezes,transporte publico
+M,33.55336,1.699793,103.841672,sim,sim,2.576449,2.419656,as vezes,nao,1.0,1.982379,0.0,nao,transporte publico
+F,,1.76,80.0,sim,sim,2.0,1.0,as vezes,nao,3.0,3.0,1.0,nao,transporte publico
+M,21.962426,1.696336,75.0,sim,sim,2.0,3.0,as vezes,nao,1.825629,0.699592,0.142056,as vezes,transporte publico
+M,18.525834,1.776989,57.275946,sim,sim,2.0,3.747163,as vezes,nao,2.575535,2.0,1.84383,nao,carro
+F,19.220108,1.530266,42.0,nao,sim,3.0,1.0,frequentemente,nao,1.954889,0.0,0.907868,as vezes,transporte publico
+F,20.0,1.63,64.0,sim,sim,1.0,3.0,sempre,nao,2.0,0.0,2.0,nao,carro
+F,19.0,1.65,82.0,sim,sim,3.0,3.0,as vezes,nao,1.0,0.0,1.0,as vezes,transporte publico
+F,23.0,1.61082,82.532994,sim,sim,2.09663,2.879541,as vezes,nao,2.432967,1.887012,0.0,nao,transporte publico
+,20.074449,1.810427,152.217135,sim,,3.0,3.0,as vezes,nao,2.299156,1.699056,0.729722,as vezes,transporte publico
+F,19.0,1.63,58.0,nao,nao,3.0,3.0,as vezes,nao,2.0,0.0,0.0,nao,transporte publico
+F,21.082384,1.486484,60.117993,sim,nao,2.0,1.104642,as vezes,nao,1.0,,0.969097,nao,transporte publico
+M,25.523127,1.786532,114.534678,sim,sim,2.100177,3.0,as vezes,nao,2.099687,1.281165,0.247332,as vezes,transporte publico
+F,22.422674,1.70011,50.173425,,sim,2.674431,3.0,frequentemente,nao,2.453384,1.321624,1.990617,nao,transporte publico
+M,25.047945,1.803207,118.332966,sim,sim,1.431346,3.0,as vezes,nao,2.098959,1.110868,0.196952,as vezes,transporte publico
+F,22.956845,1.618686,81.281578,sim,sim,,1.073421,as vezes,nao,1.979833,0.022598,0.061282,nao,transporte publico
+M,21.086512,1.863685,,sim,sim,2.0,3.0,as vezes,nao,1.005727,0.0,0.798219,as vezes,transporte publico
+M,24.079971,1.61981,98.54302,sim,sim,2.95841,2.434347,as vezes,nao,1.0,1.930033,0.754023,nao,transporte publico
+M,35.322112,1.78,102.265955,sim,sim,2.787589,1.114564,as vezes,nao,3.0,2.710338,0.572185,as vezes,carro
+M,17.0,1.79,57.0,sim,sim,2.0,4.0,frequentemente,nao,2.0,2.0,1.0,nao,transporte publico
+M,29.246269,1.758038,112.395309,sim,sim,2.323003,3.0,as vezes,nao,2.155558,0.0,1.251554,as vezes,carro
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+F,19.783234,1.747962,133.936535,sim,sim,3.0,,as vezes,nao,2.84174,,0.775378,as vezes,transporte publico
+M,21.797388,1.775584,103.605896,sim,sim,2.121909,3.0,as vezes,nao,2.500556,1.20758,0.0,nao,transporte publico
+M,21.620245,1.605314,66.621646,sim,sim,2.357496,3.376717,as vezes,nao,2.184843,1.358185,0.014885,as vezes,transporte publico
+F,18.0,1.56,51.0,sim,sim,2.0,4.0,frequentemente,nao,2.0,1.0,0.0,as vezes,transporte publico
+M,18.426619,1.777108,57.145917,sim,sim,2.0,3.092116,as vezes,nao,2.426465,2.0,1.839862,nao,
+F,37.496175,1.653088,80.0,sim,sim,2.033745,3.0,as vezes,nao,1.517225,0.0,1.517897,nao,carro
+M,23.884212,1.713825,83.952968,sim,sim,,2.6648,as vezes,nao,1.810738,0.80989,1.0,as vezes,transporte publico
+M,,1.64,78.0,sim,sim,2.0,1.0,as vezes,nao,2.0,0.0,0.0,frequentemente,carro
+M,,1.748103,108.308112,sim,sim,2.317459,3.734323,as vezes,nao,1.0,1.628637,0.0,nao,carro
+F,27.14823,1.660446,49.558304,sim,sim,2.004146,3.443456,frequentemente,nao,2.020764,1.078719,1.26729,nao,transporte publico
+F,38.939448,1.738321,86.934846,nao,sim,2.843709,3.058539,as vezes,nao,1.130079,2.834373,0.044954,as vezes,carro
+M,41.0,1.75,116.594351,sim,sim,2.0,2.831771,as vezes,nao,1.725226,0.356288,0.0,as vezes,carro
+M,21.544554,1.84998,122.609911,sim,sim,3.0,1.971659,as vezes,nao,1.179254,0.178856,0.0,as vezes,transporte publico
+F,26.0,1.652674,111.919155,sim,sim,3.0,3.0,as vezes,nao,2.814517,0.0,0.101598,as vezes,transporte publico
+M,21.962219,1.931263,118.20313,sim,,2.0,3.0,as vezes,nao,,0.743593,1.0,as vezes,transporte publico
+F,21.633056,1.754174,133.783955,sim,sim,3.0,3.0,as vezes,nao,1.94595,1.493018,0.906611,as vezes,transporte publico
+F,26.0,1.631332,111.829957,sim,sim,3.0,3.0,as vezes,nao,2.55975,0.0,0.237307,as vezes,transporte publico
+F,18.904037,1.743589,133.281333,sim,sim,3.0,3.0,as vezes,nao,2.684819,1.46525,0.804491,as vezes,transporte publico
+M,19.0,1.75,58.0,nao,sim,2.0,3.0,as vezes,nao,2.0,2.0,0.0,,bicicleta
+M,24.347414,1.789193,,sim,sim,1.521604,2.174968,as vezes,nao,2.0,0.0,0.632467,as vezes,transporte publico
+F,19.0,1.76,79.544998,sim,sim,2.0,1.146794,as vezes,nao,3.0,1.809745,1.690102,frequentemente,transporte publico
+F,16.30687,1.616366,67.183128,sim,sim,1.620845,1.0,as vezes,nao,2.0,0.926592,1.657098,nao,transporte publico
+F,18.863875,1.560029,71.728069,sim,nao,3.0,3.339914,as vezes,nao,2.0,1.0,1.0,as vezes,transporte publico
+M,25.994746,1.811602,106.042142,sim,sim,3.0,3.0,as vezes,nao,2.858171,1.813318,,as vezes,transporte publico
+M,23.0,1.799406,106.528811,sim,sim,2.123159,3.0,as vezes,nao,2.415343,,0.569852,as vezes,transporte publico
+M,20.432717,1.719342,80.790813,sim,sim,2.215464,2.116195,as vezes,nao,1.80996,1.910577,0.971746,nao,transporte publico
+F,18.0,1.5,58.0,nao,sim,2.0,3.0,as vezes,nao,1.0,0.0,0.0,nao,transporte publico
+M,26.288417,1.767806,82.694689,sim,sim,1.947405,3.118013,as vezes,nao,2.136159,0.783963,0.88868,nao,transporte publico
+M,34.0,1.78,73.0,nao,sim,2.0,3.0,as vezes,nao,2.0,3.0,1.0,as vezes,carro
+M,25.151286,1.761519,112.835195,sim,sim,1.289315,3.0,as vezes,nao,2.007348,1.376217,0.001518,as vezes,transporte publico
+F,18.0,1.59,40.0,sim,sim,2.0,1.0,frequentemente,nao,1.0,0.0,2.0,nao,transporte publico
+F,20.190733,1.680762,125.418548,sim,sim,3.0,3.0,as vezes,nao,1.124366,0.877067,0.552006,as vezes,transporte publico
+M,27.394123,1.764138,112.323213,sim,sim,1.924632,3.0,as vezes,nao,2.006595,0.1768,0.511694,as vezes,carro
+M,29.506287,1.82697,108.751502,sim,sim,2.0,2.877583,as vezes,nao,2.358038,0.877295,1.817146,as vezes,carro
+M,33.015258,1.73196,84.315608,,sim,2.0,3.0,as vezes,nao,2.205911,1.293396,0.0,,carro
+F,21.704699,1.787614,137.858254,sim,sim,3.0,3.0,as vezes,nao,2.531456,1.980738,0.835771,as vezes,transporte publico
+F,42.189023,1.647768,79.165306,sim,sim,2.0,3.0,as vezes,nao,1.0,,1.48189,nao,carro
+F,16.0,1.57,49.0,nao,sim,2.0,4.0,sempre,nao,,0.0,1.0,as vezes,transporte publico
+F,27.0,1.6,61.0,nao,sim,,3.0,sempre,nao,2.0,0.0,0.0,as vezes,carro
+M,31.327609,1.737984,82.523113,sim,sim,,3.071028,as vezes,nao,1.738959,0.090147,0.0,as vezes,carro
+F,18.107092,1.703259,91.499683,sim,sim,1.899793,3.0,as vezes,nao,1.439962,0.9529,0.838847,as vezes,transporte publico
+F,18.024744,1.617192,83.121811,sim,sim,2.976509,3.0,as vezes,nao,1.022705,1.02569,0.313016,nao,transporte publico
+M,23.154311,1.723072,82.338464,sim,sim,2.315932,2.658478,as vezes,nao,1.568476,0.949976,0.544899,as vezes,transporte publico
+M,24.0,1.7,75.0,sim,sim,2.0,3.0,,nao,2.0,,0.0,as vezes,carro
+F,37.524551,1.567915,,sim,sim,2.0,3.0,as vezes,nao,2.102976,0.0,0.0,as vezes,carro
+F,24.469756,1.663341,113.077187,sim,sim,3.0,3.0,,nao,2.632224,,0.26956,as vezes,transporte publico
+F,,1.62686,82.410189,sim,sim,2.640801,1.015488,as vezes,nao,2.022355,0.244749,0.289218,as vezes,transporte publico
+F,26.0,1.640125,111.539494,sim,sim,3.0,3.0,as vezes,nao,2.625537,0.0,0.162494,as vezes,transporte publico
+M,20.432717,1.719342,80.790813,sim,sim,2.215464,2.116195,as vezes,nao,1.80996,1.910577,0.971746,nao,transporte publico
+F,34.044229,1.665807,77.098973,sim,sim,2.976975,1.346987,as vezes,nao,1.868349,0.702538,0.879333,nao,carro
+F,18.595614,1.609495,42.656563,nao,sim,2.896562,2.625475,as vezes,nao,2.839558,1.949667,1.253311,nao,transporte publico
+M,31.689773,1.76569,120.082941,sim,sim,2.821727,3.0,as vezes,nao,2.173279,1.096556,0.232858,as vezes,carro
+,26.0,1.648143,111.950113,sim,sim,3.0,3.0,as vezes,nao,2.786417,0.0,0.079673,as vezes,transporte publico
+F,18.947102,1.518917,60.267427,nao,sim,2.838037,2.737571,as vezes,nao,1.144467,0.753782,1.286844,as vezes,transporte publico
+,44.0,1.6,80.0,sim,nao,2.0,3.0,as vezes,sim,3.0,0.0,0.0,nao,moto
+F,19.220108,1.530266,42.0,nao,sim,3.0,1.0,frequentemente,nao,1.954889,0.0,0.907868,as vezes,transporte publico
+F,20.978166,1.721057,132.054793,sim,sim,3.0,3.0,as vezes,nao,1.678791,1.68249,0.818871,as vezes,transporte publico
+F,18.91505,1.633316,45.0,nao,sim,3.0,3.0,as vezes,nao,2.924594,1.352558,0.220087,as vezes,transporte publico
+F,18.0,1.67,66.0,nao,,3.0,3.0,as vezes,nao,2.0,0.0,0.0,as vezes,transporte publico
+F,34.204408,1.664927,80.386078,sim,sim,2.0,,as vezes,nao,2.641642,0.285889,1.50301,nao,carro
+F,20.0,1.625236,74.433362,sim,nao,2.522399,1.032887,as vezes,nao,2.397653,2.358699,0.440087,,transporte publico
+F,21.082384,1.486484,60.117993,sim,nao,2.0,1.104642,as vezes,nao,1.0,,0.969097,nao,transporte publico
+F,18.10682,1.602129,,sim,sim,2.319648,3.0,as vezes,nao,,0.692123,0.30402,nao,transporte publico
+M,25.151286,1.761519,112.835195,sim,sim,1.289315,3.0,as vezes,nao,2.007348,1.376217,0.001518,as vezes,transporte publico
+M,33.0,1.85,97.92035,sim,sim,2.0,3.0,as vezes,nao,1.117464,1.0,0.663649,as vezes,transporte publico
+M,28.377958,1.766946,113.235538,sim,sim,2.314175,3.0,as vezes,nao,2.151809,0.0,1.578517,,carro
+F,17.992717,1.618683,67.193585,sim,sim,1.952987,1.0,as vezes,nao,1.334856,0.732276,1.890214,nao,transporte publico
+M,34.243146,1.843172,92.69551,sim,sim,2.0,2.271734,as vezes,nao,2.629043,1.0,0.075823,as vezes,carro
+M,24.001889,1.614075,100.245302,sim,sim,2.880483,1.703299,as vezes,nao,1.006378,1.076729,1.058007,nao,transporte publico
+F,20.700876,1.68838,121.889803,sim,sim,3.0,3.0,as vezes,nao,1.353167,1.093679,0.534553,as vezes,transporte publico
+M,41.0,1.75,115.806977,sim,sim,2.0,2.701521,as vezes,nao,1.142644,0.514225,0.0,nao,
+M,25.0,1.89,75.0,nao,nao,3.0,3.0,,nao,2.0,3.0,0.0,nao,transporte publico
+M,31.0,1.76,75.0,sim,nao,3.0,3.0,sempre,nao,3.0,3.0,0.0,nao,bicicleta
+M,30.444081,1.761068,118.370628,sim,sim,2.571274,3.0,as vezes,nao,2.224164,1.018158,1.152899,as vezes,carro
+F,23.0,1.710129,50.079991,sim,sim,2.0,3.0,frequentemente,nao,2.685842,0.373186,2.0,nao,transporte publico
+M,22.975526,1.701986,95.0,sim,sim,2.0,3.0,as vezes,nao,2.02127,1.814869,1.066603,nao,transporte publico
+F,37.455752,1.508908,63.183846,sim,sim,2.048582,1.047197,as vezes,nao,2.0,0.15136,0.22596,as vezes,carro
+F,18.83919,1.624831,69.975607,sim,sim,2.253998,2.752318,as vezes,nao,2.328331,0.815509,0.024088,nao,transporte publico
+F,25.783865,1.643111,109.910012,sim,sim,3.0,3.0,as vezes,nao,1.530992,0.01586,0.445495,as vezes,transporte publico
+F,18.535075,1.688025,45.0,nao,sim,3.0,3.0,as vezes,nao,3.0,2.539762,1.283673,nao,transporte publico
+F,27.0,1.55,,nao,sim,2.0,3.0,as vezes,nao,1.0,0.0,1.0,as vezes,carro
+F,20.534606,1.758372,79.469513,sim,sim,2.8557,1.0,as vezes,nao,2.663861,2.762711,0.783336,as vezes,transporte publico
+F,25.0,1.57,55.0,nao,sim,2.0,1.0,,nao,2.0,2.0,0.0,as vezes,transporte publico
+F,21.566815,1.748533,133.94608,sim,sim,3.0,3.0,as vezes,nao,2.833566,1.413239,0.862724,as vezes,transporte publico
+F,40.951591,,80.0,sim,sim,2.0,1.105617,as vezes,nao,1.372811,1.629432,0.0,as vezes,carro
+F,23.0,1.710182,50.287967,sim,sim,2.0,,frequentemente,nao,2.099863,1.63581,2.0,nao,transporte publico
+F,26.0,1.622418,110.676343,sim,sim,3.0,3.0,as vezes,nao,2.691584,0.0,0.425473,as vezes,transporte publico
+F,16.38009,1.617124,67.913561,sim,sim,2.851664,1.0,as vezes,nao,2.0,0.977929,1.765321,nao,transporte publico
+F,22.0,1.65,65.0,sim,sim,2.0,3.0,frequentemente,nao,2.0,1.0,,nao,carro
+M,,1.7,50.0,nao,sim,1.0,4.0,frequentemente,nao,1.0,2.0,1.0,as vezes,transporte publico
+M,25.2984,1.827279,120.996074,sim,sim,3.0,3.0,as vezes,nao,3.0,1.110215,0.396352,as vezes,transporte publico
+F,18.0,1.62,68.0,nao,nao,2.0,1.0,as vezes,nao,,0.0,2.0,nao,transporte publico
+F,20.891491,1.748313,133.573787,sim,sim,3.0,3.0,as vezes,nao,2.874336,1.624981,0.825609,as vezes,transporte publico
+F,21.0,1.55,50.0,nao,sim,2.0,3.0,as vezes,nao,2.0,0.0,0.0,as vezes,transporte publico
+M,18.0,1.751278,86.963628,sim,nao,3.0,3.0,as vezes,nao,2.0,1.271667,0.155278,as vezes,transporte publico
+F,25.991886,1.580968,102.003378,sim,sim,3.0,3.0,as vezes,nao,1.003563,0.008127,1.0,as vezes,transporte publico
+M,18.260079,1.801848,104.741914,sim,sim,2.0,3.0,as vezes,nao,3.0,1.783858,0.0,nao,transporte publico
+F,28.830558,1.7,78.0,sim,sim,,3.0,as vezes,nao,1.699971,1.727114,1.0,frequentemente,carro
+M,30.607546,1.757132,118.565568,sim,sim,2.918113,3.0,as vezes,nao,2.240463,1.076248,1.480875,as vezes,carro
+,20.534089,1.861358,115.39792,sim,,2.0,3.0,as vezes,nao,3.0,0.987591,1.914531,as vezes,transporte publico
+M,29.509151,1.770663,112.471118,sim,sim,2.303041,3.0,as vezes,nao,2.065817,,0.725222,as vezes,carro
+M,39.656559,1.789992,98.021766,sim,sim,2.043359,2.209314,as vezes,nao,2.785804,1.259613,0.669616,as vezes,carro
+F,18.0,1.56,55.0,nao,sim,2.0,3.0,as vezes,nao,1.0,0.0,0.0,frequentemente,carro
+M,36.67933,1.780725,98.790167,sim,sim,2.540949,1.116401,as vezes,nao,2.929123,2.787319,,frequentemente,carro
+F,26.0,1.643332,110.824698,sim,sim,3.0,3.0,as vezes,nao,2.709654,0.0,,as vezes,transporte publico
+F,21.022206,1.73995,135.693381,sim,,3.0,3.0,as vezes,nao,1.663213,1.094035,0.786665,as vezes,transporte publico
+M,17.570089,1.7,83.199034,sim,nao,2.097373,2.547086,as vezes,nao,1.538626,1.0,0.761898,nao,transporte publico
+F,21.012569,1.758628,78.370039,sim,sim,3.0,1.0,as vezes,nao,2.0,2.971832,0.0,as vezes,transporte publico
+F,38.683794,1.501993,,,sim,2.0,3.0,as vezes,nao,1.0,0.0,0.0,as vezes,carro
+M,20.0,1.9,91.0,sim,sim,3.0,4.0,as vezes,nao,3.0,2.0,0.0,as vezes,andando
+F,37.471683,1.549812,,sim,sim,2.0,2.765213,as vezes,nao,,1.350001,0.0,as vezes,carro
+M,,1.803132,106.329569,sim,sim,2.348745,3.0,as vezes,nao,2.096751,0.544564,0.67688,as vezes,transporte publico
+M,18.0,1.7,90.0,nao,sim,3.0,3.0,as vezes,nao,2.0,2.0,0.0,as vezes,transporte publico
+F,18.019572,1.701378,50.088468,nao,sim,1.601236,3.433908,as vezes,nao,1.055019,0.819269,1.030848,as vezes,transporte publico
+F,25.291974,1.684768,104.821175,sim,sim,3.0,3.0,as vezes,nao,1.444379,0.224482,0.912187,as vezes,transporte publico
+F,25.998646,1.640741,104.808542,sim,sim,3.0,3.0,as vezes,nao,2.653531,0.190061,0.692343,as vezes,transporte publico
+F,19.071027,1.756865,49.699672,nao,,1.69427,3.266644,as vezes,nao,1.095417,2.0,1.0,as vezes,transporte publico
+M,18.178023,1.85478,114.77484,sim,sim,2.0,1.854536,as vezes,nao,2.160169,1.0,,as vezes,transporte publico
+F,22.935612,1.732307,54.835576,sim,sim,3.0,3.0,frequentemente,nao,2.00357,1.25955,0.417116,nao,transporte publico
+F,22.667596,1.718939,75.951472,sim,sim,2.0,3.0,frequentemente,nao,2.0,0.0,2.0,as vezes,transporte publico
+F,22.033129,1.704223,51.437985,sim,sim,2.984425,3.0,frequentemente,nao,2.044694,2.008256,1.250871,nao,transporte publico
+M,21.0,1.85,83.0,sim,sim,2.0,1.0,frequentemente,nao,3.0,1.0,0.0,nao,transporte publico
+M,29.0,1.641784,89.424947,sim,sim,1.3307,3.0,as vezes,nao,1.880967,0.322013,0.0,as vezes,carro
+M,26.734476,1.816197,119.622764,sim,sim,2.247037,3.0,as vezes,nao,2.718408,0.763595,0.0,as vezes,transporte publico
+F,19.94814,1.530884,39.371523,nao,sim,1.522001,3.0,as vezes,nao,1.98126,2.306844,0.720454,as vezes,transporte publico
+F,19.872667,1.817231,152.371911,sim,sim,3.0,3.0,as vezes,nao,2.305521,1.956278,0.92376,as vezes,transporte publico
+F,21.285965,1.72692,131.335786,sim,sim,3.0,3.0,as vezes,nao,1.796267,1.728332,0.897924,as vezes,transporte publico
+F,34.281681,1.673333,77.205685,sim,sim,2.689929,1.835543,as vezes,nao,1.718569,0.674348,0.707246,nao,carro
+F,21.0,1.63,51.0,nao,sim,2.0,1.0,as vezes,nao,1.0,1.0,1.0,nao,transporte publico
+M,26.699317,1.839941,119.956651,sim,,2.244654,3.0,as vezes,nao,2.795752,0.839481,0.0,as vezes,transporte publico
+,26.0,1.644141,111.942544,sim,sim,3.0,3.0,as vezes,nao,2.763005,0.0,0.101867,as vezes,transporte publico
+F,18.0,1.498561,55.376512,nao,sim,2.0,3.0,as vezes,nao,1.274718,0.129902,0.978574,as vezes,transporte publico
+M,22.705772,1.841989,122.024954,sim,sim,3.0,2.52751,as vezes,nao,1.645338,1.025438,0.0,as vezes,transporte publico
+M,29.622804,1.814052,109.411622,sim,,2.407817,2.070033,as vezes,nao,1.796257,1.234483,0.178708,as vezes,carro
+M,25.846279,1.772731,115.828167,sim,sim,2.381164,3.0,as vezes,nao,2.170225,1.211048,1.89933,as vezes,transporte publico
+M,22.285024,1.75376,55.879263,,sim,2.450218,3.995147,as vezes,nao,2.147746,,0.58998,as vezes,transporte publico
+F,21.274628,1.737453,50.479039,sim,sim,3.0,3.489918,,nao,1.326694,0.791929,0.128394,nao,transporte publico
+F,18.874591,1.533609,41.669346,nao,sim,2.762325,1.163666,as vezes,nao,1.30491,0.25289,1.001405,as vezes,transporte publico
+M,22.0,1.88,90.0,sim,sim,2.0,3.0,sempre,nao,1.0,0.0,1.0,as vezes,carro
+F,21.322097,1.751118,149.291106,sim,sim,3.0,3.0,as vezes,nao,2.309409,1.68291,0.70558,as vezes,transporte publico
+M,29.695603,1.842943,93.798055,sim,sim,2.133955,,as vezes,nao,1.753464,1.729987,1.0,as vezes,transporte publico
+F,21.012542,1.615145,68.653347,sim,sim,1.729824,3.612941,nao,nao,2.043703,0.562118,0.426643,as vezes,transporte publico
+F,22.865018,1.632118,82.0,sim,sim,2.587789,1.482103,as vezes,nao,1.911664,0.0,,as vezes,transporte publico
+F,18.0,1.7,50.0,,nao,2.0,3.0,as vezes,nao,2.0,0.0,1.0,as vezes,andando
+F,,1.615854,80.615325,sim,sim,2.0,1.0,as vezes,nao,2.0,0.026142,0.0,nao,transporte publico
+M,20.0,1.65,58.0,nao,sim,2.0,3.0,as vezes,nao,,,1.0,as vezes,transporte publico
+F,20.530998,1.74647,133.644711,sim,,3.0,3.0,as vezes,nao,2.896088,1.612741,0.77319,as vezes,transporte publico
+F,19.300435,1.739354,49.649613,nao,sim,3.0,3.754599,as vezes,nao,1.692112,2.0,1.0,as vezes,transporte publico
+M,37.207082,1.762921,118.40174,sim,sim,2.13683,2.993084,as vezes,nao,1.885926,0.615298,,as vezes,carro
+M,30.520854,1.784049,120.644178,sim,sim,2.499108,3.0,as vezes,nao,2.040952,0.838739,0.489854,as vezes,carro
+M,26.787842,1.817641,87.107317,nao,sim,2.971588,2.743277,as vezes,nao,1.394883,2.0,0.470243,nao,carro
+M,25.062942,1.828391,120.998266,sim,sim,3.0,3.0,as vezes,nao,3.0,1.685369,0.264969,as vezes,transporte publico
+M,18.0,1.70653,51.121749,sim,sim,2.0,,,nao,2.0,0.0,1.329237,as vezes,transporte publico
+M,18.424941,1.753389,54.121925,sim,sim,2.0,3.16645,as vezes,nao,2.278578,1.838881,2.0,as vezes,transporte publico
+M,30.403205,1.696365,102.815983,sim,sim,2.79166,2.13229,as vezes,nao,1.254589,0.652736,1.040713,nao,transporte publico
+M,30.361365,1.75853,111.635463,sim,sim,1.263216,3.219347,as vezes,nao,1.981782,0.482625,0.0,as vezes,carro
+M,30.916426,1.781139,120.794535,,sim,2.111887,3.0,as vezes,nao,2.357373,0.425621,1.416353,as vezes,carro
+F,19.314964,1.661403,49.932199,nao,sim,2.205439,3.0,as vezes,nao,1.530531,2.0,1.0,as vezes,transporte publico
+F,19.0,1.5,50.0,nao,sim,2.0,3.0,frequentemente,nao,1.0,0.0,2.0,as vezes,transporte publico
+M,30.64243,1.653876,102.583895,sim,sim,2.919526,,as vezes,nao,1.175714,0.958555,0.636289,nao,transporte publico
+M,38.0,1.75,,sim,nao,3.0,3.0,frequentemente,nao,1.0,2.0,1.0,nao,carro
+F,21.0,1.55,50.0,nao,sim,2.0,3.0,as vezes,nao,2.0,0.0,0.0,as vezes,transporte publico
+F,22.591026,1.650012,87.676154,sim,sim,2.983851,1.068443,as vezes,nao,2.854161,1.103209,1.0,nao,transporte publico
+F,23.0,1.75,56.0,nao,nao,3.0,3.0,frequentemente,nao,2.0,2.0,0.0,as vezes,transporte publico
+M,21.0,1.75,72.0,sim,sim,1.0,3.0,frequentemente,nao,3.0,2.0,0.0,as vezes,transporte publico
+F,19.0,1.556211,42.339767,,sim,3.0,2.0846,as vezes,nao,2.13755,0.196152,0.062488,nao,transporte publico
+F,21.785351,1.675054,,sim,sim,2.929889,3.0,frequentemente,nao,2.792074,0.630944,1.366355,nao,transporte publico
+M,18.216032,1.755507,52.0,sim,sim,3.0,3.0,frequentemente,nao,2.0,0.658894,1.0,nao,transporte publico
+M,31.540751,1.828092,91.495718,sim,sim,2.0,,as vezes,nao,,0.598438,0.017016,as vezes,carro
+F,24.023972,1.599697,64.808022,nao,sim,2.903545,3.0,as vezes,nao,1.549931,0.0,0.273882,,transporte publico
+F,23.0,1.5,55.0,sim,sim,3.0,3.0,as vezes,nao,2.0,1.0,0.0,as vezes,moto
+F,24.0,1.56,60.0,sim,sim,1.0,3.0,sempre,nao,2.0,0.0,2.0,as vezes,transporte publico
+M,23.0,1.65,67.0,sim,sim,2.0,3.0,as vezes,nao,2.0,1.0,1.0,as vezes,transporte publico
+F,19.529746,1.751038,133.843033,sim,sim,3.0,3.0,as vezes,nao,2.955075,1.46046,0.655558,as vezes,transporte publico
+M,21.086512,1.863685,,sim,sim,2.0,3.0,as vezes,nao,1.005727,0.0,0.798219,as vezes,transporte publico
+F,18.0,1.67,66.0,nao,,3.0,3.0,as vezes,nao,2.0,0.0,0.0,as vezes,transporte publico
+F,,1.732383,133.043941,sim,sim,3.0,3.0,as vezes,nao,1.610768,1.510398,0.931455,as vezes,transporte publico
+M,31.398281,,101.544589,sim,sim,2.0,1.005391,as vezes,nao,2.001936,1.0,0.0,as vezes,transporte publico
+M,17.0,1.74,56.0,sim,sim,2.0,3.0,as vezes,nao,2.0,2.0,1.0,nao,transporte publico
+F,18.198322,1.543338,71.799982,sim,nao,,3.087119,as vezes,nao,2.0,1.403872,1.0,nao,transporte publico
+F,43.604901,1.569234,81.827288,sim,sim,2.909853,1.0,as vezes,nao,2.0,1.308852,0.0,nao,carro
+M,18.0,1.7,60.0,nao,sim,2.0,,as vezes,nao,2.0,2.0,1.0,nao,transporte publico
+F,21.768153,1.76416,133.888629,sim,sim,3.0,3.0,as vezes,nao,2.32502,1.441791,0.918468,as vezes,transporte publico
+F,26.0,1.584782,105.055597,sim,sim,3.0,3.0,as vezes,nao,1.197667,0.0,0.534769,as vezes,transporte publico
+,27.562425,1.908608,128.828122,sim,sim,2.206276,3.0,as vezes,nao,1.813082,1.94984,0.0,as vezes,transporte publico
+F,22.0,1.73,79.0,sim,sim,2.0,1.0,as vezes,nao,2.0,1.0,0.0,as vezes,transporte publico
+M,18.0,1.71889,52.058335,sim,sim,1.950742,3.0,as vezes,nao,1.751723,0.201136,1.743319,as vezes,transporte publico
+F,25.293202,1.503379,64.342459,sim,nao,2.0,1.0,as vezes,nao,1.639807,0.072117,0.0,nao,transporte publico
+F,,1.52,42.0,nao,sim,3.0,1.0,frequentemente,nao,1.0,0.0,0.0,as vezes,transporte publico
+F,21.051982,1.729719,131.877558,sim,sim,3.0,3.0,as vezes,nao,1.422483,1.708971,0.673009,as vezes,transporte publico
+M,18.0,1.6,58.0,sim,sim,2.0,3.0,frequentemente,nao,2.0,1.0,0.0,as vezes,transporte publico
+M,22.766227,1.874061,89.754302,sim,sim,2.0,2.870005,as vezes,nao,1.15031,0.417724,1.0,as vezes,carro
+M,17.0,1.7,70.0,sim,sim,,3.0,as vezes,nao,2.0,,2.0,as vezes,andando
+M,33.070142,1.709428,83.014033,sim,sim,2.0,1.044628,as vezes,nao,2.01051,2.805801,0.0,,carro
+M,18.0,1.707259,50.664459,sim,sim,1.786841,,as vezes,nao,1.546856,0.512094,1.608265,,transporte publico
+,23.035829,1.598612,42.993937,nao,nao,2.753752,,frequentemente,nao,2.346647,1.612248,0.0,nao,transporte publico
+F,23.252457,1.589616,65.127324,nao,sim,2.286146,2.961113,as vezes,nao,2.657303,1.91108,,as vezes,transporte publico
+M,19.076443,1.62,69.529625,nao,sim,2.278644,1.0,as vezes,nao,2.628985,,1.285373,as vezes,transporte publico
+F,35.483601,1.647514,73.91692,sim,nao,3.0,2.725012,as vezes,nao,1.62244,0.902661,,as vezes,carro
+M,25.035915,1.763101,88.532032,sim,sim,1.973499,1.081805,as vezes,nao,2.0,0.0,0.464022,as vezes,transporte publico
+F,19.0,1.5,45.0,nao,sim,,3.0,,nao,1.0,0.0,0.0,as vezes,transporte publico
+F,23.0,1.75,56.0,nao,nao,3.0,3.0,frequentemente,nao,2.0,2.0,0.0,as vezes,transporte publico
+M,18.0,1.716691,51.149283,sim,sim,1.813234,3.0,as vezes,nao,1.274815,0.520407,1.673584,as vezes,transporte publico
+F,23.664709,1.738836,133.472641,,sim,3.0,3.0,as vezes,nao,2.863513,1.026452,0.714137,as vezes,transporte publico
+,19.478533,1.804099,85.196279,sim,sim,2.459976,3.30846,as vezes,nao,2.078011,1.779646,0.871772,as vezes,transporte publico
+F,16.950499,1.603501,65.0,sim,sim,2.96008,,as vezes,nao,2.0,0.736032,1.344072,nao,transporte publico
+M,17.188754,1.771915,55.695036,sim,sim,2.0,4.0,as vezes,nao,2.884033,2.0,1.340107,as vezes,transporte publico
+F,21.478496,1.686936,51.256059,sim,sim,3.0,3.179995,frequentemente,nao,1.910378,0.480614,0.625079,nao,transporte publico
+M,21.0,1.65,60.0,nao,nao,3.0,,frequentemente,nao,1.0,0.0,0.0,as vezes,moto
+M,31.783524,1.672959,90.0,sim,sim,2.949242,1.782109,as vezes,nao,2.210997,1.992719,0.0,as vezes,carro
+M,25.659092,1.84842,117.631707,sim,sim,2.128574,3.0,as vezes,nao,2.531984,1.003294,0.026575,as vezes,transporte publico
+M,37.056193,1.75015,118.206565,sim,sim,2.09283,3.0,as vezes,nao,2.077704,0.598655,0.0,as vezes,carro
+F,19.0,1.559567,42.12617,nao,sim,3.0,1.989398,as vezes,nao,2.241607,0.206025,0.284453,nao,transporte publico
+M,17.039058,1.799902,95.419668,sim,sim,2.0,3.0,as vezes,nao,3.0,1.04729,0.933802,as vezes,transporte publico
+M,30.684347,1.915,129.966428,sim,sim,2.108638,3.0,as vezes,sim,1.014876,0.987521,0.047473,as vezes,transporte publico
+M,17.412629,,97.350366,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,0.931721,nao,transporte publico
+M,27.0,1.93,102.0,,sim,2.0,1.0,as vezes,nao,1.0,1.0,0.0,as vezes,transporte publico
+F,21.840654,1.747479,136.516648,sim,sim,,3.0,as vezes,nao,1.607531,1.963379,0.858392,as vezes,transporte publico
+F,18.078256,1.622999,82.403076,sim,sim,2.340405,3.0,as vezes,nao,1.655245,1.006884,0.548539,nao,transporte publico
+M,34.993835,1.752456,84.783756,sim,sim,2.63165,2.98212,as vezes,nao,2.778587,2.667739,0.905181,nao,carro
+M,26.348156,1.830317,117.75701,sim,sim,2.068834,3.0,as vezes,nao,,1.217993,0.038253,as vezes,transporte publico
+F,26.591628,1.7,78.008388,sim,sim,2.734314,3.0,as vezes,nao,3.0,0.897702,0.908271,frequentemente,
+M,18.128249,1.699437,52.08657,sim,sim,2.853513,3.0,as vezes,nao,2.0,0.680464,1.258881,as vezes,transporte publico
+,23.32012,1.705813,82.011962,sim,sim,2.784471,2.122545,as vezes,nao,2.984153,2.164472,0.203978,as vezes,transporte publico
+M,17.188754,1.771915,55.695036,sim,sim,2.0,4.0,as vezes,nao,2.884033,2.0,1.340107,as vezes,transporte publico
+F,20.0,1.61,64.0,sim,nao,3.0,3.0,sempre,nao,2.0,0.0,1.0,frequentemente,transporte publico
+F,33.690239,1.681842,77.426465,sim,sim,3.0,2.679724,as vezes,nao,1.999737,1.747347,0.681773,nao,carro
+F,23.0,1.6,78.0,sim,sim,2.0,1.0,as vezes,sim,2.0,1.0,0.0,frequentemente,transporte publico
+F,26.0,1.610225,104.936381,sim,sim,3.0,3.0,as vezes,nao,1.322004,0.0,0.539876,as vezes,transporte publico
+F,26.0,1.622418,110.676343,sim,sim,3.0,3.0,as vezes,nao,2.691584,0.0,0.425473,as vezes,transporte publico
+,20.534089,1.861358,115.39792,sim,,2.0,3.0,as vezes,nao,3.0,0.987591,1.914531,as vezes,transporte publico
+M,18.0,1.782722,108.044313,sim,sim,2.0,2.655265,as vezes,nao,2.297896,1.0,0.552665,nao,transporte publico
+M,20.432717,1.719342,80.790813,sim,sim,2.215464,2.116195,as vezes,nao,1.80996,1.910577,0.971746,nao,transporte publico
+M,26.050109,1.773115,115.089316,sim,sim,2.392179,3.0,as vezes,nao,2.16467,1.079934,1.073026,as vezes,transporte publico
+M,30.79626,1.789421,109.599453,sim,sim,2.21498,2.282392,,nao,1.179942,1.771754,0.537659,as vezes,carro
+M,31.490699,1.773521,120.209711,sim,sim,2.777165,3.0,as vezes,nao,2.106861,0.925941,0.2916,as vezes,carro
+F,61.0,,66.0,nao,sim,3.0,3.0,sempre,nao,2.0,1.0,1.0,frequentemente,transporte publico
+M,39.585811,1.719153,86.464843,sim,sim,2.325623,1.313403,as vezes,nao,,0.604259,0.0,nao,carro
+M,25.0,1.83,,sim,nao,3.0,3.0,as vezes,nao,3.0,2.0,0.0,as vezes,
+M,23.0,1.72,82.0,sim,sim,,1.0,as vezes,nao,1.0,1.0,1.0,as vezes,
+F,24.023972,1.599697,64.808022,nao,sim,2.903545,3.0,as vezes,nao,1.549931,0.0,0.273882,,transporte publico
+M,30.421596,1.819296,122.137917,sim,sim,2.0,3.0,as vezes,nao,1.984323,0.793262,0.0,as vezes,transporte publico
+F,26.0,1.633442,111.821817,sim,sim,3.0,3.0,as vezes,nao,2.550672,0.0,0.224655,as vezes,transporte publico
+M,30.967417,1.688436,90.0,sim,sim,,2.733077,as vezes,,2.77962,1.454129,0.0,as vezes,carro
+M,30.958051,1.906821,128.856677,sim,,2.633855,3.0,as vezes,nao,1.619305,1.847802,0.424612,as vezes,transporte publico
+M,20.242237,1.75633,54.567343,sim,sim,2.0,3.98525,as vezes,nao,2.654078,2.113151,2.0,nao,transporte publico
+M,40.174191,1.763029,116.974504,sim,sim,2.046651,2.842035,as vezes,nao,1.732072,0.584272,0.0,as vezes,carro
+F,25.748627,1.66877,104.774144,sim,sim,3.0,3.0,as vezes,nao,1.526416,0.180158,0.747909,as vezes,
+M,18.0,1.7108,50.92538,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,1.593704,as vezes,transporte publico
+F,26.0,1.633887,111.878132,sim,sim,3.0,3.0,as vezes,nao,2.621976,0.0,0.123861,as vezes,transporte publico
+M,30.475248,1.801368,121.094257,sim,sim,2.328469,3.0,as vezes,nao,2.001208,0.800487,0.176678,as vezes,carro
+F,25.95774,1.62414,102.233445,sim,sim,3.0,3.0,as vezes,nao,1.067716,,1.0,as vezes,transporte publico
+F,23.629159,1.70002,80.420434,sim,sim,,3.0,as vezes,nao,2.386904,0.926201,1.34403,as vezes,transporte publico
+M,38.71216,1.770278,117.29188,sim,sim,2.252382,2.842848,as vezes,nao,1.879381,0.919388,0.0,as vezes,carro
+M,25.047945,1.803207,118.332966,sim,sim,1.431346,3.0,as vezes,nao,2.098959,1.110868,0.196952,as vezes,transporte publico
+M,34.0,1.69,,sim,nao,2.0,3.0,as vezes,nao,3.0,,0.0,nao,carro
+F,22.0,1.69,65.0,sim,sim,2.0,3.0,,nao,2.0,1.0,1.0,as vezes,transporte publico
+F,25.955014,1.626449,104.879602,sim,sim,3.0,3.0,as vezes,nao,2.094901,0.07089,,as vezes,transporte publico
+M,23.0,1.72,82.0,sim,sim,,1.0,as vezes,nao,1.0,1.0,1.0,as vezes,
+M,22.969366,1.701634,95.0,sim,sim,2.0,3.0,,nao,2.133469,1.030199,1.082838,nao,transporte publico
+M,18.0,1.70165,50.157707,sim,sim,1.757466,3.0,as vezes,nao,1.153559,,1.616045,as vezes,transporte publico
+F,25.483381,1.565288,64.848627,sim,nao,2.0,1.0,as vezes,nao,1.0,0.740633,0.0,nao,transporte publico
+M,29.906575,1.913252,129.232216,,,2.02472,3.0,as vezes,nao,1.800335,1.196368,0.0,as vezes,transporte publico
+F,26.0,1.631547,111.588625,sim,sim,3.0,3.0,as vezes,nao,,0.0,0.252635,as vezes,transporte publico
+F,26.208134,1.7,78.041338,sim,sim,2.784383,3.0,as vezes,nao,2.165605,0.855973,0.839659,frequentemente,carro
+F,22.0,1.69,65.0,sim,sim,2.0,3.0,as vezes,nao,2.0,1.0,1.0,as vezes,transporte publico
+M,18.0,1.784402,108.413119,sim,sim,2.0,2.475444,as vezes,nao,2.655795,1.0,0.169879,nao,transporte publico
+F,21.131526,1.739457,150.37757,sim,sim,3.0,3.0,as vezes,nao,2.319912,1.582675,0.680746,as vezes,transporte publico
+F,22.0,1.69,65.0,sim,sim,2.0,3.0,,nao,2.0,1.0,1.0,as vezes,transporte publico
+F,26.0,1.628909,106.875927,sim,sim,3.0,3.0,as vezes,nao,,0.0,0.540812,as vezes,transporte publico
+F,16.611837,1.830068,43.534531,nao,sim,2.945967,3.0,as vezes,nao,2.953192,2.830911,1.466667,as vezes,transporte publico
+F,19.275687,1.623377,82.851318,sim,sim,1.276858,2.918124,as vezes,nao,1.403784,0.552511,1.560402,as vezes,transporte publico
+F,28.0,1.7,73.0,sim,nao,2.0,3.0,frequentemente,nao,2.0,2.0,0.0,as vezes,andando
+F,26.0,1.63302,111.863186,sim,sim,3.0,3.0,as vezes,nao,2.584305,0.0,0.232108,as vezes,transporte publico
+F,21.289104,1.708291,130.986338,sim,sim,3.0,3.0,as vezes,nao,1.205548,1.723934,0.952352,as vezes,transporte publico
+F,25.968792,1.632896,104.988925,sim,sim,3.0,3.0,as vezes,nao,1.239833,0.162279,0.619235,as vezes,transporte publico
+M,18.0,1.755823,52.331172,nao,sim,2.596364,3.0,as vezes,nao,2.0,0.281734,1.488372,as vezes,transporte publico
+F,25.722004,1.62847,107.218949,sim,sim,3.0,3.0,as vezes,nao,2.48707,0.067329,0.455823,as vezes,transporte publico
+M,22.675679,1.823765,96.945262,sim,sim,1.588782,2.601675,as vezes,nao,2.469469,1.736538,1.886855,as vezes,transporte publico
+F,29.08107,1.674568,71.602622,sim,sim,2.0,3.0,as vezes,nao,1.701835,1.682271,0.0,as vezes,carro
+F,18.610761,1.550723,60.628321,nao,sim,2.823179,2.644692,as vezes,nao,1.226764,0.747528,0.008899,as vezes,transporte publico
+M,17.06713,1.896734,59.895052,sim,sim,2.842102,3.34175,as vezes,nao,2.0,2.511157,0.560351,nao,carro
+M,18.0,1.75,85.0,sim,nao,2.0,3.0,as vezes,nao,3.0,1.0,0.0,as vezes,transporte publico
+M,24.481032,1.661277,90.744965,sim,sim,1.712848,3.0,as vezes,nao,1.162153,0.458981,0.885532,nao,carro
+M,21.997335,1.65,80.0,sim,sim,2.0,3.0,as vezes,nao,2.0,0.527341,2.0,nao,transporte publico
+M,17.689057,1.713599,83.285753,sim,sim,2.009952,2.716106,as vezes,nao,1.660614,1.0,,as vezes,transporte publico
+F,,1.62686,82.410189,sim,sim,2.640801,1.015488,as vezes,nao,2.022355,0.244749,0.289218,as vezes,transporte publico
+M,33.749594,1.701387,107.025415,sim,sim,,2.87747,as vezes,nao,1.0,1.980401,0.0,nao,carro
+M,31.490699,1.773521,120.209711,sim,sim,2.777165,3.0,as vezes,nao,2.106861,0.925941,0.2916,as vezes,carro
+F,20.744839,1.667852,49.803921,sim,sim,2.977018,3.193671,frequentemente,nao,2.482933,2.0,1.0,nao,transporte publico
+M,29.721964,1.918859,129.991623,sim,sim,2.041376,3.0,as vezes,nao,1.120213,1.05545,0.0,as vezes,transporte publico
+M,19.920629,1.768493,57.790381,sim,sim,2.0,3.897078,as vezes,nao,2.622638,2.0,1.894105,,carro
+,19.434709,1.525691,42.0,nao,sim,3.0,1.0,frequentemente,nao,1.764055,0.0,0.560887,as vezes,transporte publico
+M,21.72738,1.783782,105.000276,sim,sim,2.044326,3.0,as vezes,nao,2.35818,0.349371,0.0,,transporte publico
+F,23.474165,1.577115,78.0,sim,sim,2.0,1.0,as vezes,nao,2.0,0.876101,0.0,nao,transporte publico
+F,18.0,1.456346,55.523481,nao,sim,2.0,3.0,as vezes,nao,1.040342,0.497373,1.783319,as vezes,transporte publico
+M,19.241058,1.856811,88.633616,sim,sim,2.047069,,as vezes,nao,1.641022,1.554817,0.248218,as vezes,transporte publico
+F,18.0,1.54,,nao,nao,3.0,4.0,frequentemente,nao,2.0,1.0,1.0,nao,transporte publico
+M,20.0,1.65,58.0,nao,sim,2.0,3.0,as vezes,nao,,,1.0,as vezes,transporte publico
+M,29.883021,,112.438508,sim,sim,2.065752,3.0,as vezes,nao,2.078297,0.0,0.677354,as vezes,carro
+M,32.259623,1.703346,102.686239,sim,sim,2.723953,1.924168,as vezes,nao,1.0,1.622055,0.069367,nao,transporte publico
+M,27.0,1.85,75.0,sim,sim,2.0,1.0,as vezes,nao,2.0,1.0,0.0,nao,andando
+M,31.327609,1.737984,82.523113,sim,sim,,3.071028,as vezes,nao,1.738959,0.090147,0.0,as vezes,carro
+M,34.432669,1.694997,84.451423,sim,sim,,2.693646,as vezes,nao,2.60669,1.170823,0.290898,nao,carro
+F,21.291969,1.8002,,sim,sim,3.0,3.0,as vezes,nao,2.351193,1.051889,0.686491,as vezes,transporte publico
+F,33.700749,1.642971,74.803157,sim,nao,3.0,1.146052,as vezes,nao,1.074048,0.679935,0.0,as vezes,carro
+M,34.288249,1.835678,96.01851,sim,sim,2.0,1.546665,as vezes,nao,3.0,1.0,0.0,as vezes,carro
+F,18.367481,1.745644,133.665587,sim,sim,3.0,,as vezes,nao,2.900857,1.508897,0.625371,,transporte publico
+F,27.0,1.55,62.877347,nao,sim,2.244142,1.704828,as vezes,nao,1.0,0.792929,0.395468,as vezes,transporte publico
+F,25.777565,1.628205,107.378702,sim,sim,3.0,3.0,as vezes,nao,2.506631,0.025787,0.484165,as vezes,transporte publico
+M,23.360307,1.610647,100.642257,sim,sim,2.997524,1.154318,as vezes,nao,1.238057,1.1293,1.665621,nao,
+F,26.0,1.62439,110.008636,sim,sim,3.0,3.0,as vezes,,,0.0,0.368472,as vezes,transporte publico
+M,20.013906,1.647821,106.509947,sim,sim,2.869778,1.468948,as vezes,nao,1.656082,0.0,1.444033,nao,transporte publico
+M,21.0,1.75,50.0,sim,,3.0,4.0,frequentemente,nao,,1.0,0.0,nao,andando
+M,22.285024,1.75376,55.879263,,sim,2.450218,3.995147,as vezes,nao,2.147746,,0.58998,as vezes,transporte publico
+M,31.761799,1.751688,119.205308,,sim,2.14961,3.0,as vezes,nao,2.133876,0.393452,0.345887,,carro
+M,25.036269,1.874519,121.244969,sim,sim,2.630137,,as vezes,nao,2.960088,1.356468,0.0,as vezes,transporte publico
+F,22.865018,1.632118,82.0,sim,sim,2.587789,1.482103,as vezes,nao,1.911664,0.0,,as vezes,transporte publico
+F,18.052394,1.725233,75.970712,sim,,2.927409,3.0,as vezes,nao,2.209991,1.0,0.797215,frequentemente,transporte publico
+M,19.556729,1.767563,56.307019,sim,sim,2.362918,4.0,as vezes,nao,2.358172,2.0,0.939819,nao,carro
+F,19.431662,1.631662,82.0,sim,sim,2.843456,2.937989,as vezes,nao,1.001995,0.0,1.554404,nao,transporte publico
+M,21.379676,1.701413,96.710735,sim,sim,2.0,2.961192,as vezes,nao,2.623344,0.981686,1.35537,nao,transporte publico
+M,41.0,1.75,116.594351,sim,sim,2.0,2.831771,as vezes,nao,1.725226,0.356288,0.0,as vezes,carro
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,transporte publico
+F,25.95774,1.62414,102.233445,sim,sim,3.0,3.0,as vezes,nao,1.067716,,1.0,as vezes,transporte publico
+M,17.412629,,97.350366,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,0.931721,nao,transporte publico
+F,23.586058,1.700499,81.108599,sim,sim,2.042762,2.9774,as vezes,nao,1.522426,0.501417,1.029135,as vezes,transporte publico
+F,20.0,1.57,60.0,nao,sim,3.0,,as vezes,nao,3.0,0.0,1.0,as vezes,transporte publico
+F,25.934757,1.579893,102.134646,sim,sim,3.0,3.0,as vezes,nao,1.005864,0.02006,0.695838,,transporte publico
+F,19.0,1.76,79.349221,sim,sim,2.0,1.893811,as vezes,nao,3.0,1.376229,1.801322,nao,transporte publico
+F,19.0,1.63,58.0,nao,nao,3.0,3.0,as vezes,nao,2.0,0.0,0.0,nao,transporte publico
+F,32.278869,1.64602,74.147443,sim,sim,2.885178,2.562895,as vezes,nao,1.017006,0.588673,0.916291,as vezes,carro
+F,26.0,1.639524,111.945588,sim,sim,,3.0,as vezes,nao,2.739351,0.0,0.064769,as vezes,transporte publico
+,21.652229,1.700181,,sim,sim,2.086093,3.546352,as vezes,nao,2.081121,1.993666,0.673835,as vezes,transporte publico
+F,20.0,1.65,75.0,sim,sim,3.0,1.0,as vezes,nao,2.0,1.0,1.0,nao,
+M,19.21638,1.812472,86.748295,sim,sim,2.0,3.0,as vezes,nao,2.168651,0.977998,0.142638,as vezes,transporte publico
+M,22.789402,1.64187,104.270062,sim,sim,2.869833,1.569176,as vezes,nao,1.533682,0.167943,1.368262,nao,transporte publico
+F,26.0,1.628909,106.875927,sim,sim,3.0,3.0,as vezes,nao,,0.0,0.540812,as vezes,transporte publico
+M,24.521879,,97.582959,sim,sim,2.973569,2.650088,as vezes,nao,1.003063,1.981154,0.157007,nao,transporte publico
+M,38.297259,1.789109,100.066268,sim,sim,2.014194,2.050121,as vezes,nao,2.184707,2.000561,0.853891,frequentemente,carro
+M,19.0,1.69,65.0,nao,sim,2.0,3.0,frequentemente,nao,1.0,1.0,1.0,as vezes,transporte publico
+F,25.999942,1.627483,104.881994,sim,sim,3.0,3.0,as vezes,nao,2.569364,0.159255,0.419446,as vezes,transporte publico
+F,23.0,1.75,56.0,nao,nao,3.0,3.0,frequentemente,nao,2.0,2.0,0.0,as vezes,transporte publico
+,21.760734,1.73581,135.346677,sim,sim,3.0,3.0,as vezes,nao,2.611654,1.618512,0.868788,as vezes,transporte publico
+F,19.317148,1.731195,49.650897,nao,sim,2.919751,3.576103,as vezes,nao,1.949308,1.940182,1.0,as vezes,transporte publico
+F,38.0,1.5,60.0,sim,sim,2.0,1.0,sempre,sim,2.0,0.0,0.0,as vezes,carro
+F,23.0,1.6,63.0,sim,nao,3.0,3.0,frequentemente,nao,2.0,3.0,0.0,as vezes,andando
+M,22.740275,1.717288,75.948164,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,2.0,as vezes,transporte publico
+F,25.380557,1.630379,46.062954,sim,sim,2.690754,3.03779,frequentemente,nao,2.212296,1.616882,0.0,nao,transporte publico
+M,18.0,1.767058,51.132809,sim,sim,2.708965,3.0,,nao,1.873004,1.21718,1.0,as vezes,transporte publico
+M,21.0,1.75,50.0,sim,,3.0,4.0,frequentemente,nao,,1.0,0.0,nao,andando
+M,26.348156,1.830317,117.75701,sim,sim,2.068834,3.0,as vezes,nao,,1.217993,0.038253,as vezes,transporte publico
+M,19.0,1.67,68.0,nao,sim,2.0,3.0,as vezes,nao,2.0,1.0,0.0,as vezes,transporte publico
+M,19.0,1.82,75.0,sim,nao,2.0,3.0,frequentemente,nao,2.0,1.0,0.0,nao,transporte publico
+F,21.768834,1.733383,135.524857,sim,sim,3.0,3.0,as vezes,nao,1.485736,1.950374,0.869238,as vezes,transporte publico
+M,32.241587,1.757961,87.906019,sim,sim,2.0,1.79558,as vezes,nao,1.855054,1.083572,0.218574,as vezes,transporte publico
+M,30.796262,1.668478,100.543983,sim,sim,2.9553,2.378211,as vezes,nao,,1.738267,0.394533,nao,transporte publico
+F,21.813083,1.712515,,sim,sim,2.8813,3.087544,frequentemente,nao,1.24818,1.952427,0.427461,,transporte publico
+M,22.936098,1.702825,93.638318,sim,sim,2.0,3.0,as vezes,nao,1.746197,0.455216,0.335158,nao,
+M,17.888073,1.841879,60.0,sim,sim,3.0,3.732126,as vezes,nao,2.0,2.000934,0.384662,nao,carro
+M,38.71216,1.770278,117.29188,sim,sim,2.252382,2.842848,as vezes,nao,1.879381,0.919388,0.0,as vezes,carro
+F,22.0,1.65,60.0,,sim,,3.0,as vezes,nao,2.0,,0.0,as vezes,carro
+F,31.166572,1.680858,71.81338,sim,sim,2.048216,3.0,as vezes,nao,1.305816,0.170452,0.276806,as vezes,carro
+M,26.0,1.74,,nao,nao,2.0,3.0,as vezes,nao,2.0,2.0,0.0,nao,carro
+F,18.988581,1.544263,41.535047,nao,sim,2.68601,1.0,as vezes,,1.310074,0.0,1.0647,as vezes,transporte publico
+F,33.0,1.55,55.0,sim,sim,,1.0,,,3.0,2.0,1.0,as vezes,transporte publico
+M,20.491475,1.975663,120.702935,sim,sim,2.0,3.0,as vezes,nao,3.0,0.767013,1.0,as vezes,transporte publico
+F,25.653233,1.66494,110.92217,sim,sim,3.0,3.0,as vezes,nao,1.604075,0.029728,0.200122,as vezes,transporte publico
+F,25.493586,,104.704707,sim,sim,3.0,3.0,as vezes,nao,1.170515,,0.896842,as vezes,transporte publico
+F,19.262934,1.741014,132.57927,sim,sim,3.0,3.0,as vezes,nao,2.436261,1.464674,0.87092,as vezes,transporte publico
+F,25.908431,,103.026858,sim,sim,3.0,3.0,as vezes,nao,1.077253,0.162083,0.824607,as vezes,transporte publico
+M,30.357745,1.841852,93.614246,sim,sim,2.045027,2.946063,as vezes,nao,1.307563,1.442485,0.934493,as vezes,transporte publico
+M,22.977357,1.839699,120.431551,sim,sim,2.382705,2.938902,as vezes,nao,1.999278,1.686229,0.630866,as vezes,transporte publico
+M,18.525525,1.856633,59.258372,sim,sim,2.592247,3.304123,as vezes,nao,2.036764,2.038653,1.119877,nao,carro
+F,38.0,1.64,59.8,sim,sim,2.0,3.0,as vezes,nao,2.0,2.0,0.0,nao,transporte publico
+F,21.895468,1.64456,88.119139,sim,sim,2.693859,1.000283,as vezes,nao,3.0,1.201403,1.612432,nao,transporte publico
+M,21.18354,1.72,80.555875,sim,sim,2.0,2.468421,as vezes,nao,2.0,2.0,1.0,nao,transporte publico
+M,,1.8,85.0,sim,nao,2.0,3.0,as vezes,nao,3.0,2.0,,as vezes,transporte publico
+F,18.107092,1.703259,91.499683,sim,sim,1.899793,3.0,as vezes,nao,1.439962,0.9529,0.838847,as vezes,transporte publico
+F,18.0,1.45,53.0,nao,sim,2.0,3.0,frequentemente,nao,2.0,,2.0,frequentemente,transporte publico
+F,,1.686033,104.772164,sim,sim,3.0,3.0,as vezes,nao,1.299194,0.234303,0.946888,as vezes,
+M,24.0,1.66,67.0,sim,sim,3.0,1.0,as vezes,nao,2.0,1.0,0.0,nao,transporte publico
+M,20.406066,1.868931,63.199726,sim,sim,3.0,3.699594,as vezes,nao,2.825629,1.699592,0.071028,as vezes,carro
+F,18.0,1.683,90.924208,sim,sim,2.387426,3.0,as vezes,nao,1.77962,,0.920162,as vezes,transporte publico
+M,24.911994,1.785241,88.03748,sim,sim,1.306844,2.279546,as vezes,nao,2.0,0.0,0.739609,as vezes,transporte publico
+F,19.407204,1.520862,42.0,nao,sim,3.0,1.0,frequentemente,nao,1.848703,0.0,0.744555,as vezes,transporte publico
+F,19.349258,1.52337,42.0,nao,sim,2.913486,1.060796,frequentemente,nao,1.596212,0.108948,0.773087,as vezes,transporte publico
+F,18.301773,1.808765,140.292018,sim,sim,3.0,3.0,as vezes,nao,2.830247,1.783138,0.789064,as vezes,transporte publico
+F,25.96701,1.654875,104.758713,sim,sim,3.0,3.0,as vezes,nao,2.612758,0.24629,,as vezes,transporte publico
+M,23.975685,1.840039,120.975489,sim,sim,2.598207,2.849347,as vezes,,2.006167,1.52001,0.295685,as vezes,transporte publico
+,20.979254,1.75655,78.721696,sim,sim,2.0,3.0,as vezes,nao,,0.228753,2.0,frequentemente,transporte publico
+F,18.0,1.686904,90.004046,,sim,2.737149,3.0,as vezes,nao,1.997195,1.352663,0.468483,as vezes,transporte publico
+M,23.0,1.65,,sim,nao,2.0,,as vezes,nao,2.0,0.0,0.0,nao,transporte publico
+M,25.2984,1.827279,120.996074,sim,sim,3.0,3.0,as vezes,nao,3.0,1.110215,0.396352,as vezes,transporte publico
+M,26.011928,1.777251,106.452367,sim,sim,3.0,3.0,as vezes,nao,1.911379,1.911096,1.032392,as vezes,transporte publico
+F,37.455752,1.508908,63.183846,sim,sim,2.048582,1.047197,as vezes,nao,2.0,0.15136,0.22596,as vezes,carro
+M,23.0,1.68,62.0,nao,nao,2.0,4.0,frequentemente,nao,2.0,0.0,0.0,as vezes,carro
+F,18.166318,1.649553,82.323954,sim,sim,2.864776,3.0,as vezes,nao,1.876915,0.631565,,nao,transporte publico
+M,22.988004,1.80827,91.363293,sim,sim,1.963965,1.836226,as vezes,nao,1.85537,0.0,1.667745,as vezes,transporte publico
+F,23.474165,1.577115,78.0,sim,sim,2.0,1.0,as vezes,nao,2.0,0.876101,0.0,nao,transporte publico
+,19.665881,1.676346,49.105025,nao,nao,2.720701,3.0,as vezes,nao,2.0,1.862235,1.0,as vezes,transporte publico
+M,26.607478,1.793174,118.165082,sim,sim,2.002076,3.0,as vezes,nao,2.338373,0.897562,0.081156,as vezes,transporte publico
+F,19.994543,1.537739,39.101805,,sim,1.118436,3.0,as vezes,nao,1.997744,2.432443,1.626194,as vezes,transporte publico
+M,18.0,1.716691,51.149283,sim,sim,1.813234,3.0,as vezes,nao,1.274815,0.520407,1.673584,as vezes,transporte publico
+M,25.512048,1.660761,104.321463,sim,sim,2.748971,1.213431,as vezes,nao,1.448875,0.128548,1.239038,nao,transporte publico
+F,21.334585,1.729045,131.529267,sim,sim,,3.0,as vezes,nao,1.302193,,0.94232,as vezes,transporte publico
+M,18.0,1.7,80.0,nao,nao,3.0,1.0,as vezes,nao,1.0,1.0,0.0,nao,transporte publico
+F,18.0,1.62,55.0,,sim,2.0,3.0,frequentemente,nao,1.0,1.0,1.0,nao,
+F,25.834018,1.62456,110.10589,sim,sim,3.0,3.0,as vezes,nao,1.81786,0.011161,0.447224,as vezes,transporte publico
+F,28.0,1.7,73.0,sim,nao,2.0,3.0,frequentemente,nao,2.0,2.0,0.0,as vezes,andando
+M,20.0,1.65,58.0,nao,sim,2.0,3.0,as vezes,nao,,,1.0,as vezes,transporte publico
+F,20.843363,1.521008,67.083121,sim,,2.493448,3.0,as vezes,nao,1.849997,0.954459,1.444532,nao,transporte publico
+M,20.027764,1.611434,103.175516,sim,sim,2.983042,1.109956,as vezes,nao,1.430444,0.0,1.690901,nao,transporte publico
+M,26.011928,1.777251,106.452367,sim,sim,3.0,3.0,as vezes,nao,1.911379,1.911096,1.032392,as vezes,transporte publico
+M,18.525834,1.776989,57.275946,sim,sim,2.0,3.747163,as vezes,nao,2.575535,2.0,1.84383,nao,carro
+F,18.024853,1.7,50.0,nao,sim,1.0816,3.520555,frequentemente,nao,1.016968,0.651412,1.0,as vezes,transporte publico
+F,21.0,1.52,42.0,,sim,3.0,1.0,frequentemente,nao,1.0,0.0,0.0,as vezes,transporte publico
+M,25.035915,1.763101,88.532032,sim,sim,1.973499,1.081805,as vezes,nao,2.0,0.0,0.464022,as vezes,transporte publico
+F,20.843363,1.521008,67.083121,sim,,2.493448,3.0,as vezes,nao,1.849997,0.954459,1.444532,nao,transporte publico
+F,25.748627,1.66877,104.774144,sim,sim,3.0,3.0,as vezes,nao,1.526416,0.180158,0.747909,as vezes,
+M,19.0,1.67,68.0,nao,sim,2.0,3.0,as vezes,nao,2.0,1.0,0.0,as vezes,transporte publico
+M,18.525525,1.856633,59.258372,sim,sim,2.592247,3.304123,as vezes,nao,2.036764,2.038653,1.119877,nao,carro
+F,21.009596,1.714193,131.866734,sim,sim,3.0,3.0,as vezes,nao,1.709556,1.592494,0.925843,as vezes,transporte publico
+F,37.597953,1.62901,80.0,,sim,2.450784,2.952821,as vezes,,1.335192,0.180276,0.0,as vezes,carro
+M,17.052914,1.710616,99.860254,sim,sim,2.0,3.0,as vezes,nao,2.0,0.067491,0.894105,nao,transporte publico
+F,37.524551,1.567915,,sim,sim,2.0,3.0,as vezes,nao,2.102976,0.0,0.0,as vezes,carro
+M,30.357745,1.841852,93.614246,sim,sim,2.045027,2.946063,as vezes,nao,1.307563,1.442485,0.934493,as vezes,transporte publico
+M,20.720639,1.705304,99.873716,sim,sim,2.0,,as vezes,nao,2.0,0.0,1.917679,nao,transporte publico
+M,23.096353,1.728183,,sim,sim,2.0,2.986172,as vezes,,2.364208,2.492402,1.632506,nao,transporte publico
+F,22.0,1.675446,51.154201,sim,sim,3.0,3.0,frequentemente,nao,2.815293,1.978631,1.0,nao,transporte publico
+F,31.62638,1.666023,72.906186,sim,sim,2.0,3.0,as vezes,nao,1.0,0.0,1.301385,as vezes,
+F,22.0,1.68,52.0,,sim,3.0,3.0,frequentemente,nao,2.0,0.0,1.0,nao,transporte publico
+F,23.0,,75.0,sim,sim,2.0,3.0,frequentemente,sim,2.0,0.0,2.0,nao,andando
+F,37.872971,1.565366,80.0,sim,sim,2.002564,1.974233,as vezes,nao,1.935398,1.649299,0.0,as vezes,carro
+F,22.0,1.65,60.0,,sim,,3.0,as vezes,nao,2.0,,0.0,as vezes,carro
+F,16.941489,1.551288,54.93242,nao,sim,1.75375,1.296156,as vezes,,2.0,0.110174,1.944675,as vezes,transporte publico
+M,25.550506,1.77274,114.254278,sim,sim,2.175276,3.0,as vezes,nao,2.128176,1.306476,0.079334,as vezes,transporte publico
+F,25.907833,1.623113,102.555691,sim,sim,3.0,3.0,as vezes,nao,1.063422,0.051097,0.543118,as vezes,transporte publico
+F,37.063599,1.502609,75.279605,sim,sim,2.0,3.0,as vezes,nao,1.759803,0.0,0.0,as vezes,carro
+M,,1.796415,120.988454,sim,sim,2.475892,3.0,as vezes,nao,2.949356,1.866839,0.100048,as vezes,transporte publico
+F,24.317607,1.586751,79.109029,,sim,2.0,1.0,as vezes,nao,2.0,0.852446,0.0,nao,transporte publico
+F,18.766033,1.579561,,nao,sim,2.027574,1.0,as vezes,nao,1.636326,0.0,1.906141,as vezes,transporte publico
+F,18.0,1.692913,89.93889,sim,sim,2.818502,3.0,as vezes,nao,1.991251,1.492967,0.0,nao,transporte publico
+M,20.338815,1.698829,98.572753,sim,sim,2.0,2.392811,as vezes,nao,2.0,0.0,,nao,transporte publico
+F,26.0,1.652674,111.919155,sim,sim,3.0,3.0,as vezes,nao,2.814517,0.0,0.101598,as vezes,transporte publico
+M,26.490926,1.872517,120.898397,sim,sim,,3.0,as vezes,nao,2.939492,1.208142,0.738935,as vezes,transporte publico
+M,22.771001,1.86516,121.527369,sim,sim,2.739,2.740492,as vezes,nao,1.824561,1.094839,0.0,as vezes,transporte publico
+,26.0,1.648143,111.950113,sim,sim,3.0,3.0,as vezes,nao,2.786417,0.0,0.079673,as vezes,transporte publico
+M,31.662814,1.848965,98.912261,sim,sim,2.399531,2.623079,as vezes,nao,2.535127,1.030752,0.606264,as vezes,carro
+F,,1.616533,65.062945,sim,sim,2.388168,1.0,,nao,1.438018,0.110887,1.165817,nao,transporte publico
+M,22.0,1.84,84.0,sim,sim,3.0,3.0,frequentemente,nao,2.0,3.0,0.0,as vezes,transporte publico
+F,18.743587,1.789143,138.202869,sim,sim,3.0,3.0,as vezes,nao,2.83377,0.806422,0.672513,as vezes,transporte publico
+F,21.0,1.5,42.3,sim,nao,1.0,1.0,as vezes,nao,,3.0,0.0,nao,transporte publico
+M,18.181821,,79.863546,sim,nao,2.492758,2.270163,as vezes,nao,1.992586,1.452467,0.864583,nao,transporte publico
+M,18.026457,1.752123,80.0,sim,sim,2.0,2.794156,as vezes,nao,2.377362,0.101236,0.105895,nao,
+F,26.0,1.66,112.0,sim,nao,3.0,3.0,as vezes,nao,3.0,0.0,0.0,nao,carro
+M,30.0,1.76,112.0,sim,sim,1.0,3.0,nao,sim,2.0,0.0,0.0,,carro
+F,21.0,1.753578,77.97917,sim,sim,2.273548,2.39007,as vezes,nao,1.648404,0.874643,1.102696,as vezes,
+F,18.052394,1.725233,75.970712,sim,,2.927409,3.0,as vezes,nao,2.209991,1.0,0.797215,frequentemente,transporte publico
+M,23.0,1.712556,75.480764,sim,sim,3.0,3.654061,as vezes,nao,1.229915,0.793489,1.597608,as vezes,transporte publico
+M,24.825398,1.796332,,sim,sim,2.195964,3.0,as vezes,nao,2.514872,1.664722,0.127673,as vezes,
+M,21.0,1.79,,sim,sim,2.0,3.0,sempre,nao,1.0,0.0,0.0,as vezes,transporte publico
+F,21.0,1.52,56.0,sim,nao,3.0,3.0,as vezes,sim,3.0,3.0,0.0,,transporte publico
+F,20.989016,1.80734,155.872093,sim,sim,3.0,3.0,as vezes,nao,2.417122,0.952725,0.573958,as vezes,transporte publico
+F,17.0,1.6,53.0,nao,sim,1.0,3.0,as vezes,nao,1.0,2.0,2.0,as vezes,andando
+M,20.0,1.56,45.0,nao,nao,2.0,3.0,as vezes,nao,2.0,1.0,1.0,as vezes,transporte publico
+F,19.755797,1.542328,63.856193,nao,sim,2.628791,,as vezes,,1.512035,0.303722,0.003229,as vezes,transporte publico
+M,18.0,1.792239,108.244379,sim,sim,2.0,2.141839,as vezes,nao,2.939847,1.0,0.103056,as vezes,transporte publico
+M,24.002404,1.609418,100.078367,sim,sim,2.885693,1.685134,as vezes,nao,1.011849,0.503105,1.217929,nao,transporte publico
+F,37.955371,1.560648,80.0,sim,sim,2.846452,1.139317,as vezes,nao,1.459511,1.71807,0.0,as vezes,carro
+M,29.881301,1.758189,108.721893,sim,sim,3.0,3.0,,nao,1.271178,1.944728,0.0,as vezes,carro
+M,19.16097,1.662728,77.473204,sim,nao,2.008656,1.402771,as vezes,nao,3.0,0.112383,0.32803,as vezes,transporte publico
+M,26.199321,1.885119,121.065052,,sim,2.423291,3.0,as vezes,nao,2.902682,1.243567,0.555591,as vezes,transporte publico
+,26.680376,1.812259,118.277657,sim,sim,2.239634,3.0,as vezes,nao,2.684264,0.979306,0.0,as vezes,transporte publico
+M,25.100513,1.830596,118.424156,sim,sim,1.455602,3.0,as vezes,nao,2.363307,1.144683,0.101026,as vezes,transporte publico
+M,18.0,1.8,72.0,sim,sim,2.0,3.0,as vezes,nao,2.0,3.0,0.0,as vezes,carro
+F,39.648946,1.572791,80.086524,sim,sim,2.071622,2.977909,as vezes,nao,1.468297,0.0,0.0,nao,carro
+M,23.0,1.72,66.0,sim,sim,2.0,3.0,as vezes,nao,2.0,0.0,1.0,as vezes,andando
+F,25.908431,,103.026858,sim,sim,3.0,3.0,as vezes,nao,1.077253,0.162083,0.824607,as vezes,transporte publico
+F,22.0,1.7,66.0,sim,nao,3.0,3.0,sempre,,2.0,2.0,1.0,as vezes,transporte publico
+F,16.0,1.55,45.0,nao,sim,2.0,3.0,frequentemente,,2.0,1.0,1.0,nao,transporte publico
+M,28.377958,1.766946,113.235538,sim,sim,2.314175,3.0,as vezes,nao,2.151809,0.0,1.578517,,carro
+F,21.198217,1.743841,78.88036,sim,sim,2.510583,1.0,as vezes,nao,2.0,2.119682,0.0,as vezes,transporte publico
+M,35.389491,1.78,100.84763,sim,sim,2.069267,1.476204,as vezes,nao,3.0,,0.092736,frequentemente,carro
+,19.0,1.56,50.0,nao,sim,2.0,1.0,as vezes,nao,1.0,0.0,,nao,transporte publico
+F,40.0,1.68,80.0,nao,nao,3.0,3.0,as vezes,nao,3.0,0.0,0.0,nao,carro
+F,26.0,1.624099,109.978402,sim,sim,3.0,3.0,as vezes,nao,2.523793,0.0,0.383953,as vezes,transporte publico
+F,34.044229,1.665807,77.098973,sim,sim,2.976975,1.346987,as vezes,nao,1.868349,0.702538,0.879333,nao,carro
+F,18.288205,1.713564,50.0,nao,sim,1.140615,3.471536,as vezes,nao,1.0,2.0,1.0,as vezes,transporte publico
+F,18.367481,1.745644,133.665587,sim,sim,3.0,,as vezes,nao,2.900857,1.508897,0.625371,,transporte publico
+F,22.0,1.6,82.0,sim,sim,1.0,1.0,as vezes,nao,2.0,0.0,2.0,as vezes,transporte publico
+F,26.0,1.656465,111.949972,sim,,3.0,3.0,as vezes,nao,2.784303,0.0,0.127775,as vezes,transporte publico
+F,20.0,1.62,53.0,nao,sim,3.0,1.0,as vezes,nao,3.0,1.0,,nao,transporte publico
+F,23.0,1.649736,84.134712,sim,sim,2.334474,1.496776,as vezes,nao,2.776724,0.782416,0.167728,nao,transporte publico
+M,20.0,1.76,55.0,sim,sim,2.0,4.0,as vezes,nao,3.0,2.0,,nao,transporte publico
+M,21.0,1.62,70.0,nao,sim,2.0,1.0,nao,nao,3.0,1.0,0.0,as vezes,
+M,21.420537,1.712473,75.0,sim,sim,2.0,3.0,as vezes,nao,1.362642,0.921268,0.139013,as vezes,transporte publico
+M,,1.64,78.0,sim,sim,2.0,1.0,as vezes,nao,2.0,0.0,0.0,frequentemente,carro
+F,17.807828,1.518067,55.822119,nao,sim,1.773265,2.118153,as vezes,nao,1.075239,0.085388,1.915191,as vezes,transporte publico
+M,23.367212,1.853223,87.083266,sim,sim,2.0,1.097312,as vezes,nao,1.328835,1.264257,1.0,as vezes,carro
+F,45.0,1.675953,79.66832,sim,sim,2.598051,3.0,as vezes,nao,1.0,0.0,0.0,nao,carro
+M,19.329542,,55.700497,sim,sim,2.0,4.0,as vezes,nao,2.157395,2.0,1.679149,nao,carro
+M,40.794057,1.735851,109.889334,sim,sim,2.305349,3.169089,as vezes,nao,1.02161,0.908981,0.0,nao,carro
+M,16.0,1.84,45.0,sim,sim,3.0,3.0,sempre,nao,3.0,3.0,2.0,as vezes,andando
+F,39.214514,1.580765,62.631382,sim,sim,2.487167,3.0,as vezes,nao,2.396977,0.577063,0.435072,as vezes,carro
+F,23.0,1.6,63.0,sim,nao,3.0,3.0,frequentemente,nao,2.0,3.0,0.0,as vezes,andando
+M,26.271621,1.660955,90.0,sim,sim,2.0,3.0,as vezes,nao,3.0,0.669278,0.505266,as vezes,carro
+M,23.451595,1.670227,75.0,sim,sim,2.0,3.0,as vezes,nao,2.0,0.129163,1.983678,as vezes,transporte publico
+M,22.276969,1.84995,121.786485,sim,sim,3.0,,as vezes,nao,1.555534,0.348839,0.0,as vezes,transporte publico
+F,38.895069,1.549257,80.0,sim,sim,2.736628,1.130751,as vezes,nao,1.385175,1.666965,0.0,as vezes,carro
+F,18.0,1.685633,90.032671,sim,sim,2.496455,3.0,as vezes,nao,1.850344,1.066101,0.732265,as vezes,transporte publico
+F,16.0,1.57,49.0,nao,sim,2.0,4.0,sempre,nao,,0.0,1.0,as vezes,transporte publico
+F,19.735968,1.699956,49.98297,nao,sim,1.204855,3.531038,as vezes,nao,1.134658,2.0,1.0,as vezes,transporte publico
+,22.851773,1.752115,79.414603,sim,sim,3.0,1.0,as vezes,nao,2.0,2.315983,0.0,as vezes,transporte publico
+F,17.402028,1.710756,50.0,nao,sim,2.015258,3.300666,as vezes,nao,1.315608,0.069802,1.0,as vezes,transporte publico
+M,22.975526,1.701986,95.0,sim,sim,2.0,3.0,as vezes,nao,2.02127,1.814869,1.066603,nao,transporte publico
+F,18.988581,1.544263,41.535047,nao,sim,2.68601,1.0,as vezes,,1.310074,0.0,1.0647,as vezes,transporte publico
+,22.944349,1.799742,89.98168,sim,sim,1.34138,1.94671,as vezes,nao,2.0,0.0,0.975504,as vezes,transporte publico
+M,19.443639,1.744733,87.27989,sim,sim,2.442536,3.0,as vezes,nao,2.825629,3.0,0.0,as vezes,transporte publico
+F,25.0,1.61,61.0,nao,nao,2.0,3.0,,nao,1.0,2.0,1.0,as vezes,transporte publico
+,28.393111,1.685462,99.540122,sim,sim,2.774562,2.301129,as vezes,nao,1.0,1.621733,0.138314,nao,transporte publico
+M,34.432669,1.694997,84.451423,sim,sim,,2.693646,as vezes,nao,2.60669,1.170823,0.290898,nao,carro
+F,23.0,1.6,52.0,nao,sim,2.0,4.0,frequentemente,nao,2.0,2.0,1.0,as vezes,carro
+F,25.909353,1.644078,102.277765,sim,sim,3.0,3.0,as vezes,nao,1.029241,0.075776,1.0,as vezes,transporte publico
+F,21.996523,1.733263,50.890363,nao,nao,3.0,3.765526,frequentemente,nao,1.656082,0.42777,0.555967,as vezes,transporte publico
+F,21.501721,1.809871,152.394739,sim,sim,3.0,3.0,as vezes,nao,2.351207,0.246831,0.91336,,transporte publico
+F,24.497373,1.737056,132.527011,sim,,3.0,3.0,as vezes,nao,2.86559,0.973864,0.58345,as vezes,transporte publico
+F,17.25813,1.600184,65.0,sim,sim,,2.298612,as vezes,nao,2.0,0.547515,1.619473,as vezes,transporte publico
+M,18.0,1.86,110.0,sim,sim,2.0,1.0,as vezes,sim,2.0,1.0,2.0,as vezes,transporte publico
