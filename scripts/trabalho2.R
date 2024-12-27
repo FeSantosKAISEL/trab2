@@ -1,6 +1,12 @@
+# Carregando os pacotes utilizados
+
 library(dplyr)
 library(tidyr)
-library(purrr)
+library(readr)
+
+## Carregar a base de dados:
+
+trabalho2_dados_7 <- read_csv("dados/trabalho2_dados_7.csv")
 
 ### Consistência dos dados e dados faltantes:
 
@@ -27,9 +33,10 @@ trabalho2_dados_7|>
   rowwise()|>
   mutate(total_NA = rowSums(is.na(across(everything()))))|>
   select(total_NA)|>
-  filter(total_NA>1)
+  filter(total_NA>0)|>
+  arrange(-total_NA)
 
-# Existem 92 observações com mais de uma com mais de um NA's registrado.
+# Existem 432 observações com mais de uma com mais de um NA's registrado.
 # Em 7 observações existem 3 valores faltantes.
 # Esse número, a princípio não sugere a remoção de nenhuma observação.
 
@@ -43,7 +50,7 @@ trabalho2_dados_7|>
 
 trabalho2_dados_7 %>%
   select(where(is.numeric)) %>%
-  imap(~ hist(.x, main = .y, xlab = .y, ylab = "Frequência"))
+  purrr::imap(~ hist(.x, main = .y, xlab = .y, ylab = "Frequência"))
 
 ## Ver Corrleações entre atributos
 ## 
