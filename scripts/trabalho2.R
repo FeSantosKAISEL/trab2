@@ -4,6 +4,7 @@ library(dplyr)
 library(tidyr)
 library(readr)
 library(tidymodels)
+library(ggplot2)
 
 
 ## Carregar a base de dados:
@@ -14,7 +15,10 @@ trabalho2_dados_7 <- read_csv("dados/trabalho2_dados_7.csv")
 
 ## Visualização de dados faltantes:
 
-visdat::vis_miss(trabalho2_dados_7) 
+visdat::vis_miss(trabalho2_dados_7)+
+  labs(title = "Análise da consistência dos dados")+
+  theme(plot.title = element_text(hjust = 0.5))
+
 
 # Somente 3.3% dos dados estão faltantes.
 # Nenhuma variável tem mais de 4% de dados faltantes
@@ -52,10 +56,65 @@ trabalho2_dados_7|>
 
 trabalho2_dados_7 %>%
   select(where(is.numeric)) %>%
-  purrr::imap(~ hist(.x, main = .y, xlab = .y, ylab = "Frequência"))
+  purrr::imap(~ hist(.x, main = .y, xlab = .y, ylab = "Frequência", breaks = 30, freq = F))
+
+# Idade: Por conta da assimetria normalizar (observações de 50 e 60 anos altera a média)
+# altura: Nada a fazer
+# peso : Nada a fazer
+# consome_vegetais: Normalizar
+# n_refeicoes: Discretizar (menos de 3, 3, mais de 3)
+# consumo_diario_agua: Nonrmalizar(?)
+# frequencia_atividade_fisica: Normalizar
+# tempo_usando_eletronico: Normalizar
+
+
+
+## Fazer o violinplot (Discutir discretização)
+## Fazer o boxplot (Discutir outliers)
+
+## Fazer gráfico de paineis para os histogramas (Linha para média) (Descutir distribuição)
+
+## Box plot
+
+trabalho2_dados_7|>
+  select(where(is.numeric))|>
+  reshape2::melt()|>
+  ggplot(aes(x = variable,y = value, fill = variable))+
+  geom_boxplot()+
+  facet_wrap(~variable, scales = 'free_y', ncol = 2)+
+  theme_bw()+
+  guides(fill = 'none')+
+  theme(axis.text.x = element_blank(),
+        axis.title = element_blank())
+  
+
+## Violin plot
+
+trabalho2_dados_7|>
+  select(where(is.numeric))|>
+  reshape2::melt()|>
+  ggplot(aes(x = variable,y = value, fill = variable))+
+  geom_violin()+
+  guides(fill = 'none')+
+  facet_wrap(~variable, scales = 'free_y', ncol = 2)+
+  theme_bw()+
+  theme(axis.text.x = element_blank(),
+        axis.title = element_blank(),
+        panel.border = element_blank() 
+        )
 
 ## Ver Corrleações entre atributos
-## 
+
+correlacoes<-trabalho2_dados_7|>
+  drop_na()|>
+  select(where(is.numeric))|>
+  cor()
+
+par(oma = c(0, 0, 0, 0))
+
+corrplot::corrplot.mixed(correlacoes, order = "hclust", tl.pos = "lt", 
+               upper = "ellipse")
+
 
 
 ### Visualizar as estruturas dos dados categóricos:
@@ -67,6 +126,12 @@ trabalho2_dados_7|>
   select(!where(is.numeric))|>
   apply(MARGIN = 2, FUN = ftable)
 
+trabalho2_dados_7|>
+  select(!where(is.numeric))|>
+  rownames_to_column()|>
+  reshape2::melt(id = 'rowname',value.name = 'value')|>
+  ggplot(aes(x = variable, fill = value))+
+  geom_bar(position = 'fill')
 
 ### Seleção de variáveis:
 
