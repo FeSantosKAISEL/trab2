@@ -3,6 +3,8 @@
 library(dplyr)
 library(tidyr)
 library(readr)
+library(tidymodels)
+
 
 ## Carregar a base de dados:
 
