@@ -5,6 +5,7 @@ library(tidyr)
 library(readr)
 library(tidymodels)
 
+
 ## Carregar a base de dados:
 
 trabalho2_dados_7 <- read_csv("dados/trabalho2_dados_7.csv")
