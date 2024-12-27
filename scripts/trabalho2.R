@@ -5,7 +5,7 @@ library(tidyr)
 library(readr)
 library(tidymodels)
 library(ggplot2)
-
+library(RColorBrewer)
 
 ## Carregar a base de dados:
 
@@ -119,19 +119,39 @@ corrplot::corrplot.mixed(correlacoes, order = "hclust", tl.pos = "lt",
 
 ### Visualizar as estruturas dos dados categóricos:
 
-## Ver proporções (Fazer gráfico)
+
 ## Verficar relevância da estratificação
 
 trabalho2_dados_7|>
   select(!where(is.numeric))|>
   apply(MARGIN = 2, FUN = ftable)
 
+## Ver proporções (Fazer gráfico)
+
+cores<- c("#89C5DA", "#DA5724", "#74D944", "#CE50CA", "#3F4921", "#C0717C", "#CBD588", "#5F7FC7", 
+          "#673770", "#D3D93E", "#38333E", "#508578", "#D7C1B1", "#689030", "#AD6F3B", "#CD9BCD", 
+          "#D14285", "#6DDE88", "#652926", "#7FDCC0", "#C84248", "#8569D5", "#5E738F", "#D1A33D", 
+          "#8A7C64", "#599861")
+
 trabalho2_dados_7|>
   select(!where(is.numeric))|>
+  drop_na()|>
   rownames_to_column()|>
   reshape2::melt(id = 'rowname',value.name = 'value')|>
-  ggplot(aes(x = variable, fill = value))+
-  geom_bar(position = 'fill')
+  group_by(value)|>
+  mutate(n = n())|>
+    ggplot(aes(x = variable, fill = interaction(variable,value)))+
+  geom_bar(position = 'fill')+
+  guides(fill = 'none')+
+  theme_bw()+
+  theme(axis.text.x = element_text(angle = 35,
+                                   vjust = 1,
+                                   hjust = 1,
+                                   size = 14),
+        axis.title = element_blank())+
+  scale_fill_manual(values = cores)+
+  geom_text(aes(label = ..count..), stat = "count", position = position_fill(vjust = 0.5), size = 3)
+
 
 ### Seleção de variáveis:
 
