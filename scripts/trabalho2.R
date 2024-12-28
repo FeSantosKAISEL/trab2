@@ -29,7 +29,7 @@ plota_hist<-function(base){
     geom_vline(aes(xintercept = mediana), color = "green", linetype = "dotted", size = 1) +
     theme_bw() +
     labs(title = "Distribuições das Variáveis Numéricas", x = "Valores", y = "Densidade") +
-    theme(axis.text.x = element_blank(),
+    theme(
           axis.title = element_blank(),
           panel.grid = element_blank(),
           strip.text = element_text(face = 'bold'),
