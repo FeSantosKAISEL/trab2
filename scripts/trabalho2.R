@@ -27,8 +27,15 @@ plota_hist<-function(base){
     facet_wrap(~variavel, scales = "free", ncol = 2) +
     geom_vline(aes(xintercept = media), color = "red", linetype = "dashed", size = 1) +
     geom_vline(aes(xintercept = mediana), color = "green", linetype = "dotted", size = 1) +
-    theme_minimal() +
-    labs(title = "Distribuições das Variáveis Numéricas", x = "Valores", y = "Densidade")
+    theme_bw() +
+    labs(title = "Distribuições das Variáveis Numéricas", x = "Valores", y = "Densidade") +
+    theme(axis.text.x = element_blank(),
+          axis.title = element_blank(),
+          panel.grid = element_blank(),
+          strip.text = element_text(face = 'bold'),
+          axis.ticks.y = element_line(),
+          strip.background = element_rect(fill = 'white')
+    )
   
   
 }
