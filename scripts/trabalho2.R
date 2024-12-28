@@ -17,25 +17,19 @@ plota_hist<-function(base){
   aux <- base |> select(where(is.numeric))|> drop_na()
   num_vars <- ncol(aux)
   
-  # Configuração da área de plotagem e margens
-  par(mfrow = c(ceiling(num_vars / 2), 2), mar = c(4, 4, 2, 1))
+  aux |> 
+    pivot_longer(everything(), names_to = "variavel", values_to = "valor")|>
+    group_by(variavel)|>
+    mutate(media = mean(valor), mediana = median(valor))|>
+    ggplot(aes(x = valor)) +
+    geom_histogram(aes(y = ..density..), fill = "skyblue", color = "white", bins = 30) +
+    geom_density(color = "blue", size = 1) +
+    facet_wrap(~variavel, scales = "free", ncol = 2) +
+    geom_vline(aes(xintercept = media), color = "red", linetype = "dashed", size = 1) +
+    geom_vline(aes(xintercept = mediana), color = "green", linetype = "dotted", size = 1) +
+    theme_minimal() +
+    labs(title = "Distribuições das Variáveis Numéricas", x = "Valores", y = "Densidade")
   
-  # Criação dos histogramas com linha da média
-  lapply(seq_along(aux), function(i) {
-    hist(
-      aux[[i]],
-      main = colnames(aux)[i],    # Nome da variável
-      xlab = "Valores",           # Rótulo do eixo x
-      ylab = "Densidade",         # Rótulo do eixo y
-      col = "skyblue",            # Cor do histograma
-      border = "white",           # Cor das bordas
-      freq = F
-    )
-    abline(v = mean(aux[[i]], na.rm = TRUE), col = "red", lwd = 2) # Linha da média
-    abline(v = median(aux[[i]], na.rm = TRUE),col = "#599861", lty = 2, lwd = 2) # Linha da mediana
-  })
-  # Reseta a área de plotagem ao padrão
-  par(mfrow = c(1, 1))
   
 }
 
