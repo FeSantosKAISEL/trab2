@@ -9,6 +9,36 @@ library(RColorBrewer)
 library(ggiraph)
 library(ggrepel)
 
+# Funções internas:
+
+plota_hist<-function(base){
+  
+  # Seleção de colunas numéricas e cálculo de dimensões
+  aux <- base |> select(where(is.numeric))|> drop_na()
+  num_vars <- ncol(aux)
+  
+  # Configuração da área de plotagem e margens
+  par(mfrow = c(ceiling(num_vars / 2), 2), mar = c(4, 4, 2, 1))
+  
+  # Criação dos histogramas com linha da média
+  lapply(seq_along(aux), function(i) {
+    hist(
+      aux[[i]],
+      main = colnames(aux)[i],    # Nome da variável
+      xlab = "Valores",           # Rótulo do eixo x
+      ylab = "Densidade",         # Rótulo do eixo y
+      col = "skyblue",            # Cor do histograma
+      border = "white",           # Cor das bordas
+      freq = F
+    )
+    abline(v = mean(aux[[i]], na.rm = TRUE), col = "red", lwd = 2) # Linha da média
+    abline(v = median(aux[[i]], na.rm = TRUE),col = "#599861", lty = 2, lwd = 2) # Linha da mediana
+  })
+  # Reseta a área de plotagem ao padrão
+  par(mfrow = c(1, 1))
+  
+}
+
 ## Carregar a base de dados:
 
 trabalho2_dados_7 <- read_csv("dados/trabalho2_dados_7.csv")
@@ -64,31 +94,7 @@ dados|>
 
 
 # Histogramas
-# Seleção de colunas numéricas e cálculo de dimensões
-aux <- dados |> select(where(is.numeric))|> drop_na()
-num_vars <- ncol(aux)
-
-# Configuração da área de plotagem e margens
-par(mfrow = c(ceiling(num_vars / 2), 2), mar = c(4, 4, 2, 1))
-
-# Criação dos histogramas com linha da média
-lapply(seq_along(aux), function(i) {
-  hist(
-    aux[[i]],
-    main = colnames(aux)[i],    # Nome da variável
-    xlab = "Valores",           # Rótulo do eixo x
-    ylab = "Densidade",         # Rótulo do eixo y
-    col = "skyblue",            # Cor do histograma
-    border = "white",           # Cor das bordas
-    freq = F
-  )
-  abline(v = mean(aux[[i]], na.rm = TRUE), col = "red", lwd = 2) # Linha da média
-  abline(v = median(aux[[i]], na.rm = TRUE),col = "#599861", lty = 2, lwd = 2) # Linha da mediana
-})
-
-# Reseta a área de plotagem ao padrão
-par(mfrow = c(1, 1))
-
+plota_hist(dados)
 
 # Idade: Por conta da assimetria normalizar (observações de 50 e 60 anos altera a média)
 # altura: Normalizar
@@ -98,8 +104,6 @@ par(mfrow = c(1, 1))
 # consumo_diario_agua: Nonrmalizar(?)
 # frequencia_atividade_fisica: Normalizar
 # tempo_usando_eletronico: Normalizar
-
-
 
 
 ## Fazer o boxplot (Discutir outliers)
@@ -376,30 +380,8 @@ dados_range<-numeric_range_rec|>
   bake(new_data=NULL)
 
 # Histogramas após transformações:
-# Seleção de colunas numéricas e cálculo de dimensões
-aux <- dados_range |> select(where(is.numeric))|> drop_na()
-num_vars <- ncol(aux)
 
-# Configuração da área de plotagem e margens
-par(mfrow = c(ceiling(num_vars / 2), 2), mar = c(4, 4, 2, 1))
-
-# Criação dos histogramas com linha da média
-lapply(seq_along(aux), function(i) {
-  hist(
-    aux[[i]],
-    main = colnames(aux)[i],    # Nome da variável
-    xlab = "Valores",           # Rótulo do eixo x
-    ylab = "Densidade",         # Rótulo do eixo y
-    col = "skyblue",            # Cor do histograma
-    border = "white",           # Cor das bordas
-    freq = F
-  )
-  abline(v = mean(aux[[i]], na.rm = TRUE), col = "red", lwd = 2) # Linha da média
-  abline(v = median(aux[[i]], na.rm = TRUE),col = "#599861", lty = 2, lwd = 2) # Linha da mediana
-})
-
-# Reseta a área de plotagem ao padrão
-par(mfrow = c(1, 1))
+plota_hist(dados_range)
 
 ## Percentil:
 
@@ -414,31 +396,8 @@ dados_percent<-numeric_percent_rec|>
   bake(new_data = NULL)
 
 # Histogramas após transformações:
-# Seleção de colunas numéricas e cálculo de dimensões
-aux <- dados_percent |> select(where(is.numeric))|> drop_na()
-num_vars <- ncol(aux)
 
-# Configuração da área de plotagem e margens
-par(mfrow = c(ceiling(num_vars / 2), 2), mar = c(4, 4, 2, 1))
-
-# Criação dos histogramas com linha da média
-lapply(seq_along(aux), function(i) {
-  hist(
-    aux[[i]],
-    main = colnames(aux)[i],    # Nome da variável
-    xlab = "Valores",           # Rótulo do eixo x
-    ylab = "Densidade",         # Rótulo do eixo y
-    col = "skyblue",            # Cor do histograma
-    border = "white",           # Cor das bordas
-    freq = F
-  )
-  abline(v = mean(aux[[i]], na.rm = TRUE), col = "red", lwd = 2) # Linha da média
-  abline(v = median(aux[[i]], na.rm = TRUE),col = "#599861", lty = 2, lwd = 2) # Linha da mediana
-})
-
-# Reseta a área de plotagem ao padrão
-par(mfrow = c(1, 1))
-
+plota_hist(dados_percent)
 
 ## Agrupar variáveis categóricas pouco frequentes (Lumping - numérico) 
 #Agrupou 'moto, bicicleta, andando' - meio_transporte
