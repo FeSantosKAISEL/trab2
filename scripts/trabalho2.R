@@ -7,17 +7,19 @@ library(tidymodels)
 library(ggplot2)
 library(RColorBrewer)
 library(ggiraph)
-library(ggtext)
+library(ggrepel)
 
 ## Carregar a base de dados:
 
 trabalho2_dados_7 <- read_csv("dados/trabalho2_dados_7.csv")
 
+dados<-trabalho2_dados_7
+
 ### Consistência dos dados e dados faltantes:
 
 ## Visualização de dados faltantes:
 
-visdat::vis_miss(trabalho2_dados_7)+
+visdat::vis_miss(dados)+
   labs(title = "Análise da consistência dos dados")+
   theme(plot.title = element_text(hjust = 0.5))
 
@@ -28,7 +30,7 @@ visdat::vis_miss(trabalho2_dados_7)+
 
 ## Determinar o número de observações concretas para escolher como tratar os NA's
 
-trabalho2_dados_7|>
+dados|>
   drop_na()|>
   count()
 
@@ -37,33 +39,33 @@ trabalho2_dados_7|>
 
 ## Encontrar quantidade de NA's em cada observação.
 
-trabalho2_dados_7|>
+dados|>
   rowwise()|>
   mutate(total_NA = rowSums(is.na(across(everything()))))|>
   select(total_NA)|>
-  filter(total_NA>0)|>
+  filter(total_NA>1)|>
   arrange(-total_NA)
 
-# Existem 432 observações com mais de uma com mais de um NA's registrado.
+# Existem 92 observações com mais de uma com mais de um NA's registrado.
 # Em 7 observações existem 3 valores faltantes.
 # Esse número, a princípio não sugere a remoção de nenhuma observação.
 
-
 # Uma vez conhecida integralidade dos dados, 
 # podemos prosseguir para conhecer as estruras e relações dos atributos.
+
 
 ### Visualizar as estrturas dos dados numéricos:
 
 ## Determinar distribuição dos dados (Histogramas, Densidade, Violin_plot)
 
-#trabalho2_dados_7 %>%
+#dados %>%
 #  select(where(is.numeric)) %>%
 #  purrr::imap(~ hist(.x, main = .y, xlab = .y, ylab = "Frequência", breaks = 30, freq = F))
 
 
 # Histogramas
 # Seleção de colunas numéricas e cálculo de dimensões
-aux <- trabalho2_dados_7 |> select(where(is.numeric))|> drop_na()
+aux <- dados |> select(where(is.numeric))|> drop_na()
 num_vars <- ncol(aux)
 
 # Configuração da área de plotagem e margens
@@ -106,7 +108,7 @@ par(mfrow = c(1, 1))
 
 ## Box plot
 
-trabalho2_dados_7|>
+dados|>
   select(where(is.numeric))|>
   reshape2::melt()|>
   ggplot(aes(x = variable,y = value, fill = variable))+
@@ -126,7 +128,7 @@ trabalho2_dados_7|>
 ## Fazer o violinplot (Discutir discretização)
 ## Violin plot
 
-trabalho2_dados_7|>
+dados|>
   select(where(is.numeric))|>
   reshape2::melt()|>
   ggplot(aes(x = variable,y = value, fill = variable))+
@@ -144,7 +146,7 @@ trabalho2_dados_7|>
 
 ## Ver Corrleações entre variáveis numéricas:
 
-correlacoes<-trabalho2_dados_7|>
+correlacoes<-dados|>
   drop_na()|>
   select(where(is.numeric))|>
   cor(method = 'spearman')
@@ -157,7 +159,7 @@ ggcorrplot::ggcorrplot(correlacoes,
 
 ## Mostrar o resumo de relações entre as variáveis numéricas:
 
-trabalho2_dados_7|>
+dados|>
   select(where(is.numeric))|>
   drop_na()|>
   GGally::ggpairs(title = 'Resumo das relações entre variáveis numéricas')+
@@ -177,9 +179,16 @@ trabalho2_dados_7|>
 
 ## Verficar relevância da estratificação
 
-trabalho2_dados_7|>
+# Contagem por variável categórica:
+
+dados|>
   select(!where(is.numeric))|>
   apply(MARGIN = 2, FUN = ftable)
+
+# Frequência por variável categórica:
+dados|>
+  select(!where(is.numeric))|>
+  apply(MARGIN = 2, FUN = function(x)  ftable(x) / sum(ftable(x)))
 
 ## Ver proporções (Fazer gráfico)
 
@@ -188,7 +197,7 @@ cores<- c("#89C5DA", "#DA5724", "#74D944", "#CE50CA", "#3F4921", "#C0717C", "#CB
           "#D14285", "#6DDE88", "#652926", "#7FDCC0", "#C84248", "#8569D5", "#5E738F", "#D1A33D", 
           "#8A7C64", "#599861")
 
-trabalho2_dados_7 |>
+dados |>
   select(!where(is.numeric)) |>
   drop_na() |>
   rownames_to_column() |>
@@ -215,7 +224,7 @@ trabalho2_dados_7 |>
 
 ## Gráfico interativo de proporções:
 
-p<-trabalho2_dados_7 |>
+p<-dados |>
   select(!where(is.numeric)) |>
   drop_na() |>
   rownames_to_column() |>
@@ -275,45 +284,190 @@ girafe(ggobj = p,
 
 ## Resumo numérico estratificado por sexo:
 
-trabalho2_dados_7|>
+dados|>
   select(where(is.numeric),sexo)|>
   drop_na()|>
   GGally::ggpairs(aes(colour = sexo),
                   title = 'Influência da variável sexo na distribuição dos dados')
 
-
-
 # Lumping se come entre as refeições (lumping lógico ou lumping numerico)
-# Verificar a relevância da variável 'fuma'
+# Remover variável 'fuma'
 # Lumping da variável meio de transporte (lumping lógico ou lumping numerico)
-
-
-### Seleção de variáveis:
-
-## Remover variáveis altamente correlacionadas
-## Remover dados inconsistentes
-## Remover variáveis de baixa variação
-## Remover estratificações desnecessárias
-
 
 ### Encontrar dados inconsistentes:
 
-### Transformação dos dados:
+##
 
-## Normalizar dados numéricos (?)
-## Escalonar dados numéricos (Centrar na média?, centrar na mediana?, normalizar antes de centralizar?)
-## Colocar valores em percentis? Re-escalar pelo máximo e mínimo.
-## Agrupar variáveis categóricas pouco frequentes (Lumping)
-## Numerizar variáveis categóricas (Binarizar - One-Hot - Dummy Encode)
+### Seleção de variáveis:
 
+## Remover variáveis altamente correlacionadas: (Nenhuma variável removida pela correlação.)
+
+## Remover variáveis numéricas de baixa variação: (# Nenhuma variável numérica foi removida.)
+
+## Remover estratificações desnecessárias:
+
+nzv_rec <- recipe(~., data = dados) |>
+  step_zv(all_predictors()) |>
+  step_nzv(all_predictors())|>
+  prep()
+
+# Mostra quais variáveis foram removidas por etapa do pré-process
+nzv_rec|>
+  tidy(2)
+
+# Variável 'fuma' é removida uma vez que carrega pouca informação.
+
+dados<-nzv_rec|>
+  bake(new_data = NULL)
+
+## Remover observações inconsistentes:
+
+##
 
 ### NA Imput
 
-## Imputar média
-## Imputar mediana
-## Imputar com knn
-## Imputar com bagging
+## Imputar média (Pouco interessante)
+## Imputar mediana (Pouco interessante)
+## Imputar com knn: (hyperparametro 'neighbors' no 'chute')
+
+knn_rec <- recipe(~., data = dados) |>
+  step_impute_knn(all_predictors(), neighbors = 5)|>
+  prep()
+
+dados<-knn_rec|>
+  bake(new_data = NULL)
+
+visdat::vis_miss(dados)+
+  labs(title = "Análise da consistência dos dados")+
+  theme(plot.title = element_text(hjust = 0.5))
+
+## Imputar com bagging (Testar no próximo trabalho)
 
 
-### Redução de dimensionalidade com PCA
+### Transformação dos dados:
 
+## Discretizar dados numericos:
+
+dados<-dados|>
+  mutate(n_refeicoes = case_when(n_refeicoes < 3 ~ 'Menos_3',
+                                 n_refeicoes > 3 ~ 'Mais_3',
+                                 n_refeicoes == 3 ~ '3_ref',
+                                 n_refeicoes == NA ~ NA))
+
+# 608 3 ref (57%)
+# 107 Mais_3 (10%)
+# 354 Menos_3 (33%)
+
+## Normalizar dados numéricos (step_YeoJohnson)
+## Escalonar dados numéricos (step_center + step_scale)
+
+## Reescalar dados numericos:
+
+## range -1, 1
+numeric_range_rec<-recipe(~., data = dados) |>
+  step_YeoJohnson(all_numeric_predictors()) |>
+  step_center(all_numeric_predictors())|>
+  step_scale(all_numeric_predictors())|>
+  step_range(all_numeric_predictors(), min = -1, max = 1)|>
+  prep()
+
+
+dados_range<-numeric_range_rec|>
+  bake(new_data=NULL)
+
+# Histogramas após transformações:
+# Seleção de colunas numéricas e cálculo de dimensões
+aux <- dados_range |> select(where(is.numeric))|> drop_na()
+num_vars <- ncol(aux)
+
+# Configuração da área de plotagem e margens
+par(mfrow = c(ceiling(num_vars / 2), 2), mar = c(4, 4, 2, 1))
+
+# Criação dos histogramas com linha da média
+lapply(seq_along(aux), function(i) {
+  hist(
+    aux[[i]],
+    main = colnames(aux)[i],    # Nome da variável
+    xlab = "Valores",           # Rótulo do eixo x
+    ylab = "Densidade",         # Rótulo do eixo y
+    col = "skyblue",            # Cor do histograma
+    border = "white",           # Cor das bordas
+    freq = F
+  )
+  abline(v = mean(aux[[i]], na.rm = TRUE), col = "red", lwd = 2) # Linha da média
+  abline(v = median(aux[[i]], na.rm = TRUE),col = "#599861", lty = 2, lwd = 2) # Linha da mediana
+})
+
+# Reseta a área de plotagem ao padrão
+par(mfrow = c(1, 1))
+
+## Percentil:
+
+numeric_percent_rec<-recipe(~., data = dados) |>
+  step_YeoJohnson(all_numeric_predictors()) |>
+  step_center(all_numeric_predictors())|>
+  step_scale(all_numeric_predictors())|>
+  step_percentile(all_numeric_predictors())|>
+  prep()
+
+dados_percent<-numeric_percent_rec|>
+  bake(new_data = NULL)
+
+# Histogramas após transformações:
+# Seleção de colunas numéricas e cálculo de dimensões
+aux <- dados_percent |> select(where(is.numeric))|> drop_na()
+num_vars <- ncol(aux)
+
+# Configuração da área de plotagem e margens
+par(mfrow = c(ceiling(num_vars / 2), 2), mar = c(4, 4, 2, 1))
+
+# Criação dos histogramas com linha da média
+lapply(seq_along(aux), function(i) {
+  hist(
+    aux[[i]],
+    main = colnames(aux)[i],    # Nome da variável
+    xlab = "Valores",           # Rótulo do eixo x
+    ylab = "Densidade",         # Rótulo do eixo y
+    col = "skyblue",            # Cor do histograma
+    border = "white",           # Cor das bordas
+    freq = F
+  )
+  abline(v = mean(aux[[i]], na.rm = TRUE), col = "red", lwd = 2) # Linha da média
+  abline(v = median(aux[[i]], na.rm = TRUE),col = "#599861", lty = 2, lwd = 2) # Linha da mediana
+})
+
+# Reseta a área de plotagem ao padrão
+par(mfrow = c(1, 1))
+
+
+## Agrupar variáveis categóricas pouco frequentes (Lumping - numérico) 
+#Agrupou 'moto, bicicleta, andando' - meio_transporte
+#Agrupou 'não e sempre' - come_entre_refeições
+## Numerizar variáveis categóricas (Binarizar - One-Hot - Dummy Encode)
+
+# One hot 25 variáveis + colinearidade
+# Dummy 18 variaveis
+# binarizar 14 variáveis
+
+cat_rec<-recipe(~. , data = dados_range)|>
+  step_other(all_nominal_predictors())|>
+  step_dummy(all_nominal_predictors())|>
+  prep()
+
+dados_dummy<-cat_rec|>
+  bake(new_data = NULL)
+
+
+### Redução de dimensionalidade com PCA (Ordem de fazer a redução)
+
+pca_rec<-recipe(~. , data = dados_range)|>
+  step_pca(all_numeric_predictors(), threshold = 0.9)|>
+  step_other(all_nominal_predictors())|>
+  step_dummy(all_nominal_predictors())|>
+  prep()
+
+dados_pca<-pca_rec|>
+  bake(new_data = NULL)
+
+
+# Reduz de 18 para 16 variáveis (Poucas variáveis numéricas deixam PCA pouco util nesse caso)
