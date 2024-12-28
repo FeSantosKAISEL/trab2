@@ -197,12 +197,17 @@ dados|>
 
 ## Ver proporções (Fazer gráfico)
 
-cores<- c("#89C5DA", "#DA5724", "#74D944", "#CE50CA", "#3F4921", "#C0717C", "#CBD588", "#5F7FC7", 
-          "#673770", "#D3D93E", "#38333E", "#508578", "#D7C1B1", "#689030", "#AD6F3B", "#CD9BCD", 
-          "#D14285", "#6DDE88", "#652926", "#7FDCC0", "#C84248", "#8569D5", "#5E738F", "#D1A33D", 
-          "#8A7C64", "#599861")
+cores<- c("#1f77b4", "#08306b", "#ff7f0e", "#7f3f00", "#2ca02c", "#0f4000", 
+          "#d62728", "#800000", "#9467bd", "#472d6b", "#8c564b", "#4d2c20", 
+          "#e377c2", "#7f0044", "#7f7f7f", "#4c4c4c", "#bcbd22", "#6b6b00", 
+          "#17becf", "#005f6b")
 
-dados |>
+
+
+
+# Armazena as proporções para serem usadas no gráfico
+
+proporcoes<-dados |>
   select(!where(is.numeric)) |>
   drop_na() |>
   rownames_to_column() |>
@@ -210,78 +215,57 @@ dados |>
   group_by(variable, value) |>
   summarise(n = n(), .groups = "drop") |>
   group_by(variable) |>
-  mutate(prop = n / sum(n)) |>
-  ggplot(aes(x = variable, y = prop, fill = interaction(variable, value))) +
+  mutate(prop = round(n / sum(n),2))
+
+
+# Ordem das cores nas barras:
+
+ordem<-with(proporcoes,fct_reorder(interaction(variable, value),
+                            prop))
+
+proporcoes|>
+  ggplot(aes(x = variable, y = prop, fill = fct_reorder(interaction(variable, value),
+                                                        prop))) +
   geom_bar(stat = "identity", position = "fill") +
-  geom_text_repel(aes(label = paste(scales::percent(prop, accuracy = 1),"\n",value)),
-                  position = position_fill(vjust = 0.5),
+  geom_text(data = subset(proporcoes, prop > 0.09 ),aes(label = paste(scales::percent(prop, accuracy = 1),"\n",value)),
+                  position = position_fill(vjust = 0.3),
                   size = 3,
-                  col = "black",
-                  direction = "y",fontface = 'bold') +
-  scale_fill_manual(values = cores) +
+                  col = "white",
+                  fontface = 'bold') +
+  scale_fill_manual(values = cores,
+                    breaks = ordem) +
   theme_minimal() +
   theme(
-    axis.text.x = element_text(angle = 35, vjust = 1, hjust = 1, size = 14),
+    axis.text.y = element_text(angle = 35, vjust = 1, hjust = 1, size = 10),
     axis.title = element_blank()
   ) +
   guides(
-    fill = "none")
+    fill = "none")+
+  coord_flip()
 
 ## Gráfico interativo de proporções:
 
-p<-dados |>
-  select(!where(is.numeric)) |>
-  drop_na() |>
-  rownames_to_column() |>
-  reshape2::melt(id = 'rowname', value.name = 'value') |>
-  group_by(variable, value) |>
-  summarise(n = n(), .groups = "drop") |>
-  group_by(variable) |>
-  mutate(prop = n / sum(n)) |>
-  ggplot(aes(x = variable,
-             y = prop,
-             fill = interaction(variable, value)))+ 
-  geom_bar_interactive(aes(data_id = value,
-                           tooltip = value),
-                       stat = "identity",
-                       position = "fill"
-  ) +
-  geom_text_repel(aes(label = scales::percent(prop, accuracy = 1)),
-                  position = position_fill(vjust = 0.5),
-                  size = 8,
-                  col = "black",
-                  direction = "y",
-                  fontface = 'bold') +
-  scale_fill_manual(values = cores) +
+p<-proporcoes|>
+  ggplot(aes(x = variable, y = prop, fill = fct_reorder(interaction(variable, value),
+                                                        prop))) +
+  geom_bar(stat = "identity", position = "fill") +
+  geom_text(data = subset(proporcoes, prop > 0.09 ),
+            aes(label = scales::percent(prop, accuracy = 1)),
+            position = position_fill(vjust = 0.2),
+            size = 3,
+            col = "white",
+            fontface = 'bold') +
+  scale_fill_manual(values = cores,
+                    breaks = ordem) +
   theme_minimal() +
   theme(
-    axis.text.x = element_text(angle = 35, vjust = 1, hjust = 1, size = 14),
+    axis.text.x = element_text(angle = 35, vjust = 1, hjust = 1, size = 10),
     axis.title = element_blank()
   ) +
   guides(
     fill = "none")
 
-
-girafe(ggobj = p,
-       width_svg = 22,
-       height_svg = 10,
-       options = list(
-         opts_hover(css = 'stroke'),
-         opts_hover_key(css = 'stroke;r:8pt;cursor:pointer;'),
-         opts_selection(css = 'fill;opacity:1',type = 'single', only_shiny = F),
-         opts_selection_key(css = 'r:5pt;opacity:1',type = 'single', only_shiny = F),
-         opts_selection_inv(css = 'opacity:0.1'),
-         opts_hover_theme(),
-         opts_tooltip(
-           offx = 0,
-           offy = 10,
-           css = "background-color:#555555;color:white;padding:10px;
-                  border-radius:10px;box-shadow:1px 1px 1px rgba(0.5,0.5,0.5,0.3);
-                  font-family:roboto;font-size:15px;", # características da caixa de texto
-           opacity = 0.7, # transparência da caixa
-           use_fill = F,use_cursor_pos = T)
-       )
-)
+plotly::ggplotly(p)
 
 ## Decisão variáveis categóricas:
 
