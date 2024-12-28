@@ -56,9 +56,9 @@ trabalho2_dados_7|>
 
 ## Determinar distribuição dos dados (Histogramas, Densidade, Violin_plot)
 
-trabalho2_dados_7 %>%
-  select(where(is.numeric)) %>%
-  purrr::imap(~ hist(.x, main = .y, xlab = .y, ylab = "Frequência", breaks = 30, freq = F))
+#trabalho2_dados_7 %>%
+#  select(where(is.numeric)) %>%
+#  purrr::imap(~ hist(.x, main = .y, xlab = .y, ylab = "Frequência", breaks = 30, freq = F))
 
 
 # Histogramas
@@ -89,8 +89,8 @@ par(mfrow = c(1, 1))
 
 
 # Idade: Por conta da assimetria normalizar (observações de 50 e 60 anos altera a média)
-# altura: Nada a fazer
-# peso : Nada a fazer
+# altura: Normalizar
+# peso : Normalizar
 # consome_vegetais: Normalizar
 # n_refeicoes: Discretizar (menos de 3, 3, mais de 3)
 # consumo_diario_agua: Nonrmalizar(?)
@@ -99,7 +99,7 @@ par(mfrow = c(1, 1))
 
 
 
-## Fazer o violinplot (Discutir discretização)
+
 ## Fazer o boxplot (Discutir outliers)
 
 ## Fazer gráfico de paineis para os histogramas (Linha para média) (Descutir distribuição)
@@ -123,6 +123,7 @@ trabalho2_dados_7|>
   )
 
 
+## Fazer o violinplot (Discutir discretização)
 ## Violin plot
 
 trabalho2_dados_7|>
@@ -146,7 +147,7 @@ trabalho2_dados_7|>
 correlacoes<-trabalho2_dados_7|>
   drop_na()|>
   select(where(is.numeric))|>
-  cor(method = 'kendall')
+  cor(method = 'spearman')
 
 ggcorrplot::ggcorrplot(correlacoes,
                        type = 'lower',
@@ -159,7 +160,15 @@ ggcorrplot::ggcorrplot(correlacoes,
 trabalho2_dados_7|>
   select(where(is.numeric))|>
   drop_na()|>
-  GGally::ggpairs(title = 'Resumo das relações entre variáveis numéricas')
+  GGally::ggpairs(title = 'Resumo das relações entre variáveis numéricas')+
+  theme_bw()+
+  theme(axis.text.x = element_blank(),
+        axis.title = element_blank(),
+        panel.grid = element_blank(),
+        strip.text = element_text(face = 'bold'),
+        axis.ticks.y = element_line(),
+        strip.background = element_rect(fill = 'white')
+  )
 
 
 
@@ -259,6 +268,25 @@ girafe(ggobj = p,
            use_fill = F,use_cursor_pos = T)
        )
 )
+
+## Decisão variáveis categóricas:
+
+# Estratificação por sexo
+
+## Resumo numérico estratificado por sexo:
+
+trabalho2_dados_7|>
+  select(where(is.numeric),sexo)|>
+  drop_na()|>
+  GGally::ggpairs(aes(colour = sexo),
+                  title = 'Influência da variável sexo na distribuição dos dados')
+
+
+
+# Lumping se come entre as refeições (lumping lógico ou lumping numerico)
+# Verificar a relevância da variável 'fuma'
+# Lumping da variável meio de transporte (lumping lógico ou lumping numerico)
+
 
 ### Seleção de variáveis:
 
