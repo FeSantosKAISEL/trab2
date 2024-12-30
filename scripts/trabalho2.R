@@ -87,6 +87,25 @@ dados|>
 # Uma vez conhecida integralidade dos dados, 
 # podemos prosseguir para conhecer as estruras e relações dos atributos.
 
+### NA Imput
+
+## Imputar média (Pouco interessante)
+## Imputar mediana (Pouco interessante)
+## Imputar com knn: (hyperparametro 'neighbors' no 'chute')
+
+knn_rec <- recipe(~., data = dados) |>
+  step_impute_knn(all_predictors(), neighbors = 5)|>
+  prep()
+
+dados<-knn_rec|>
+  bake(new_data = NULL)
+
+visdat::vis_miss(dados)+
+  labs(title = "Análise da consistência dos dados")+
+  theme(plot.title = element_text(hjust = 0.5))
+
+## Imputar com bagging (Testar no próximo trabalho)
+
 
 ### Visualizar as estrturas dos dados numéricos:
 
@@ -228,13 +247,16 @@ ordem<-with(proporcoes,forcats::fct_reorder(interaction(variable, value),
 
 proporcoes|>
   ggplot(aes(x = variable, y = prop, fill = forcats::fct_reorder(interaction(variable, value),
-                                                        prop))) +
+                                                                 prop))) +
   geom_bar(stat = "identity", position = "fill") +
-  geom_text(data = subset(proporcoes, prop > 0.09 ),aes(label = paste(scales::percent(prop, accuracy = 1),"\n",value)),
-                  position = position_fill(vjust = 0.3),
-                  size = 3,
-                  col = "white",
-                  fontface = 'bold') +
+  geom_text(data = subset(proporcoes, prop > 0.09 & value != 'frequentemente' ),aes(label = paste(scales::percent(prop, accuracy = 1),"\n",value)),
+            position = position_fill(vjust = 0.5),
+            size = 3,
+            col = "white",
+            fontface = 'bold') +
+  annotate(geom = 'text', label = paste("10% \n frequentemente"),
+           col = "white", size = 3, fontface = 'bold',
+           x = 4, y = 0.89)+
   scale_fill_manual(values = cores,
                     breaks = ordem) +
   theme_minimal() +
@@ -246,18 +268,21 @@ proporcoes|>
     fill = "none")+
   coord_flip()
 
+
 ## Gráfico interativo de proporções:
 
 p<-proporcoes|>
   ggplot(aes(x = variable, y = prop, fill = forcats::fct_reorder(interaction(variable, value),
-                                                        prop))) +
+                                                                 prop))) +
   geom_bar(stat = "identity", position = "fill") +
-  geom_text(data = subset(proporcoes, prop > 0.09 ),
-            aes(label = scales::percent(prop, accuracy = 1)),
-            position = position_fill(vjust = 0.2),
+  geom_text(data = subset(proporcoes, prop > 0.09 & value != 'frequentemente' ),aes(label = paste(scales::percent(prop, accuracy = 1),"\n",value)),
+            position = position_fill(vjust = 0.5),
             size = 3,
             col = "white",
             fontface = 'bold') +
+  annotate(geom = 'text', label = paste("10% \n frequentemente"),
+           col = "white", size = 3, fontface = 'bold',
+           x = 4, y = 0.89)+
   scale_fill_manual(values = cores,
                     breaks = ordem) +
   theme_minimal() +
@@ -315,26 +340,6 @@ dados<-nzv_rec|>
 ## Remover observações inconsistentes:
 
 ##
-
-### NA Imput
-
-## Imputar média (Pouco interessante)
-## Imputar mediana (Pouco interessante)
-## Imputar com knn: (hyperparametro 'neighbors' no 'chute')
-
-knn_rec <- recipe(~., data = dados) |>
-  step_impute_knn(all_predictors(), neighbors = 5)|>
-  prep()
-
-dados<-knn_rec|>
-  bake(new_data = NULL)
-
-visdat::vis_miss(dados)+
-  labs(title = "Análise da consistência dos dados")+
-  theme(plot.title = element_text(hjust = 0.5))
-
-## Imputar com bagging (Testar no próximo trabalho)
-
 
 ### Transformação dos dados:
 
