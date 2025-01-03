@@ -1,0 +1,1243 @@
+---
+title: "Pré-Processamento de dados"
+author: "Luiz Henrique e Luís Felipe"
+format:
+   revealjs:
+     theme: serif
+     center-title-slide: true
+     center: false
+     transition: none
+     auto-animate: true
+editor: visual
+---
+
+## Objetivos: {.smaller}
+
+-   Entender.....
+
+-   ......
+
+-   
+
+-   
+
+-   
+
+## Procedimentos: {.smaller auto-animate="true"}
+
+-   Limpeza e estruturação dos dados.
+-   Integralidade dos dados - Dados faltantes
+-   Imputação de dados faltantes
+-   Busca por observações discrepantes
+-   Tratamento de observações discrepantes
+-   Distribuição de variáveis numéricas
+-   Relações entre variáveis numéricas
+-   Distribuição de variáveis categóricas
+-   Associações entre variáveis categóricas
+-   Filtragem de dados
+-   Transformação de dados
+
+## Dados Faltantes 1 {.smaller auto-animate="true" style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+::: {.fragment .strike}
+::: {.fragment .fade-out}
+Limpeza e estruturação dos dados.
+:::
+:::
+
+::: {.fragment .highlight-red}
+Integralidade dos dados - Dados faltantes
+:::
+
+Imputação de dados faltantes
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+Transformação de dados
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+-   AAAA
+-   BBBB
+-   CCCC
+-   DDDD
+:::
+:::
+
+## Dados Faltantes 2 {.smaller auto-animate="true" style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+::: {style="color:red"}
+Integralidade dos dados - Dados faltantes
+:::
+
+Imputação de dados faltantes
+
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+Transformação de dados
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+```{r}
+# Carregando os pacotes utilizados
+
+library(dplyr)
+library(tidyr)
+library(readr)
+library(tidymodels)
+library(ggplot2)
+library(RColorBrewer)
+library(ggiraph)
+library(ggrepel)
+library(treemap)
+library(forcats)
+library(pheatmap)
+library(reactable)
+library(reactablefmtr)
+
+# Funções internas:
+
+plota_hist<-function(base){
+  
+  # Seleção de colunas numéricas e cálculo de dimensões
+  aux <- base |> select(where(is.numeric))|> drop_na()
+  num_vars <- ncol(aux)
+  
+  aux |> 
+    pivot_longer(everything(), names_to = "variavel", values_to = "valor")|>
+    group_by(variavel)|>
+    mutate(media = mean(valor), mediana = median(valor))|>
+    ggplot(aes(x = valor)) +
+    geom_histogram(aes(y = ..density..), fill = "skyblue", color = "white", bins = 30) +
+    geom_density(color = "blue", size = 1) +
+    facet_wrap(~variavel, scales = "free", ncol = 2) +
+    geom_vline(aes(xintercept = media), color = "red", linetype = "dashed", size = 1) +
+    geom_vline(aes(xintercept = mediana), color = "green", linetype = "dotted", size = 1) +
+    theme_bw() +
+    labs(title = "Distribuições das Variáveis Numéricas", x = "Valores", y = "Densidade") +
+    theme(
+          axis.title = element_blank(),
+          panel.grid = element_blank(),
+          strip.text = element_text(face = 'bold'),
+          axis.ticks.y = element_line(),
+          strip.background = element_rect(fill = 'white')
+    )
+  
+  
+}
+
+## Carregar a base de dados:
+
+trabalho2_dados_7 <- read_csv("dados/trabalho2_dados_7.csv")
+
+dados<-trabalho2_dados_7
+
+### Consistência dos dados e dados faltantes:
+
+## Visualização de dados faltantes:
+
+visdat::vis_miss(dados)+
+  labs(title = "Análise da consistência dos dados")+
+  theme(plot.title = element_text(hjust = 0.5))
+
+
+```
+:::
+:::
+
+## Dados Faltantes 3 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+:::{style="color:red"}
+Imputação de dados faltantes
+:::
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+Transformação de dados
+:::
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+Colocar a imagem sobre imputação
+
+:::
+:::
+
+## Dados Faltantes 4 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+::: {style="color:red"}
+Imputação de dados faltantes
+:::
+
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+Transformação de dados
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+```{r}
+knn_rec <- recipe(~., data = dados) |>
+  step_impute_knn(all_predictors(), neighbors = 5)|>
+  prep()
+
+dados<-knn_rec|>
+  bake(new_data = NULL)
+
+visdat::vis_miss(dados)+
+  labs(title = "Análise da consistência dos dados")+
+  theme(plot.title = element_text(hjust = 0.5))
+```
+:::
+:::
+
+## Valores Discrepantes 1 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+Imputação de dados faltantes
+
+::: {style="color:red"}
+Busca por valores discrepantes
+:::
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+Transformação de dados
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+O que tiver sobre outliers
+:::
+:::
+
+## Valores Discrepantes 2 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+Imputação de dados faltantes
+
+Busca por valores discrepantes
+
+::: {style="color:red"}
+Tratamento de valores discrepantes
+:::
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+Transformação de dados
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+O que tiver sobre tratamento de outliers
+:::
+:::
+
+## Variáveis numéricas 1 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+Imputação de dados faltantes
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+::: {style="color:red"}
+Distribuição de variáveis numéricas
+:::
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+Transformação de dados
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+::: {.panel-tabset}
+
+### Histogramas
+
+```{r}
+plota_hist(dados)
+```
+
+
+### Box-plots
+
+```{r}
+dados|>
+  select(where(is.numeric))|>
+  reshape2::melt()|>
+  ggplot(aes(x = variable,y = value, fill = variable))+
+  geom_boxplot(width = 0.3)+
+  facet_wrap(~variable, scales = 'free', ncol = 2)+
+  theme_bw()+
+  guides(fill = 'none')+
+  theme(axis.text.x = element_blank(),
+        axis.title = element_blank(),
+        panel.grid = element_blank(),
+        strip.text = element_text(face = 'bold'),
+        axis.ticks.y = element_line(),
+        strip.background = element_rect(fill = 'white')
+  )
+```
+
+
+### Violin plot
+
+```{r}
+dados|>
+  select(where(is.numeric))|>
+  reshape2::melt()|>
+  ggplot(aes(x = variable,y = value, fill = variable))+
+  geom_violin(width = 0.3)+
+  guides(fill = 'none')+
+  facet_wrap(~variable, scales = 'free', ncol = 2)+
+  theme_bw()+
+  theme(axis.text.x = element_blank(),
+        axis.title = element_blank(),
+        panel.grid = element_blank(),
+        strip.text = element_text(face = 'bold'),
+        axis.ticks.y = element_line(),
+        strip.background = element_rect(fill = 'white')
+  )
+```
+:::
+:::
+:::
+
+## Variáveis numéricas 2 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+Imputação de dados faltantes
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+::: {style="color:red"}
+Relações entre variáveis numéricas
+:::
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+Transformação de dados
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+::: {.panel-tabset}
+
+### Correlações
+
+```{r}
+correlacoes<-dados|>
+  drop_na()|>
+  select(where(is.numeric))|>
+  cor(method = 'spearman')
+
+ggcorrplot::ggcorrplot(correlacoes,
+                       type = 'lower',
+                       hc.order = T,colors = c('red','white','blue'),
+                       lab = T,
+                       title = 'Matriz de correlação para variáveis numéricas')
+
+```
+
+
+### Resumos numéricos
+
+```{r}
+
+## Mostrar o resumo de relações entre as variáveis numéricas:
+
+dados|>
+  select(where(is.numeric))|>
+  drop_na()|>
+  GGally::ggpairs(title = 'Resumo das relações entre variáveis numéricas')+
+  theme_bw()+
+  theme(axis.text.x = element_blank(),
+        axis.title = element_blank(),
+        panel.grid = element_blank(),
+        strip.text = element_text(face = 'bold'),
+        axis.ticks.y = element_line(),
+        strip.background = element_rect(fill = 'white')
+  )
+
+```
+:::
+:::
+:::
+
+## Variáveis Categoricas 1 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+Imputação de dados faltantes
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+::: {style="color:red"}
+Distribuição de variáveis categóricas
+:::
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+Transformação de dados
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+::: {.panel-tabset}
+
+### Proporções
+
+
+```{r}
+## Ver proporções (Fazer gráfico)
+
+cores<- c("#1f77b4", "#08306b", "#ff7f0e", "#7f3f00", "#2ca02c", "#0f4000", 
+          "#d62728", "#800000", "#9467bd", "#472d6b", "#8c564b", "#4d2c20", 
+          "#e377c2", "#7f0044", "#7f7f7f", "#4c4c4c", "#bcbd22", "#6b6b00", 
+          "#17becf", "#005f6b")
+
+
+
+
+# Armazena as proporções para serem usadas no gráfico
+
+proporcoes<-dados |>
+  select(!where(is.numeric)) |>
+  drop_na() |>
+  rownames_to_column() |>
+  reshape2::melt(id = 'rowname', value.name = 'value') |>
+  group_by(variable, value) |>
+  summarise(n = n(), .groups = "drop") |>
+  group_by(variable) |>
+  mutate(prop = round(n / sum(n),2))
+
+
+# Ordem das cores nas barras:
+
+ordem<-with(proporcoes,forcats::fct_reorder(interaction(variable, value),
+                            prop))
+
+proporcoes|>
+  ggplot(aes(x = variable, y = prop, fill = forcats::fct_reorder(interaction(variable, value),
+                                                                 prop))) +
+  geom_bar(stat = "identity", position = "fill") +
+  geom_text(data = subset(proporcoes, prop > 0.09 & value != 'frequentemente' ),aes(label = paste(scales::percent(prop, accuracy = 1),"\n",value)),
+            position = position_fill(vjust = 0.5),
+            size = 3,
+            col = "white",
+            fontface = 'bold') +
+  annotate(geom = 'text', label = paste("10% \n frequentemente"),
+           col = "white", size = 3, fontface = 'bold',
+           x = 4, y = 0.89)+
+  scale_fill_manual(values = cores,
+                    breaks = ordem) +
+  theme_minimal() +
+  theme(
+    axis.text.y = element_text(angle = 35, vjust = 1, hjust = 1, size = 10),
+    axis.title = element_blank()
+  ) +
+  guides(
+    fill = "none")+
+  coord_flip()
+
+```
+
+### Proporções (Interativo)
+
+```{r}
+## Gráfico interativo de proporções:
+
+p<-proporcoes|>
+  ggplot(aes(x = variable, y = prop, fill = forcats::fct_reorder(interaction(variable, value),
+                                                                 prop))) +
+  geom_bar(stat = "identity", position = "fill") +
+  geom_text(data = subset(proporcoes, prop > 0.09 & value != 'frequentemente' ),aes(label = paste(scales::percent(prop, accuracy = 1),"\n",value)),
+            position = position_fill(vjust = 0.5),
+            size = 3,
+            col = "white",
+            fontface = 'bold') +
+  annotate(geom = 'text', label = paste("10% \n frequentemente"),
+           col = "white", size = 3, fontface = 'bold',
+           x = 4, y = 0.89)+
+  scale_fill_manual(values = cores,
+                    breaks = ordem) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 35, vjust = 1, hjust = 1, size = 10),
+    axis.title = element_blank()
+  ) +
+  guides(
+    fill = "none")
+
+plotly::ggplotly(p)
+```
+
+
+### Estratificação
+
+```{r}
+dados|>
+  select(where(is.numeric),sexo)|>
+  drop_na()|>
+  GGally::ggpairs(aes(colour = sexo),
+                  title = 'Influência da variável sexo na distribuição dos dados')
+```
+:::
+:::
+:::
+
+## Variáveis categóricas 2 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+Imputação de dados faltantes
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+::: {style="color:red"}
+Associações entre variáveis categóricas
+:::
+
+Filtragem de dados
+
+Transformação de dados
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+::: {.panel-tabset}
+
+### Relação 1
+
+```{r}
+# come_entre_refeicoes X sexo
+
+test1 <- dados |> select(sexo, come_entre_refeicoes) |> table() |> chisq.test()
+
+pheatmap(test1$residuals,
+               display_numbers = TRUE,
+               cluster_rows = FALSE,
+               cluster_cols = FALSE,
+               main = "come_entre_refeicoes X sexo"
+)
+```
+
+
+### Relação 2
+
+
+```{r}
+# sexo X tipo_transporte
+test2 <- dados |> select(sexo, tipo_transporte) |> table() |> chisq.test()
+
+pheatmap(test2$residuals,
+               display_numbers = TRUE,
+               cluster_rows = FALSE,
+               cluster_cols = FALSE,
+               main = "sexo X tipo_transporte")
+```
+
+### Relação 3
+
+```{r}
+# consome_comida_calorica X come_entre_refeicoes
+
+test3 <- dados |> select(consome_comida_calorica, come_entre_refeicoes) |> table() |> chisq.test()
+
+pheatmap(test3$residuals,
+               display_numbers = TRUE,
+               cluster_rows = FALSE,
+               cluster_cols = FALSE,
+               main = "come_entre_refeicoes X consome_comida_calorica"
+)
+```
+
+### Relação 4
+
+```{r}
+#tipo_transporte X come_entre_refeicoes
+test4 <- dados |> select(come_entre_refeicoes, tipo_transporte) |> table() |> chisq.test()
+
+pheatmap(test4$residuals,
+               display_numbers = TRUE,
+               cluster_rows = FALSE,
+               cluster_cols = FALSE,
+               main = "tipo_transporte X come_entre_refeicoes"
+)
+```
+
+:::
+:::
+:::
+
+## Seleção de variáveis {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+Imputação de dados faltantes
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+::: {style="color:red"}
+Filtragem de dados
+:::
+
+Transformação de dados
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+ - Nenhuma variável numérica removida devido a **correlação** ou **multicolinearidade**
+ - Nenhuma variável numérica removida devido a **baixa variância** ou **variância zero**
+ - Uma variável categórica removida devido à **baixa variação** (*fuma*)
+ - Nenhum algorítmo de **seleção de variáveis** utilizado
+ 
+ 
+::: {.fragment .fade-in}
+```{r}
+#| output: true
+
+## Remover estratificações desnecessárias:
+
+nzv_rec <- recipe(~., data = dados) |>
+  step_zv(all_predictors()) |>
+  step_nzv(all_predictors())|>
+  prep()
+
+# Mostra quais variáveis foram removidas por etapa do pré-process
+#nzv_rec|>
+#  tidy(2)
+
+# Variável 'fuma' é removida uma vez que carrega pouca informação.
+
+dados<-nzv_rec|>
+  bake(new_data = NULL)
+
+reactable(dados,
+          defaultColDef = colDef(minWidth = 210,align = "center"),
+          columns = list(sexo = colDef(minWidth = 50),
+                         idade = colDef(minWidth = 100),
+                         altura = colDef(minWidth = 100),
+                         peso = colDef(minWidth = 50)
+                         ),
+          
+          defaultPageSize = 4,
+          sortable = T,
+          resizable = T,
+          highlight = T,
+          fullWidth = T,
+          compact = T,
+          striped = T,
+          theme = reactableTheme(style = list(fontSize=15),headerStyle = list(fontSize=15) 
+          )
+)
+
+```
+
+:::
+:::
+:::
+
+## Engenharia de variáveis {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+Imputação de dados faltantes
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+::: {style="color:red"}
+Transformação de dados
+:::
+
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+ - Discretização da variável *n_refeicoes*
+ - Normalização das variáveis numéricas (Yeo-Johnson)
+ - Normatização das variáveis numéricas (centrar na média e escalonar)
+ - Mudança de escala das variáveis numericas (Máximo-Mínimo, Percentil)
+ - Agrupamento em variáveis categóricas *tipo_de_transporte* ("moto", "bicicleta"), *come_entre_refeições* ("não", "sempre")
+ - Numerizar as variáveis categóricas (One-Hot Enconde, Dummy Encode, Binarizar)
+ - Redução de dimensões (PCA)
+ 
+:::
+:::
+
+## Discretização {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+Imputação de dados faltantes
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+::: {style="color:red"}
+Transformação de dados
+:::
+
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+::: {.panel-tabset}
+
+### Discretização
+
+```{r}
+dados<-dados|>
+  mutate(n_refeicoes = case_when(n_refeicoes < 3 ~ 'Menos_3',
+                                 n_refeicoes > 3 ~ 'Mais_3',
+                                 n_refeicoes == 3 ~ '3_ref',
+                                 n_refeicoes == NA ~ NA))
+
+reactable(dados,
+          defaultColDef = colDef(minWidth = 210,align = "center"),
+          columns = list(sexo = colDef(minWidth = 50),
+                         idade = colDef(minWidth = 100),
+                         altura = colDef(minWidth = 100),
+                         peso = colDef(minWidth = 50),
+                         n_refeicoes = colDef(style = list(backgroundColor = "#55dde0"))
+                         ),
+          
+          defaultPageSize = 4,
+          sortable = T,
+          resizable = T,
+          highlight = T,
+          fullWidth = T,
+          compact = T,
+          striped = T,
+          theme = reactableTheme(style = list(fontSize=15),headerStyle = list(fontSize=15) 
+          )
+)
+
+
+
+```
+
+
+### Resultado
+
+```{r}
+# come_entre_refeicoes X n_refeicoes
+test2 <- dados |> select(n_refeicoes, come_entre_refeicoes) |> table() |> chisq.test()
+
+pheatmap(test2$residuals,
+         display_numbers = TRUE,
+         cluster_rows = FALSE,
+         cluster_cols = FALSE,
+         main = "come_entre_refeicoes X n_refeicoes",
+)
+```
+:::
+:::
+:::
+
+## Transformações numericas {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+Imputação de dados faltantes
+
+Busca por valores discrepantes
+
+
+Tratamento de valores discrepantes
+
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+::: {style="color:red"}
+Transformação de dados
+:::
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+::: {.panel-tabset}
+
+### Amplitute -1 a 1
+
+```{r}
+## range -1, 1
+numeric_range_rec<-recipe(~., data = dados) |>
+  step_YeoJohnson(all_numeric_predictors()) |>
+  step_center(all_numeric_predictors())|>
+  step_scale(all_numeric_predictors())|>
+  step_range(all_numeric_predictors(), min = -1, max = 1)|>
+  prep()
+
+
+dados_range<-numeric_range_rec|>
+  bake(new_data=NULL)
+
+# Histogramas após transformações:
+
+plota_hist(dados_range)
+```
+
+
+### Percentil
+
+```{r}
+## Percentil:
+
+numeric_percent_rec<-recipe(~., data = dados) |>
+  step_YeoJohnson(all_numeric_predictors()) |>
+  step_center(all_numeric_predictors())|>
+  step_scale(all_numeric_predictors())|>
+  step_percentile(all_numeric_predictors())|>
+  prep()
+
+dados_percent<-numeric_percent_rec|>
+  bake(new_data = NULL)
+
+# Histogramas após transformações:
+
+plota_hist(dados_percent)
+```
+:::
+:::
+:::
+
+## Transformações em variáveis categóricas 2a {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+Imputação de dados faltantes
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+::: {style="color:red"}
+Transformação de dados
+:::
+
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+::: {.panel-tabset}
+
+### One-Hot
+
+```{r}
+cat_rec<-recipe(~. , data = dados_range)|>
+  step_other(all_nominal_predictors())|>
+  step_dummy(all_nominal_predictors(),
+             one_hot = T)|>
+  prep()
+
+dados_one_hot<-cat_rec|>
+  bake(new_data = NULL)
+
+reactable(dados_one_hot,
+          defaultColDef = colDef(minWidth = 210,align = "center"),
+          columns = list(sexo = colDef(minWidth = 50),
+                         idade = colDef(minWidth = 100),
+                         altura = colDef(minWidth = 100),
+                         peso = colDef(minWidth = 50)
+                         ),
+          
+          defaultPageSize = 4,
+          sortable = T,
+          resizable = T,
+          highlight = T,
+          fullWidth = T,
+          compact = T,
+          striped = T,
+          theme = reactableTheme(style = list(fontSize=15),headerStyle = list(fontSize=15) 
+          )
+)
+```
+
+### Dummy
+
+```{r}
+cat_rec<-recipe(~. , data = dados_range)|>
+  step_other(all_nominal_predictors())|>
+  step_dummy(all_nominal_predictors())|>
+  prep()
+
+dados_dummy<-cat_rec|>
+  bake(new_data = NULL)
+
+reactable(dados_dummy,
+          defaultColDef = colDef(minWidth = 210,align = "center"),
+          columns = list(sexo = colDef(minWidth = 50),
+                         idade = colDef(minWidth = 100),
+                         altura = colDef(minWidth = 100),
+                         peso = colDef(minWidth = 50)
+                         ),
+          
+          defaultPageSize = 4,
+          sortable = T,
+          resizable = T,
+          highlight = T,
+          fullWidth = T,
+          compact = T,
+          striped = T,
+          theme = reactableTheme(style = list(fontSize=15),headerStyle = list(fontSize=15) 
+          )
+)
+```
+
+
+### Binarizar
+
+```{r}
+
+cat_rec_bin<-recipe(~. , data = dados_range)|>
+  step_other(all_nominal_predictors())|>
+  extrasteps::step_encoding_binary(all_nominal_predictors())|>
+  prep()
+
+dados_binarized<-cat_rec_bin|>
+  bake(new_data = NULL)
+
+reactable(dados_binarized,
+          defaultColDef = colDef(minWidth = 210,align = "center"),
+          columns = list(sexo = colDef(minWidth = 50),
+                         idade = colDef(minWidth = 100),
+                         altura = colDef(minWidth = 100),
+                         peso = colDef(minWidth = 50)
+                         ),
+          
+          defaultPageSize = 4,
+          sortable = T,
+          resizable = T,
+          highlight = T,
+          fullWidth = T,
+          compact = T,
+          striped = T,
+          theme = reactableTheme(style = list(fontSize=15),headerStyle = list(fontSize=15) 
+          )
+)
+```
+:::
+:::
+:::
+
+## Redução de dimensionalidade (PCA) {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+
+Integralidade dos dados - Dados faltantes
+
+Imputação de dados faltantes
+
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+::: {style="color:red"}
+Transformação de dados
+:::
+
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+
+::: {.panel-tabset}
+
+### Número de variáveis
+
+```{r}
+pca_rec<-recipe(~. , data = dados_range)|>
+  step_pca(all_numeric_predictors())|>
+  step_other(all_nominal_predictors())|>
+  step_dummy(all_nominal_predictors())|>
+  prep()
+
+pca_rec |>
+  tidy(1, type = 'variance') |>
+  filter(terms == 'cumulative percent variance') |>
+  ggplot(aes(x = component, y = value)) +
+  geom_point(size = 3, color = 'blue') +
+  geom_line(color = 'blue', size = 1) +
+  geom_hline(yintercept = 90, col = 'red', linetype = 'dashed')+
+  scale_x_continuous(breaks = c(seq(1,7,1)))+
+  scale_y_continuous(breaks = c(seq(30,100,20)))+
+  theme_bw() +
+  labs(
+    title = 'Cumulative Percent Variance',
+    x = 'Principal Component',
+    y = 'Cumulative Variance (%)'
+  ) +
+  theme(
+    axis.title = element_text(size = 12, face = 'bold'),
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    )
+```
+
+
+### Dataset 'final'
+
+```{r}
+pca_rec<-recipe(~. , data = dados_range)|>
+  step_pca(all_numeric_predictors(), threshold = 0.9)|>
+  step_other(all_nominal_predictors())|>
+  step_dummy(all_nominal_predictors())|>
+  prep()
+
+dados_pca<-pca_rec|>
+  bake(new_data = NULL)
+
+dados_pca|>reactable(
+          defaultColDef = colDef(minWidth = 210,align = "center"),
+          columns = list(sexo = colDef(minWidth = 50),
+                         idade = colDef(minWidth = 100),
+                         altura = colDef(minWidth = 100),
+                         peso = colDef(minWidth = 50)
+                         ),
+          
+          defaultPageSize = 4,
+          sortable = T,
+          resizable = T,
+          highlight = T,
+          fullWidth = T,
+          compact = T,
+          striped = T,
+          theme = reactableTheme(style = list(fontSize=15),headerStyle = list(fontSize=15) 
+          )
+)
+
+```
+
+
+:::
+
+:::
+:::
+
+## Conclusão {.smaller}
+
+::: {.incremental}
+- A
+- B
+- C
+- D
+- E
+- F
+:::

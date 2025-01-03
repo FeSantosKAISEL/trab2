@@ -409,11 +409,20 @@ cat_rec<-recipe(~. , data = dados_range)|>
 dados_dummy<-cat_rec|>
   bake(new_data = NULL)
 
+## Binarizar:
+
+cat_rec_bin<-recipe(~. , data = dados_range)|>
+  step_other(all_nominal_predictors())|>
+  extrasteps::step_encoding_binary(all_nominal_predictors())|>
+  prep()
+
+dados_binarized<-cat_rec_bin|>
+  bake(new_data = NULL)
 
 ### Redução de dimensionalidade com PCA (Ordem de fazer a redução)
 
 pca_rec<-recipe(~. , data = dados_range)|>
-  step_pca(all_numeric_predictors(), threshold = 0.9)|>
+  step_pca(all_numeric_predictors())|>
   step_other(all_nominal_predictors())|>
   step_dummy(all_nominal_predictors())|>
   prep()
@@ -422,87 +431,84 @@ dados_pca<-pca_rec|>
   bake(new_data = NULL)
 
 
-# Reduz de 18 para 16 variáveis (Poucas variáveis numéricas deixam PCA pouco util nesse caso)
+# 16 variáveis com PCA x 18 variáveis sem PCA pouca diferença por ter poucas variáveis categóricas:
 
 
 
-
-
-
-# grafico treemap, para se ver proporcção de respostas em dados categoricos
-dados |>
-  select(!where(is.numeric)) |>
-  drop_na() |>
-  rownames_to_column() |>
-  reshape2::melt(id = 'rowname', value.name = 'value') |>
-  group_by(variable, value) |>
-  summarise(n = n(), .groups = "drop") |>
-  group_by(variable) |>
-  unite("variable_value", variable, value, sep = ": ") |>
-  treemap(
-    index = "variable_value",       # Coluna com os rótulos
-    vSize = "n",                    # Tamanho baseado nos valores
-    vColor = "n",                   # Cor baseada no número de ocorrências
-    title = "Distribuição dos Dados - Treemap",
-    palette = "Set3",               # Usar uma paleta de cores predefinida
-    border.col = "white",           # Adiciona bordas brancas para separar as áreas
-    border.lwds = 2                # Define a espessura da borda
-  )
 
 
 #identificando variaveis dependentes pelo teste qui quadrado
+
+vars <- dados |>
+  select(!where(is.numeric)) |> colnames()
 
 for (i in 1:(length(vars) - 1)) {
   for (j in (i + 1):length(vars)) {
     tabela <- table(dados[[vars[i]]], dados[[vars[j]]])
     teste <- chisq.test(tabela)
-    if (teste$p.value < 0.0001 & teste$statistic > 50) {
+    if (teste$p.value < 0.0001 ) {
       print(c(vars[i], vars[j]))
     }
   }
 }
 
 
-# historico_obesidade_familia X come_entre_refeicoes
+# come_entre_refeicoes X sexo
 
-test1 <- dados |> select(historico_obesidade_familia, come_entre_refeicoes) |> table() |> chisq.test()
-test1$residuals
+test1 <- dados |> select(sexo, come_entre_refeicoes) |> table() |> chisq.test()
+
 
 pheatmap(test1$residuals,
-         display_numbers = TRUE,
-         cluster_rows = FALSE,
-         cluster_cols = FALSE,
-         main = "come_entre_refeicoes X historico_obesidade_familia",
+               display_numbers = TRUE,
+               cluster_rows = FALSE,
+               cluster_cols = FALSE,
+               main = "come_entre_refeicoes X sexo"
 )
+
+# sexo X tipo_transporte
+test2 <- dados |> select(sexo, tipo_transporte) |> table() |> chisq.test()
+
+pheatmap(test2$residuals,
+               display_numbers = TRUE,
+               cluster_rows = FALSE,
+               cluster_cols = FALSE,
+               main = "sexo X tipo_transporte"
+)
+# consome_comida_calorica X come_entre_refeicoes
+
+test3 <- dados |> select(consome_comida_calorica, come_entre_refeicoes) |> table() |> chisq.test()
+
+pheatmap(test3$residuals,
+               display_numbers = TRUE,
+               cluster_rows = FALSE,
+               cluster_cols = FALSE,
+               main = "come_entre_refeicoes X consome_comida_calorica"
+)
+
+#tipo_transporte X come_entre_refeicoes
+test4 <- dados |> select(come_entre_refeicoes, tipo_transporte) |> table() |> chisq.test()
+
+pheatmap(test4$residuals,
+               display_numbers = TRUE,
+               cluster_rows = FALSE,
+               cluster_cols = FALSE,
+               main = "tipo_transporte X come_entre_refeicoes"
+)
+
+
+
+
+
+
+# Relação entre categóricas após a discretização de n_ref:
+
+
 # come_entre_refeicoes X n_refeicoes
 test2 <- dados |> select(n_refeicoes, come_entre_refeicoes) |> table() |> chisq.test()
-test2$residuals
 
 pheatmap(test2$residuals,
          display_numbers = TRUE,
          cluster_rows = FALSE,
          cluster_cols = FALSE,
          main = "come_entre_refeicoes X n_refeicoes",
-)
-
-# consumo_alcool X n_refeicoes
-test3 <- dados |> select(n_refeicoes, consumo_alcool) |> table() |> chisq.test()
-test3$residuals
-
-pheatmap(test3$residuals,
-         display_numbers = TRUE,
-         cluster_rows = FALSE,
-         cluster_cols = FALSE,
-         main = "consumo_alcool X n_refeicoes",
-)
-
-#tipo_transporte X come_entre_refeicoes
-test4 <- dados |> select(come_entre_refeicoes, tipo_transporte) |> table() |> chisq.test()
-test4$residuals
-
-pheatmap(test4$residuals,
-         display_numbers = TRUE,
-         cluster_rows = FALSE,
-         cluster_cols = FALSE,
-         main = "tipo_transporte X come_entre_refeicoes",
 )
