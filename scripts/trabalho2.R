@@ -15,7 +15,7 @@ library(pheatmap)
 # Funções internas:
 
 plota_hist<-function(base){
-  
+   
   # Seleção de colunas numéricas e cálculo de dimensões
   aux <- base |> select(where(is.numeric))|> drop_na()
   num_vars <- ncol(aux)
