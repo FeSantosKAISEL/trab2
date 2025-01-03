@@ -13,15 +13,21 @@ editor: visual
 
 ## Objetivos: {.smaller}
 
--   Entender.....
+- Determinar e verificar o **Conteúdo**, **Validade** e **Confiabilidade** dos dados
 
--   ......
+- Entender a **distribuição** das variáveis numéricas
 
--   
+- Analisar **correlações** entre duas variáveis numéricas
 
--   
+- Detectar **tendências** ou **padrões** entre variáveis numéricas
 
--   
+- Entender a **proporção** de categorias
+
+- Identificar categorias **raras** ou **pouco frequentes**
+
+- Verificar **inconsistências**
+
+- **Remover**, **transformar** e adicionar variáveis confrome a necessidade
 
 ## Procedimentos: {.smaller auto-animate="true"}
 
@@ -37,11 +43,10 @@ editor: visual
 -   Filtragem de dados
 -   Transformação de dados
 
-## Dados Faltantes 1 {.smaller auto-animate="true" style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+## Dados Faltantes {.smaller auto-animate="true" style="text-align: left; margin-top: 30px; margin-left: 300px;"}
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 ::: {.fragment .strike}
 ::: {.fragment .fade-out}
 Limpeza e estruturação dos dados.
@@ -72,24 +77,22 @@ Transformação de dados
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
--   AAAA
--   BBBB
--   CCCC
--   DDDD
+-   97% dos dados estão presentes
+-   Apenas 60% das observações estão completas
+-   Nenhuma observação possui mais que 3 *NA's*
+-   Nenhuma variável possui mais que 4% de dados faltantes
 :::
 :::
 
-## Dados Faltantes 2 {.smaller auto-animate="true" style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+## Dados Faltantes {.smaller auto-animate="true" style="text-align: left; margin-top: 30px; margin-left: 300px;"}
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 ::: {style="color:red"}
 Integralidade dos dados - Dados faltantes
 :::
 
 Imputação de dados faltantes
-
 
 Busca por valores discrepantes
 
@@ -176,53 +179,49 @@ visdat::vis_miss(dados)+
 :::
 :::
 
-## Dados Faltantes 3 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+## Dados Faltantes {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
-Integralidade dos dados - Dados faltantes
-
-:::{style="color:red"}
-Imputação de dados faltantes
-:::
-
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
-
-Distribuição de variáveis numéricas
-
-Relações entre variáveis numéricas
-
-Distribuição de variáveis categóricas
-
-Associações entre variáveis categóricas
-
-Filtragem de dados
-
-Transformação de dados
-:::
-:::
-
-::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
-Colocar a imagem sobre imputação
-
-:::
-:::
-
-## Dados Faltantes 4 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
-
-::: columns
-::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 ::: {style="color:red"}
 Imputação de dados faltantes
 :::
 
+Busca por valores discrepantes
+
+Tratamento de valores discrepantes
+
+Distribuição de variáveis numéricas
+
+Relações entre variáveis numéricas
+
+Distribuição de variáveis categóricas
+
+Associações entre variáveis categóricas
+
+Filtragem de dados
+
+Transformação de dados
+:::
+:::
+
+::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+![](dados/fig-imputation.png){fig-align="center" width="800"}
+:::
+
+:::
+
+## Dados Faltantes {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+
+::: columns
+::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
+Integralidade dos dados - Dados faltantes
+
+::: {style="color:red"}
+Imputação de dados faltantes
+:::
 
 Busca por valores discrepantes
 
@@ -242,7 +241,6 @@ Transformação de dados
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
 ```{r}
 knn_rec <- recipe(~., data = dados) |>
   step_impute_knn(all_predictors(), neighbors = 5)|>
@@ -258,11 +256,10 @@ visdat::vis_miss(dados)+
 :::
 :::
 
-## Valores Discrepantes 1 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+## Valores Discrepantes {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
@@ -287,16 +284,14 @@ Transformação de dados
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
 O que tiver sobre outliers
 :::
 :::
 
-## Valores Discrepantes 2 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+## Valores Discrepantes {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
@@ -321,16 +316,14 @@ Transformação de dados
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
 O que tiver sobre tratamento de outliers
 :::
 :::
 
-## Variáveis numéricas 1 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+## Variáveis numéricas {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
@@ -355,15 +348,12 @@ Transformação de dados
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
-::: {.panel-tabset}
-
+::: panel-tabset
 ### Histogramas
 
 ```{r}
 plota_hist(dados)
 ```
-
 
 ### Box-plots
 
@@ -384,7 +374,6 @@ dados|>
         strip.background = element_rect(fill = 'white')
   )
 ```
-
 
 ### Violin plot
 
@@ -409,11 +398,10 @@ dados|>
 :::
 :::
 
-## Variáveis numéricas 2 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+## Variáveis numéricas {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
@@ -438,9 +426,7 @@ Transformação de dados
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
-::: {.panel-tabset}
-
+::: panel-tabset
 ### Correlações
 
 ```{r}
@@ -456,7 +442,6 @@ ggcorrplot::ggcorrplot(correlacoes,
                        title = 'Matriz de correlação para variáveis numéricas')
 
 ```
-
 
 ### Resumos numéricos
 
@@ -482,11 +467,10 @@ dados|>
 :::
 :::
 
-## Variáveis Categoricas 1 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+## Variáveis Categoricas {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
@@ -511,11 +495,8 @@ Transformação de dados
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
-::: {.panel-tabset}
-
+::: panel-tabset
 ### Proporções
-
 
 ```{r}
 ## Ver proporções (Fazer gráfico)
@@ -601,7 +582,6 @@ p<-proporcoes|>
 plotly::ggplotly(p)
 ```
 
-
 ### Estratificação
 
 ```{r}
@@ -615,11 +595,10 @@ dados|>
 :::
 :::
 
-## Variáveis categóricas 2 {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+## Variáveis categóricas {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
@@ -644,9 +623,7 @@ Transformação de dados
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
-::: {.panel-tabset}
-
+::: panel-tabset
 ### Relação 1
 
 ```{r}
@@ -662,9 +639,7 @@ pheatmap(test1$residuals,
 )
 ```
 
-
 ### Relação 2
-
 
 ```{r}
 # sexo X tipo_transporte
@@ -705,7 +680,6 @@ pheatmap(test4$residuals,
                main = "tipo_transporte X come_entre_refeicoes"
 )
 ```
-
 :::
 :::
 :::
@@ -714,7 +688,6 @@ pheatmap(test4$residuals,
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
@@ -739,13 +712,11 @@ Transformação de dados
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
+-   Nenhuma variável numérica removida devido a **correlação** ou **multicolinearidade**
+-   Nenhuma variável numérica removida devido a **baixa variância** ou **variância zero**
+-   Uma variável categórica removida devido à **baixa variação** (*fuma*)
+-   Nenhum algorítmo de **seleção de variáveis** utilizado
 
- - Nenhuma variável numérica removida devido a **correlação** ou **multicolinearidade**
- - Nenhuma variável numérica removida devido a **baixa variância** ou **variância zero**
- - Uma variável categórica removida devido à **baixa variação** (*fuma*)
- - Nenhum algorítmo de **seleção de variáveis** utilizado
- 
- 
 ::: {.fragment .fade-in}
 ```{r}
 #| output: true
@@ -786,7 +757,6 @@ reactable(dados,
 )
 
 ```
-
 :::
 :::
 :::
@@ -795,7 +765,6 @@ reactable(dados,
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
@@ -817,19 +786,16 @@ Filtragem de dados
 ::: {style="color:red"}
 Transformação de dados
 :::
-
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
- - Discretização da variável *n_refeicoes*
- - Normalização das variáveis numéricas (Yeo-Johnson)
- - Normatização das variáveis numéricas (centrar na média e escalonar)
- - Mudança de escala das variáveis numericas (Máximo-Mínimo, Percentil)
- - Agrupamento em variáveis categóricas *tipo_de_transporte* ("moto", "bicicleta"), *come_entre_refeições* ("não", "sempre")
- - Numerizar as variáveis categóricas (One-Hot Enconde, Dummy Encode, Binarizar)
- - Redução de dimensões (PCA)
- 
+-   Discretização da variável *n_refeicoes*
+-   Normalização das variáveis numéricas (Yeo-Johnson)
+-   Normatização das variáveis numéricas (centrar na média e escalonar)
+-   Mudança de escala das variáveis numericas (Máximo-Mínimo, Percentil)
+-   Agrupamento em variáveis categóricas *tipo_de_transporte* ("moto", "bicicleta"), *come_entre_refeições* ("não", "sempre")
+-   Numerizar as variáveis categóricas (One-Hot Enconde, Dummy Encode, Binarizar)
+-   Redução de dimensões (PCA)
 :::
 :::
 
@@ -837,7 +803,6 @@ Transformação de dados
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
@@ -859,13 +824,10 @@ Filtragem de dados
 ::: {style="color:red"}
 Transformação de dados
 :::
-
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
-::: {.panel-tabset}
-
+::: panel-tabset
 ### Discretização
 
 ```{r}
@@ -899,7 +861,6 @@ reactable(dados,
 
 ```
 
-
 ### Resultado
 
 ```{r}
@@ -921,16 +882,13 @@ pheatmap(test2$residuals,
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
 Busca por valores discrepantes
 
-
 Tratamento de valores discrepantes
-
 
 Distribuição de variáveis numéricas
 
@@ -948,9 +906,7 @@ Transformação de dados
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
-::: {.panel-tabset}
-
+::: panel-tabset
 ### Amplitute -1 a 1
 
 ```{r}
@@ -970,7 +926,6 @@ dados_range<-numeric_range_rec|>
 
 plota_hist(dados_range)
 ```
-
 
 ### Percentil
 
@@ -995,11 +950,10 @@ plota_hist(dados_percent)
 :::
 :::
 
-## Transformações em variáveis categóricas 2a {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+## Transformações em var. categóricas {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
@@ -1021,13 +975,10 @@ Filtragem de dados
 ::: {style="color:red"}
 Transformação de dados
 :::
-
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
-::: {.panel-tabset}
-
+::: panel-tabset
 ### One-Hot
 
 ```{r}
@@ -1091,7 +1042,6 @@ reactable(dados_dummy,
 )
 ```
 
-
 ### Binarizar
 
 ```{r}
@@ -1127,11 +1077,10 @@ reactable(dados_binarized,
 :::
 :::
 
-## Redução de dimensionalidade (PCA) {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
+## Redução de dimensionalidade {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
 
 ::: columns
 ::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-
 Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
@@ -1153,13 +1102,10 @@ Filtragem de dados
 ::: {style="color:red"}
 Transformação de dados
 :::
-
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-
-::: {.panel-tabset}
-
+::: panel-tabset
 ### Número de variáveis
 
 ```{r}
@@ -1190,7 +1136,6 @@ pca_rec |>
     panel.grid.minor = element_blank(),
     )
 ```
-
 
 ### Dataset 'final'
 
@@ -1224,20 +1169,21 @@ dados_pca|>reactable(
 )
 
 ```
-
-
 :::
-
 :::
 :::
 
 ## Conclusão {.smaller}
- 
-::: {.incremental}
-- A
-- B
-- C
-- D
-- E
-- F
+
+::: incremental
+-   Os dados foram imputados com KNN, mas outras formas poder ser testadas e validadadas com o modelo construído
+-   Normalização e Normatização foram realizadas para todas as variáveis numéricas
+-   A variável *fuma* foi removida
+-   A variável *n_refeicoes* foi discretizada em três níveis
+-   A escala foi alterada para variar de -1 até 1 (Outras escalas devem ser testadas)
+-   Foram feitos agrupamentos numéricos nas variáveis *tipo_transporte* e *come_entre_refeicoes*
+-  As variáveis nominais foram codificadas com **Dummy-Encode**
+-  PCA não se mostra uma opção benéfica considerando o número final de dimensões (16 x 18)
+-  Procedimentos para seleção de variáveis e tratamento de valores atípicos devem serão feitos iterativamente com os resultados do agrupamento realizado
+
 :::
