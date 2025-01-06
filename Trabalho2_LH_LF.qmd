@@ -8,26 +8,27 @@ format:
      center: false
      transition: none
      auto-animate: true
+     slide-number: true
 editor: visual
 ---
 
 ## Objetivos: {.smaller}
 
-- Determinar e verificar o **Conteúdo**, **Validade** e **Confiabilidade** dos dados
+-   Determinar e verificar o **Conteúdo**, **Validade** e **Confiabilidade** dos dados
 
-- Entender a **distribuição** das variáveis numéricas
+-   Entender a **distribuição** das variáveis numéricas
 
-- Analisar **correlações** entre duas variáveis numéricas
+-   Analisar **correlações** entre duas variáveis numéricas
 
-- Detectar **tendências** ou **padrões** entre variáveis numéricas
+-   Detectar **tendências** ou **padrões** entre variáveis numéricas
 
-- Entender a **proporção** de categorias
+-   Entender a **proporção** de categorias
 
-- Identificar categorias **raras** ou **pouco frequentes**
+-   Identificar categorias **raras** ou **pouco frequentes**
 
-- Verificar **inconsistências**
+-   Verificar **inconsistências**
 
-- **Remover**, **transformar** e adicionar variáveis confrome a necessidade
+-   **Remover**, **transformar** e adicionar variáveis confrome a necessidade
 
 ## Procedimentos: {.smaller auto-animate="true"}
 
@@ -59,9 +60,7 @@ Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -94,9 +93,7 @@ Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -189,9 +186,7 @@ Integralidade dos dados - Dados faltantes
 Imputação de dados faltantes
 :::
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -223,9 +218,7 @@ Integralidade dos dados - Dados faltantes
 Imputação de dados faltantes
 :::
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -265,41 +258,7 @@ Integralidade dos dados - Dados faltantes
 Imputação de dados faltantes
 
 ::: {style="color:red"}
-Busca por valores discrepantes
-:::
-
-Tratamento de valores discrepantes
-
-Distribuição de variáveis numéricas
-
-Relações entre variáveis numéricas
-
-Distribuição de variáveis categóricas
-
-Associações entre variáveis categóricas
-
-Filtragem de dados
-
-Transformação de dados
-:::
-
-::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-O que tiver sobre outliers
-:::
-:::
-
-## Valores Discrepantes {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
-
-::: columns
-::: {.column .left width="10%" style="margin-left: -400px; color: black; text-align: left; font-size: 0.5em; background-color: white; border: 2px solid black; line-height: 100; padding: 10px; height: 80%; width: 15%;"}
-Integralidade dos dados - Dados faltantes
-
-Imputação de dados faltantes
-
-Busca por valores discrepantes
-
-::: {style="color:red"}
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 :::
 
 Distribuição de variáveis numéricas
@@ -316,8 +275,31 @@ Transformação de dados
 :::
 
 ::: {.column .incremental width="90%" style="margin-left: 70px; width: 100%; height: 100%; "}
-O que tiver sobre tratamento de outliers
+Usando a função mahalonobis, como métrica de distância, foram encotrados os 0.01% casos mais distantes, mostrados a seguir, que podem ser tratados como outliers, porém a extração delas não afetou o modelo, por fim foi decidido mantê-las.
+
+```{r}
+
+# Selecionar apenas as variáveis numéricas
+dados_numericos <- dados %>% select(where(is.numeric))
+
+# Calcular a distância de Mahalanobis
+mahalanobis_dist <- mahalanobis(
+  dados_numericos,
+  center = colMeans(dados_numericos, na.rm = TRUE),
+  cov = cov(dados_numericos, use = "pairwise.complete.obs")
+)
+
+# Identificar outliers usando um limite (e.g., p < 0.001)
+limite <- qchisq(0.999, df = ncol(dados_numericos)) # Limite de chi-quadrado
+outliers <- which(mahalanobis_dist > limite)
+
+# Exibir os outliers
+dados[outliers, ]
+
+```
 :::
+:::
+
 :::
 
 ## Variáveis numéricas {.smaller style="text-align: left; margin-top: 30px; margin-left: 300px;"}
@@ -328,9 +310,7 @@ Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 ::: {style="color:red"}
 Distribuição de variáveis numéricas
@@ -406,9 +386,7 @@ Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -475,9 +453,7 @@ Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -603,9 +579,7 @@ Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -692,9 +666,7 @@ Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -769,9 +741,7 @@ Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -794,7 +764,7 @@ Transformação de dados
 -   Normatização das variáveis numéricas (centrar na média e escalonar)
 -   Mudança de escala das variáveis numericas (Máximo-Mínimo, Percentil)
 -   Agrupamento em variáveis categóricas *tipo_de_transporte* ("moto", "bicicleta"), *come_entre_refeições* ("não", "sempre")
--   Numerizar as variáveis categóricas (One-Hot Enconde, Dummy Encode, Binarizar)
+-   Numerizar as variáveis categóricas (One-Hot Encode, Dummy Encode, Binarizar)
 -   Redução de dimensões (PCA)
 :::
 :::
@@ -807,9 +777,7 @@ Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -886,9 +854,7 @@ Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -958,9 +924,7 @@ Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -1085,9 +1049,7 @@ Integralidade dos dados - Dados faltantes
 
 Imputação de dados faltantes
 
-Busca por valores discrepantes
-
-Tratamento de valores discrepantes
+Busca e tratamento de valores discrepantes
 
 Distribuição de variáveis numéricas
 
@@ -1177,13 +1139,13 @@ dados_pca|>reactable(
 
 ::: incremental
 -   Os dados foram imputados com KNN, mas outras formas poder ser testadas e validadadas com o modelo construído
+-   Nenhuma observação foi excuída por causa dos outliers por que não necessariamente o valor discrepante afeta o modelo
 -   Normalização e Normatização foram realizadas para todas as variáveis numéricas
 -   A variável *fuma* foi removida
 -   A variável *n_refeicoes* foi discretizada em três níveis
 -   A escala foi alterada para variar de -1 até 1 (Outras escalas devem ser testadas)
 -   Foram feitos agrupamentos numéricos nas variáveis *tipo_transporte* e *come_entre_refeicoes*
--  As variáveis nominais foram codificadas com **Dummy-Encode**
--  PCA não se mostra uma opção benéfica considerando o número final de dimensões (16 x 18)
--  Procedimentos para seleção de variáveis e tratamento de valores atípicos devem serão feitos iterativamente com os resultados do agrupamento realizado
-
+-   As variáveis nominais foram codificadas com **Dummy-Encode**
+-   PCA não se mostra uma opção benéfica considerando o número final de dimensões (16 x 18)
+-   Procedimentos para seleção de variáveis e tratamento de valores atípicos devem serão feitos iterativamente com os resultados do agrupamento realizado
 :::
